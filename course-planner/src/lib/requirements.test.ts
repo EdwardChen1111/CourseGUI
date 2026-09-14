@@ -28,10 +28,70 @@ describe("calculateRequirementProgress", () => {
         groupName: "基礎數學",
         completedCredits: 4,
         minimumCredits: 4,
+        creditEligibleCourseCount: 2,
         missingRequiredCourseNos: ["MA102"],
         isComplete: false,
       },
     ]);
+  });
+
+  it("counts electives that are explicitly eligible for a credit group", () => {
+    const electiveRequirements = requirementSetSchema.parse({
+      ...requirements,
+      groups: [
+        {
+          id: "technical-electives",
+          name: "技術選修",
+          minimumCredits: 6,
+          requiredCourseNos: [],
+          creditEligibleCourseNos: ["CS201", "CS202", "CS203"],
+        },
+      ],
+    });
+
+    expect(calculateRequirementProgress(electiveRequirements, [
+      { courseNo: "CS201", credits: 3 },
+      { courseNo: "CS202", credits: 3 },
+      { courseNo: "OTHER101", credits: 3 },
+    ])).toMatchObject([
+      {
+        completedCredits: 6,
+        minimumCredits: 6,
+        creditEligibleCourseCount: 3,
+        missingRequiredCourseNos: [],
+        isComplete: true,
+      },
+    ]);
+  });
+
+  it("rejects a rule that marks a required course as ineligible for its own credit group", () => {
+    expect(() => requirementSetSchema.parse({
+      ...requirements,
+      groups: [
+        {
+          id: "invalid",
+          name: "不一致規則",
+          minimumCredits: 3,
+          requiredCourseNos: ["CS101"],
+          creditEligibleCourseNos: ["CS102"],
+        },
+      ],
+    })).toThrow("every required course number must also be credit-eligible");
+  });
+
+  it("rejects duplicate course numbers in a credit group", () => {
+    expect(() => requirementSetSchema.parse({
+      ...requirements,
+      groups: [
+        {
+          id: "duplicate",
+          name: "重複課號",
+          minimumCredits: 3,
+          requiredCourseNos: [],
+          creditEligibleCourseNos: ["CS201", "CS201"],
+        },
+      ],
+    })).toThrow("credit-eligible course numbers must be unique");
   });
 });
 

@@ -8,6 +8,27 @@ export const requirementGroupSchema = z.object({
   name: z.string().min(1),
   minimumCredits: z.number().nonnegative(),
   requiredCourseNos: z.array(z.string().min(1)).default([]),
+  creditEligibleCourseNos: z.array(z.string().min(1)).min(1).optional(),
+  notes: z.string().min(1).optional(),
+}).superRefine((group, context) => {
+  const countableCourseNos = group.creditEligibleCourseNos ?? group.requiredCourseNos;
+  const duplicateCourseNos = countableCourseNos.filter((courseNo, index) => countableCourseNos.indexOf(courseNo) !== index);
+
+  if (duplicateCourseNos.length > 0) {
+    context.addIssue({
+      code: "custom",
+      message: "credit-eligible course numbers must be unique",
+      path: ["creditEligibleCourseNos"],
+    });
+  }
+
+  if (group.creditEligibleCourseNos && group.requiredCourseNos.some((courseNo) => !group.creditEligibleCourseNos?.includes(courseNo))) {
+    context.addIssue({
+      code: "custom",
+      message: "every required course number must also be credit-eligible",
+      path: ["creditEligibleCourseNos"],
+    });
+  }
 });
 
 export const requirementSetSchema = z.object({
@@ -61,6 +82,7 @@ export type RequirementProgress = {
   groupName: string;
   completedCredits: number;
   minimumCredits: number;
+  creditEligibleCourseCount: number;
   missingRequiredCourseNos: string[];
   isComplete: boolean;
 };
@@ -69,7 +91,8 @@ export function calculateRequirementProgress(requirements: z.infer<typeof requir
   const completedCourseNos = new Set(completedCourses.map((course) => course.courseNo));
 
   return requirements.groups.map((group) => {
-    const matchingCourses = completedCourses.filter((course) => group.requiredCourseNos.includes(course.courseNo));
+    const creditEligibleCourseNos = group.creditEligibleCourseNos ?? group.requiredCourseNos;
+    const matchingCourses = completedCourses.filter((course) => creditEligibleCourseNos.includes(course.courseNo));
     const completedCredits = matchingCourses.reduce((total, course) => total + course.credits, 0);
     const missingRequiredCourseNos = group.requiredCourseNos.filter((courseNo) => !completedCourseNos.has(courseNo));
 
@@ -78,6 +101,7 @@ export function calculateRequirementProgress(requirements: z.infer<typeof requir
       groupName: group.name,
       completedCredits,
       minimumCredits: group.minimumCredits,
+      creditEligibleCourseCount: creditEligibleCourseNos.length,
       missingRequiredCourseNos,
       isComplete: missingRequiredCourseNos.length === 0 && completedCredits >= group.minimumCredits,
     };

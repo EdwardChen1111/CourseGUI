@@ -264,6 +264,7 @@ export function CoursePlanner() {
                     {group.completedCredits} / {group.minimumCredits} 學分
                   </span>
                 </div>
+                {group.creditEligibleCourseCount > 0 ? <p className="mt-2 text-xs leading-5 text-slate-500">可計入此群組學分的課程：{group.creditEligibleCourseCount} 門</p> : null}
                 {group.missingRequiredCourseNos.length > 0 ? (
                   <p className="mt-2 text-xs leading-5 text-slate-600">尚缺：{group.missingRequiredCourseNos.join("、")}</p>
                 ) : (
