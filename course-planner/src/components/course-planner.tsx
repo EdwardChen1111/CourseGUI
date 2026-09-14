@@ -85,10 +85,10 @@ export function CoursePlanner() {
       <div>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-sky-700">1151 課程快照</p>
+            <p className="text-sm font-semibold text-sky-700">{courseSnapshot.scope.description}</p>
             <h2 className="mt-1 text-2xl font-bold">搜尋課程</h2>
           </div>
-          <p className="text-sm text-slate-500">目前顯示 {filteredCourses.length} 門課</p>
+          <p className="text-sm text-slate-500">快照共 {offerings.length} 門；目前顯示 {filteredCourses.length} 門</p>
         </div>
 
         <label className="mt-5 block text-sm font-semibold text-slate-700" htmlFor="course-search">

@@ -45,6 +45,7 @@ describe("NTUST course API adapter", () => {
       semester: "1151",
       source: "https://example.test/courses",
       retrievedAt,
+      scope: { type: "full-semester", description: "1151 學期全校課程" },
       offerings: [
         {
           semester: "1151",

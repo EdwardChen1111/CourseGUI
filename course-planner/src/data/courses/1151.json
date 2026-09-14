@@ -2,6 +2,10 @@
   "semester": "1151",
   "source": "https://querycourse.ntust.edu.tw/querycourse/api/courses",
   "retrievedAt": "2026-09-14T14:08:23.440Z",
+  "scope": {
+    "type": "filtered-query",
+    "description": "1151 學期「微積分」課名篩選結果"
+  },
   "offerings": [
     {
       "semester": "1151",

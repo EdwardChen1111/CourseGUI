@@ -24,6 +24,10 @@ export const courseSnapshotSchema = z.object({
   semester: z.string().regex(/^\d{4}$/),
   source: z.url(),
   retrievedAt: z.iso.datetime(),
+  scope: z.object({
+    type: z.enum(["full-semester", "filtered-query"]),
+    description: z.string().min(1),
+  }),
   offerings: z.array(courseOfferingSchema),
 }).superRefine((snapshot, context) => {
   const courseNos = new Set<string>();

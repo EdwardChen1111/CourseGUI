@@ -5,7 +5,9 @@ import { parseCourseSnapshot } from "@/lib/course-data";
 
 describe("parseCourseSnapshot", () => {
   it("accepts the versioned 1151 official course snapshot", () => {
-    expect(parseCourseSnapshot(snapshot).offerings).toHaveLength(48);
+    const parsedSnapshot = parseCourseSnapshot(snapshot);
+    expect(parsedSnapshot.offerings).toHaveLength(48);
+    expect(parsedSnapshot.scope).toEqual({ type: "filtered-query", description: "1151 學期「微積分」課名篩選結果" });
   });
 
   it("rejects a course that belongs to another semester", () => {

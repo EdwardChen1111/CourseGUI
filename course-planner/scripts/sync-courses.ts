@@ -92,6 +92,12 @@ async function main() {
     semester: options.semester,
     source: NTUST_COURSE_API_URL,
     retrievedAt,
+    scope: {
+      type: options.courseName ? "filtered-query" : "full-semester",
+      description: options.courseName
+        ? `${options.semester} 學期「${options.courseName}」課名篩選結果`
+        : `${options.semester} 學期全校課程`,
+    },
     offerings: mapped.map((result) => result.offering),
   });
   const scheduleWarnings = mapped.flatMap((result) => result.unrecognizedScheduleTokens);

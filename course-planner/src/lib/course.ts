@@ -28,5 +28,9 @@ export type CourseSnapshot = {
   semester: string;
   source: string;
   retrievedAt: string;
+  scope: {
+    type: "full-semester" | "filtered-query";
+    description: string;
+  };
   offerings: CourseOffering[];
 };
