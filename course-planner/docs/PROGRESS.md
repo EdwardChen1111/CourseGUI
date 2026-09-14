@@ -78,3 +78,20 @@
 1. 建立可顯示 requirement set 的修課進度介面。
 2. 將課程快照驗證納入 GitHub Actions。
 3. 設計校方資料同步 adapter 與失敗告警資料。
+
+## 2026-09-14 - Milestone 5：公開交接文件
+
+- 將預設 Next.js README 改寫為專案的功能、技術、驗證、資料治理與 GitHub Pages 部署文件。
+- 明確記錄校方資料來源與資料使用邊界。
+- 明確記錄不保存 SSO 密碼、成績或正式選課紀錄的資料保護原則。
+
+### 驗證紀錄
+
+- `npm run test`：7 項測試通過。
+- `npm run build`：通過。
+
+### 下一步
+
+1. 設定 GitHub 遠端並推送既有提交。
+2. 建立可顯示 requirement set 的修課進度介面。
+3. 設計校方資料同步 adapter 與失敗告警資料。
