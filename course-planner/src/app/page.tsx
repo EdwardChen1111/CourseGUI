@@ -23,7 +23,7 @@ export default function Home() {
             把選課與學業規劃，放在同一張地圖上。
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            從課程搜尋、候選課表到畢業條件追蹤，幫助你更快看懂每一學期的選擇。
+            從版本化課程搜尋、候選課表到規則比對展示，幫助你更快看懂每一學期的選擇。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800" href="#planner">
@@ -62,9 +62,9 @@ export default function Home() {
           <h2 className="text-2xl font-bold">MVP 功能</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {[
-              ["課程搜尋", "依課名、教師、學分、校區與時段篩選，並保留課綱與限制資訊。"],
-              ["候選課表", "將開課班次放入同一張課表，即時顯示衝堂與總學分。"],
-              ["修課進度", "依入學年度與系所規則，追蹤已完成與尚缺的課程。"],
+              ["課程搜尋", "依課名、課號或教師搜尋版本化快照，查看學分、時段與教室；快照範圍會明確標示。"],
+              ["候選課表", "將開課班次放入同一張課表，即時顯示衝堂、總學分與每週時段，並只保存在本機瀏覽器。"],
+              ["修課進度", "使用具來源與審核狀態的規則資料，顯示已完成與尚缺課程；目前提供展示資料驗證流程。"],
             ].map(([title, description]) => (
               <article className="rounded-xl border border-slate-200 p-5" key={title}>
                 <h3 className="font-semibold text-slate-900">{title}</h3>
@@ -78,7 +78,7 @@ export default function Home() {
       <section id="data" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-bold">資料透明化</h2>
         <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-          課程資料將以校方公開查詢系統為準。畢業規則會保留來源、適用入學年度、版本與最後驗證時間；平台結果僅供規劃參考，正式畢業資格以教務處審核為準。
+          課程資料以校方公開查詢系統為準，並在每份快照保留來源、擷取時間與範圍。已匯入的畢業規則會保留來源、適用入學年度、版本與審核狀態；平台結果僅供規劃參考，正式畢業資格以教務處審核為準。
         </p>
       </section>
 

@@ -66,6 +66,8 @@ npm run build
 ## 專案進度
 
 請見 [docs/PROGRESS.md](docs/PROGRESS.md)。
+
+目前 MVP 的已交付功能、資料邊界與待人工審核項目見 [docs/MVP_SCOPE.md](docs/MVP_SCOPE.md)。
 ## 課程資料同步
 
 網站部署時只讀取已提交的靜態快照，不會在使用者瀏覽時向校方 API 發出請求。維護者可用下列指令從公開 API 產生課程資料，先預覽差異，再明確指定 `--write` 寫入快照；每次寫入前都會以 schema 驗證。
