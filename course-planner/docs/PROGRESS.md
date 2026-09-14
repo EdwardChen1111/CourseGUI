@@ -12,11 +12,13 @@
 - `npm run test`：7 個測試檔、17 項測試通過。
 - `npm run lint`：通過。
 - `npm run build`：通過，首頁與範圍文件相關內容可隨靜態產物生成。
+- GitHub Actions：提交 `f6df3e2` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
+- 公開網站：以版本參數載入已確認最新首頁文案；未帶參數的首頁仍可能短暫受 GitHub Pages CDN 快取影響。
 
 ### 下一步
 
-1. 提交並由 GitHub Actions／Pages 驗證首頁承諾修正。
-2. 取得實際適用的入學年度、學制與系所後，匯入第一份正式審核規則。
+1. 取得實際適用的入學年度、學制與系所後，匯入第一份正式審核規則。
+2. 依使用者需求擴大並審核其他課程快照範圍。
 
 ## 2026-09-14 - Milestone 13：課程快照範圍揭露
 
