@@ -1,5 +1,23 @@
 # 專案進度
 
+## 2026-09-14 - Milestone 17：受控修課規則匯入
+
+- 新增 `npm run import:requirements`，可從專案內的人工轉錄草稿讀取 requirement set、以 schema 驗證，並預覽 metadata 與規則群組的新增、移除、異動。
+- 匯入預設為 dry run，只有明確指定 `--write` 才會更新部署資料；`demo` 規則禁止匯入，`reviewed` 規則必須加上 `--allow-reviewed` 才可發布。
+- 對規則群組 ID 加入唯一性限制，使差異比較與介面呈現都具有穩定識別；加入可供維護者複製的非正式草稿格式範例。
+
+### 驗證紀錄
+
+- `npm run import:requirements -- --input=docs/examples/requirement-draft.json --output=src/data/requirements/example-112-undergraduate.json`：dry run 成功，確認未寫入資料目錄。
+- `npm run validate:data`：1 份課程快照與 1 份 requirement set 通過。
+- `npm run test`：9 個測試檔、26 項測試通過；涵蓋規則群組差異、可計入課號排序忽略與重複群組 ID 拒絕。
+- `npm run lint`、`npm run build`：通過。
+
+### 下一步
+
+1. 提供第一個適用的入學年度、學制與系所，依官方來源轉錄並匯入 `draft` 規則。
+2. 針對實際使用情境選擇下一個受控課程快照範圍。
+
 ## 2026-09-14 - Milestone 16：可計入學分的規則群組
 
 - 擴充修課規則資料模型：除了必修課號外，也能明確記錄可計入某個學分群組的課號，對應系所選修、雙主修及輔系常見的「指定清單任選若干學分」規則。

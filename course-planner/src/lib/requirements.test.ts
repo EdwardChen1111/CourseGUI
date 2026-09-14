@@ -93,6 +93,16 @@ describe("calculateRequirementProgress", () => {
       ],
     })).toThrow("credit-eligible course numbers must be unique");
   });
+
+  it("rejects duplicate group ids so an import has stable identities", () => {
+    expect(() => requirementSetSchema.parse({
+      ...requirements,
+      groups: [
+        { id: "core", name: "核心一", minimumCredits: 3, requiredCourseNos: ["CS101"] },
+        { id: "core", name: "核心二", minimumCredits: 3, requiredCourseNos: ["CS102"] },
+      ],
+    })).toThrow("requirement group ids must be unique");
+  });
 });
 
 describe("requirement review status", () => {

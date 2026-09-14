@@ -48,6 +48,18 @@ export const requirementSetSchema = z.object({
   reviewNotes: z.string().min(1).optional(),
   groups: z.array(requirementGroupSchema).min(1),
 }).superRefine((requirements, context) => {
+  const duplicateGroupIds = requirements.groups
+    .map((group) => group.id)
+    .filter((groupId, index, groupIds) => groupIds.indexOf(groupId) !== index);
+
+  if (duplicateGroupIds.length > 0) {
+    context.addIssue({
+      code: "custom",
+      message: "requirement group ids must be unique",
+      path: ["groups"],
+    });
+  }
+
   if (requirements.reviewStatus !== "reviewed") return;
 
   (["reviewedBy", "reviewedAt", "reviewNotes"] as const).forEach((field) => {
@@ -60,6 +72,8 @@ export const requirementSetSchema = z.object({
     }
   });
 });
+
+export type RequirementSet = z.infer<typeof requirementSetSchema>;
 
 export type RequirementReviewPresentation = {
   label: string;
@@ -87,7 +101,7 @@ export type RequirementProgress = {
   isComplete: boolean;
 };
 
-export function calculateRequirementProgress(requirements: z.infer<typeof requirementSetSchema>, completedCourses: Array<{ courseNo: string; credits: number }>): RequirementProgress[] {
+export function calculateRequirementProgress(requirements: RequirementSet, completedCourses: Array<{ courseNo: string; credits: number }>): RequirementProgress[] {
   const completedCourseNos = new Set(completedCourses.map((course) => course.courseNo));
 
   return requirements.groups.map((group) => {

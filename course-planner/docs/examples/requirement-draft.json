@@ -1,0 +1,29 @@
+{
+  "id": "example-112-undergraduate",
+  "category": "major",
+  "departmentCode": "EXAMPLE",
+  "departmentName": "範例系所（不可發布）",
+  "entryYear": "112",
+  "degreeType": "undergraduate",
+  "version": "example-2026-09-14",
+  "sourceUrl": "https://example.invalid/requirement-table",
+  "sourceTitle": "僅供匯入格式參考，非正式規則",
+  "sourceRetrievedAt": "2026-09-14T00:00:00.000Z",
+  "reviewStatus": "draft",
+  "groups": [
+    {
+      "id": "required-example",
+      "name": "必修範例",
+      "minimumCredits": 3,
+      "requiredCourseNos": ["EX101"]
+    },
+    {
+      "id": "elective-example",
+      "name": "指定選修範例",
+      "minimumCredits": 6,
+      "requiredCourseNos": [],
+      "creditEligibleCourseNos": ["EX201", "EX202", "EX203"],
+      "notes": "此檔案只說明欄位格式，不可寫入 release data。"
+    }
+  ]
+}

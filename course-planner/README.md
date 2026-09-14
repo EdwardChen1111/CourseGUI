@@ -78,3 +78,14 @@ npm run sync:courses -- --semester=1151 --course-name=微積分 --write
 ```
 
 第一個指令是唯讀的 dry run。第二個指令才會更新 `src/data/courses/1151.json`；目前以課名篩選示範，避免意外寫入過大的全校課程資料。同步會輸出新增、移除、異動課號數量與無法辨識的時段 token 數量，供人工審核後再提交版本。
+
+## 修課規則匯入
+
+正式規則必須先由維護者依官方表格人工轉錄成草稿，再用受控匯入指令預覽差異。預設只接受 `draft` 規則；已人工審核的規則需要另加 `--allow-reviewed` 明確確認，`demo` 規則永遠不能匯入發布資料。
+
+```bash
+npm run import:requirements -- --input=drafts/cs-112-undergraduate.json --output=src/data/requirements/cs-112-undergraduate.json
+npm run import:requirements -- --input=drafts/cs-112-undergraduate.json --output=src/data/requirements/cs-112-undergraduate.json --write
+```
+
+第一個指令僅顯示群組與差異，第二個才會寫入。詳細欄位、審核步驟與草稿格式請見 [修課規則匯入與審核流程](docs/REQUIREMENT_REVIEW.md)。
