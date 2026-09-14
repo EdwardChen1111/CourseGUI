@@ -1,0 +1,41 @@
+{
+  "semester": "1151",
+  "source": "https://querycourse.ntust.edu.tw/QueryCourse/#/",
+  "retrievedAt": "2026-09-14T00:00:00.000Z",
+  "offerings": [
+    {
+      "semester": "1151",
+      "courseNo": "CE162A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "full",
+      "instructors": ["蕭育生"],
+      "enrollmentText": "25(25 / 0)",
+      "meetings": [
+        { "weekday": "T", "period": "9", "location": "TR-510" }
+      ],
+      "notes": "T9演算課，由助教上課／請自行上機選課／限60人",
+      "sourceUpdatedAt": "2026-09-14T00:00:00.000Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CS161A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "full",
+      "instructors": ["許之凡"],
+      "enrollmentText": "81(81 / 0)",
+      "meetings": [
+        { "weekday": "M", "period": "6", "location": "TR-213" },
+        { "weekday": "M", "period": "7", "location": "TR-213" },
+        { "weekday": "W", "period": "10", "location": "TR-409-2" },
+        { "weekday": "R", "period": "6", "location": "TR-409-2" },
+        { "weekday": "R", "period": "7", "location": "TR-409-2" }
+      ],
+      "notes": "W10演算課，由助教上課／英語授課／EMI課程",
+      "sourceUpdatedAt": "2026-09-14T00:00:00.000Z"
+    }
+  ]
+}
