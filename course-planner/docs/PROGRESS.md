@@ -12,6 +12,7 @@
 - `npm run validate:data`：1 份課程快照與 1 份 requirement set 通過。
 - `npm run test`：9 個測試檔、26 項測試通過；涵蓋規則群組差異、可計入課號排序忽略與重複群組 ID 拒絕。
 - `npm run lint`、`npm run build`：通過。
+- GitHub Actions：提交 `202b539` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
 
 ### 下一步
 
