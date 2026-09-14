@@ -1,3 +1,5 @@
+import { CoursePlanner } from "@/components/course-planner";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
@@ -24,8 +26,8 @@ export default function Home() {
             從課程搜尋、候選課表到畢業條件追蹤，幫助你更快看懂每一學期的選擇。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800" href="#features">
-              查看開發範圍
+            <a className="rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800" href="#planner">
+              開始規劃課表
             </a>
             <a className="rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400" href="#data">
               了解資料來源
@@ -50,6 +52,10 @@ export default function Home() {
           </div>
         </aside>
       </section>
+
+      <div id="planner" className="border-y border-slate-200 bg-slate-100">
+        <CoursePlanner />
+      </div>
 
       <section id="features" className="border-y border-slate-200 bg-white py-16">
         <div className="mx-auto max-w-6xl px-6">
