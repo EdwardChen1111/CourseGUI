@@ -31,7 +31,7 @@ export function parseScheduleSlots(value: string, locations: string[] = []): Par
       return;
     }
 
-    const location = locations[index];
+    const location = locations.length === 1 ? locations[0] : locations[index];
     meetings.push(location ? { weekday, period, location } : { weekday, period });
   });
 

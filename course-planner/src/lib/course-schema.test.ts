@@ -4,8 +4,8 @@ import snapshot from "@/data/courses/1151.json";
 import { parseCourseSnapshot } from "@/lib/course-data";
 
 describe("parseCourseSnapshot", () => {
-  it("accepts the versioned 1151 course snapshot", () => {
-    expect(parseCourseSnapshot(snapshot).offerings).toHaveLength(2);
+  it("accepts the versioned 1151 official course snapshot", () => {
+    expect(parseCourseSnapshot(snapshot).offerings).toHaveLength(48);
   });
 
   it("rejects a course that belongs to another semester", () => {

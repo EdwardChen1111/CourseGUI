@@ -64,3 +64,13 @@ npm run build
 ## 專案進度
 
 請見 [docs/PROGRESS.md](docs/PROGRESS.md)。
+## 課程資料同步
+
+網站部署時只讀取已提交的靜態快照，不會在使用者瀏覽時向校方 API 發出請求。維護者可用下列指令從公開 API 產生課程資料，先預覽差異，再明確指定 `--write` 寫入快照；每次寫入前都會以 schema 驗證。
+
+```bash
+npm run sync:courses -- --semester=1151 --course-name=微積分
+npm run sync:courses -- --semester=1151 --course-name=微積分 --write
+```
+
+第一個指令是唯讀的 dry run。第二個指令才會更新 `src/data/courses/1151.json`；目前以課名篩選示範，避免意外寫入過大的全校課程資料。同步會輸出新增、移除、異動課號數量與無法辨識的時段 token 數量，供人工審核後再提交版本。

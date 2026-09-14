@@ -1,22 +1,1220 @@
 {
   "semester": "1151",
-  "source": "https://querycourse.ntust.edu.tw/QueryCourse/#/",
-  "retrievedAt": "2026-09-14T00:00:00.000Z",
+  "source": "https://querycourse.ntust.edu.tw/querycourse/api/courses",
+  "retrievedAt": "2026-09-14T14:08:23.440Z",
   "offerings": [
+    {
+      "semester": "1151",
+      "courseNo": "3N1154701",
+      "title": "基礎微積分",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "森元俊成"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｅ302"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｅ302"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｅ302"
+        }
+      ],
+      "notes": "師大課程／限外系 生科一、學科一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1550701",
+      "title": "高等微積分（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林延輯"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "3",
+          "location": "公館 Ｅ301"
+        },
+        {
+          "weekday": "M",
+          "period": "4",
+          "location": "公館 Ｅ301"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｅ301"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｅ301"
+        }
+      ],
+      "notes": "師大課程／英語授課／EMI課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1550702",
+      "title": "高等微積分（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "郭庭榕"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "R",
+          "period": "3",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "R",
+          "period": "4",
+          "location": "公館 Ｓ201"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1550703",
+      "title": "高等微積分（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "陳賢修"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｓ201"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｓ201"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1552701",
+      "title": "微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "郭君逸"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "2",
+          "location": "公館 Ｂ103"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1552702",
+      "title": "微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林惠娥"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "2",
+          "location": "公館 Ｓ602"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1552703",
+      "title": "微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "張毓麟"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "2",
+          "location": "公館 Ｓ101"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1554701",
+      "title": "高等微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "陳賢修"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｓ201"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1554702",
+      "title": "高等微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林延輯"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｅ301"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1554703",
+      "title": "高等微積分探索（一）",
+      "credits": 1,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "郭庭榕"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "8",
+          "location": "公館 Ｓ201"
+        }
+      ],
+      "notes": "師大課程／本課程訂有先修課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1556701",
+      "title": "微積分甲（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林惠娥"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "公館 Ｓ602"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "公館 Ｓ602"
+        },
+        {
+          "weekday": "R",
+          "period": "3",
+          "location": "公館 Ｓ602"
+        },
+        {
+          "weekday": "R",
+          "period": "4",
+          "location": "公館 Ｓ602"
+        }
+      ],
+      "notes": "師大課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1556702",
+      "title": "微積分甲（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "張毓麟"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "公館 Ｓ101"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "公館 Ｓ101"
+        },
+        {
+          "weekday": "F",
+          "period": "3",
+          "location": "公館 Ｓ101"
+        },
+        {
+          "weekday": "F",
+          "period": "4",
+          "location": "公館 Ｓ101"
+        }
+      ],
+      "notes": "師大課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1556703",
+      "title": "微積分甲（一）",
+      "credits": 4,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "郭君逸"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "公館 Ｂ103"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "公館 Ｂ103"
+        },
+        {
+          "weekday": "R",
+          "period": "3",
+          "location": "公館 Ｂ103"
+        },
+        {
+          "weekday": "R",
+          "period": "4",
+          "location": "公館 Ｂ103"
+        }
+      ],
+      "notes": "師大課程／限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557701",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "江政融"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｅ202"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｅ202"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｅ202"
+        }
+      ],
+      "notes": "師大課程／限外系 資工一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557702",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "劉津豪"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "和平 教201演講廳"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "和平 教201演講廳"
+        },
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "和平 教201演講廳"
+        }
+      ],
+      "notes": "師大課程／限外系 工教一、光電一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557703",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林月珍"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｂ103"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｂ103"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｂ103"
+        }
+      ],
+      "notes": "師大課程／限外系 化一乙；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557704",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "陳瑞堂"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｅ201"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｅ201"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｅ201"
+        }
+      ],
+      "notes": "師大課程／限外系 地科一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557705",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "范洪源"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "和平 綜202演講廳"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "和平 綜202演講廳"
+        },
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "和平 綜202演講廳"
+        }
+      ],
+      "notes": "師大課程／限外系 機電一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557706",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "楊青育"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｅ102"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "公館 Ｅ102"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "公館 Ｅ102"
+        }
+      ],
+      "notes": "師大課程／限外系 化一甲；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557707",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "司靈得"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "6",
+          "location": "公館 Ｓ304"
+        },
+        {
+          "weekday": "M",
+          "period": "7",
+          "location": "公館 Ｓ304"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "公館 Ｓ304"
+        }
+      ],
+      "notes": "師大課程／英語授課／EMI課程／限外系 物一乙；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557708",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "王建勛"
+      ],
+      "enrollmentText": "已選 1／名額 1",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "和平 綜210展覽廳"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "和平 綜210展覽廳"
+        },
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "和平 綜210展覽廳"
+        }
+      ],
+      "notes": "師大課程／限外系 電機一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557709",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "李政哲"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "和平 教103"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "和平 教103"
+        },
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "和平 教103"
+        }
+      ],
+      "notes": "師大課程／限外系 車能一；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3N1557710",
+      "title": "微積分乙（一）",
+      "credits": 3,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "林月珍"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "6",
+          "location": "公館 Ｅ102"
+        },
+        {
+          "weekday": "M",
+          "period": "7",
+          "location": "公館 Ｅ102"
+        },
+        {
+          "weekday": "M",
+          "period": "8",
+          "location": "公館 Ｅ102"
+        }
+      ],
+      "notes": "師大課程／限外系 物一甲；限修學制：大、碩、博",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "3T1866701",
+      "title": "微積分一",
+      "credits": 5,
+      "requiredType": "elective",
+      "yearType": "half",
+      "instructors": [
+        "郭孝豪"
+      ],
+      "enrollmentText": "已選 0／名額 0",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "新204"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "新204"
+        },
+        {
+          "weekday": "R",
+          "period": "6"
+        },
+        {
+          "weekday": "R",
+          "period": "7"
+        },
+        {
+          "weekday": "R",
+          "period": "10"
+        }
+      ],
+      "notes": "台大課程／",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
     {
       "semester": "1151",
       "courseNo": "CE162A001",
       "title": "微積分(上)",
       "credits": 4,
       "requiredType": "required",
-      "yearType": "full",
-      "instructors": ["蕭育生"],
-      "enrollmentText": "25(25 / 0)",
-      "meetings": [
-        { "weekday": "T", "period": "9", "location": "TR-510" }
+      "yearType": "unknown",
+      "instructors": [
+        "蕭育生"
       ],
-      "notes": "T9演算課，由助教上課／請自行上機選課／限60人",
-      "sourceUpdatedAt": "2026-09-14T00:00:00.000Z"
+      "enrollmentText": "已選 25／名額 25",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "TR-510"
+        },
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "F",
+          "period": "6",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "TR-515"
+        }
+      ],
+      "notes": "適高中背景／T9演算課，由助教上課／請自行上機選課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A002",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "陳建光"
+      ],
+      "enrollmentText": "已選 56／名額 56",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "TR-517"
+        },
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "TR-517"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "TR-517"
+        },
+        {
+          "weekday": "F",
+          "period": "6",
+          "location": "TR-517"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "TR-517"
+        }
+      ],
+      "notes": "適高職背景／T9演算課，由助教上課／請自行上機選課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A003",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "王孟菊"
+      ],
+      "enrollmentText": "已選 50／名額 50",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "IB-308"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "IB-308"
+        },
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "IB-308"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "IB-308"
+        },
+        {
+          "weekday": "F",
+          "period": "8",
+          "location": "IB-308"
+        }
+      ],
+      "notes": "T9演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A004",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "吳子和"
+      ],
+      "enrollmentText": "已選 49／名額 49",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "IB-307"
+        },
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "IB-307"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "IB-307"
+        },
+        {
+          "weekday": "F",
+          "period": "6",
+          "location": "IB-307"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "IB-307"
+        }
+      ],
+      "notes": "T9演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A005",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "鄧伊茹"
+      ],
+      "enrollmentText": "已選 54／名額 54",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "T",
+          "period": "10",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "W",
+          "period": "3",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "W",
+          "period": "4",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "W",
+          "period": "5",
+          "location": "TR-515"
+        }
+      ],
+      "notes": "W5演算課，由助教上課／英語授課／EMI課程／限60人／創新教學課程",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A006",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "鄧伊茹"
+      ],
+      "enrollmentText": "已選 49／名額 49",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "T",
+          "period": "8",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-515"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-515"
+        }
+      ],
+      "notes": "T8演算課，由助教上課／限60人／創新教學課程",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A007",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "葉馥瑄"
+      ],
+      "enrollmentText": "已選 51／名額 51",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "10",
+          "location": "TR-509"
+        },
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-512"
+        }
+      ],
+      "notes": "M10演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A008",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "林育志"
+      ],
+      "enrollmentText": "已選 42／名額 42",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "TR-511"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "TR-511"
+        },
+        {
+          "weekday": "T",
+          "period": "8",
+          "location": "TR-511"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-511"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-511"
+        }
+      ],
+      "notes": "T8演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A009",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "何信璇"
+      ],
+      "enrollmentText": "已選 43／名額 43",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "TR-510"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "TR-510"
+        },
+        {
+          "weekday": "T",
+          "period": "8",
+          "location": "TR-510"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-510"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-510"
+        }
+      ],
+      "notes": "T8演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A010",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "林詩瑀"
+      ],
+      "enrollmentText": "已選 41／名額 41",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "TR-614"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "TR-614"
+        },
+        {
+          "weekday": "T",
+          "period": "8",
+          "location": "TR-614"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-614"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-614"
+        }
+      ],
+      "notes": "T8演算課，由助教上課／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A011",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "Iman Adipur"
+      ],
+      "enrollmentText": "已選 87／名額 87",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "3",
+          "location": "TR-312"
+        },
+        {
+          "weekday": "W",
+          "period": "4",
+          "location": "TR-312"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-309"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-309"
+        },
+        {
+          "weekday": "F",
+          "period": "1",
+          "location": "TR-309"
+        }
+      ],
+      "notes": "F1演算課，由助教上課／英語授課／EMI課程／限60人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "CE162A012",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "Hairus"
+      ],
+      "enrollmentText": "已選 30／名額 30",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "9",
+          "location": "TR-514"
+        },
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "TR-514"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "TR-514"
+        },
+        {
+          "weekday": "F",
+          "period": "6",
+          "location": "TR-514"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "TR-514"
+        }
+      ],
+      "notes": "T9演算課，由助教上課／英語授課／EMI課程／限30人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
     },
     {
       "semester": "1151",
@@ -24,18 +1222,471 @@
       "title": "微積分(上)",
       "credits": 4,
       "requiredType": "required",
-      "yearType": "full",
-      "instructors": ["許之凡"],
-      "enrollmentText": "81(81 / 0)",
+      "yearType": "unknown",
+      "instructors": [
+        "許之凡"
+      ],
+      "enrollmentText": "已選 81／名額 81",
       "meetings": [
-        { "weekday": "M", "period": "6", "location": "TR-213" },
-        { "weekday": "M", "period": "7", "location": "TR-213" },
-        { "weekday": "W", "period": "10", "location": "TR-409-2" },
-        { "weekday": "R", "period": "6", "location": "TR-409-2" },
-        { "weekday": "R", "period": "7", "location": "TR-409-2" }
+        {
+          "weekday": "M",
+          "period": "6",
+          "location": "TR-213"
+        },
+        {
+          "weekday": "M",
+          "period": "7",
+          "location": "TR-213"
+        },
+        {
+          "weekday": "W",
+          "period": "10",
+          "location": "TR-409-2"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-409-2"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "TR-409-2"
+        }
       ],
       "notes": "W10演算課，由助教上課／英語授課／EMI課程",
-      "sourceUpdatedAt": "2026-09-14T00:00:00.000Z"
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "EC161A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "項人宗"
+      ],
+      "enrollmentText": "已選 35／名額 35",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "W",
+          "period": "9",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "IB-408"
+        }
+      ],
+      "notes": "W9演算課，由助教上課／英語授課／EMI課程／限51人／合班上課",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "EE161A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "沈哲州"
+      ],
+      "enrollmentText": "已選 80／名額 80",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "EE-406"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "EE-406"
+        },
+        {
+          "weekday": "W",
+          "period": "A",
+          "location": "EE-406"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "EE-406"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "EE-406"
+        }
+      ],
+      "notes": "WA演算課，由助教上課／不分系學號單號／英語授課／EMI課程",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "EE161A002",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "鄭于珊"
+      ],
+      "enrollmentText": "已選 81／名額 81",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "IB-401"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "IB-401"
+        },
+        {
+          "weekday": "W",
+          "period": "A",
+          "location": "IB-401"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "EE-407"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "EE-407"
+        }
+      ],
+      "notes": "WA演算課，由助教上課／不分系學號雙號／EMI課程／英語授課",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "ET161A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "謝松年"
+      ],
+      "enrollmentText": "已選 82／名額 82",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "IB-503"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "IB-503"
+        },
+        {
+          "weekday": "W",
+          "period": "10",
+          "location": "IB-503"
+        },
+        {
+          "weekday": "R",
+          "period": "8",
+          "location": "IB-503"
+        },
+        {
+          "weekday": "R",
+          "period": "9",
+          "location": "IB-503"
+        }
+      ],
+      "notes": "學號單數／W10演算課，由助教上課／英語授課／EMI課程",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "ET161A002",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "呂政修"
+      ],
+      "enrollmentText": "已選 67／名額 67",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "3",
+          "location": "IB-501"
+        },
+        {
+          "weekday": "M",
+          "period": "4",
+          "location": "IB-501"
+        },
+        {
+          "weekday": "W",
+          "period": "6",
+          "location": "IB-501"
+        },
+        {
+          "weekday": "W",
+          "period": "7",
+          "location": "IB-501"
+        },
+        {
+          "weekday": "W",
+          "period": "10",
+          "location": "IB-501"
+        }
+      ],
+      "notes": "學號雙數／W10演算課，由助教上課／英語授課／EMI課程",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "HC162A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "王鵬凱"
+      ],
+      "enrollmentText": "已選 49／名額 49",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "8",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "M",
+          "period": "9",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "M",
+          "period": "10",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "F",
+          "period": "6",
+          "location": "TR-512"
+        },
+        {
+          "weekday": "F",
+          "period": "7",
+          "location": "TR-512"
+        }
+      ],
+      "notes": "M10演算課，由助教上課／限60人／乙班、丙班",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "IC114A001",
+      "title": "微積分(上)",
+      "credits": 4,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "項人宗"
+      ],
+      "enrollmentText": "已選 35／名額 35",
+      "meetings": [
+        {
+          "weekday": "T",
+          "period": "6",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "T",
+          "period": "7",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "W",
+          "period": "9",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "IB-408"
+        },
+        {
+          "weekday": "R",
+          "period": "7",
+          "location": "IB-408"
+        }
+      ],
+      "notes": "EMI課程／英語授課／W9演算課，由助教上課／限51人／合班上課",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "IM160A001",
+      "title": "微積分(上)",
+      "credits": 3,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "呂仁廣"
+      ],
+      "enrollmentText": "已選 36／名額 36",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "IB-409-2"
+        },
+        {
+          "weekday": "W",
+          "period": "9",
+          "location": "IB-409-2"
+        },
+        {
+          "weekday": "W",
+          "period": "10",
+          "location": "IB-409-2"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "MA-207"
+        }
+      ],
+      "notes": "臺大及臺師大修讀本系輔系及雙主修學生可向授課老師索取授權碼選課／R6演算課，由助教上課",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "IM160A002",
+      "title": "微積分(上)",
+      "credits": 3,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "張益賓"
+      ],
+      "enrollmentText": "已選 37／名額 37",
+      "meetings": [
+        {
+          "weekday": "W",
+          "period": "8",
+          "location": "MA-010"
+        },
+        {
+          "weekday": "W",
+          "period": "9",
+          "location": "MA-010"
+        },
+        {
+          "weekday": "W",
+          "period": "10",
+          "location": "MA-010"
+        },
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "MA-010"
+        }
+      ],
+      "notes": "R6演算課，由助教上課／臺大及臺師大修讀本系輔系及雙主修學生可向授課老師索取授權碼選課／限53人",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "MB160A001",
+      "title": "微積分(上)",
+      "credits": 3,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "周志隆"
+      ],
+      "enrollmentText": "已選 45／名額 45",
+      "meetings": [
+        {
+          "weekday": "R",
+          "period": "6",
+          "location": "TR-209"
+        },
+        {
+          "weekday": "F",
+          "period": "2",
+          "location": "HHC-D401"
+        },
+        {
+          "weekday": "F",
+          "period": "3",
+          "location": "HHC-D401"
+        },
+        {
+          "weekday": "F",
+          "period": "4",
+          "location": "HHC-D401"
+        }
+      ],
+      "notes": "R6演算課，由助教上課，上課地點台科大／上課地點華夏校區，上課節次起訖時間請依照臺科大上課時間表／EMI課程／限管理學士班學生選修／非本校管理學士班學生，欲選課者請洽授課老師／限45人／英語授課",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
+    },
+    {
+      "semester": "1151",
+      "courseNo": "MI161A001",
+      "title": "微積分(上)",
+      "credits": 3,
+      "requiredType": "required",
+      "yearType": "unknown",
+      "instructors": [
+        "洪政煌"
+      ],
+      "enrollmentText": "已選 53／名額 53",
+      "meetings": [
+        {
+          "weekday": "M",
+          "period": "3",
+          "location": "TR-310-1"
+        },
+        {
+          "weekday": "M",
+          "period": "4",
+          "location": "TR-310-1"
+        },
+        {
+          "weekday": "T",
+          "period": "3",
+          "location": "TR-310-1"
+        },
+        {
+          "weekday": "T",
+          "period": "4",
+          "location": "TR-310-1"
+        }
+      ],
+      "notes": "T4演算課，由助教上課／限本校資管系、全校不分系主修資管學生選課。",
+      "sourceUpdatedAt": "2026-09-14T14:08:23.440Z"
     }
   ]
 }

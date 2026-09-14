@@ -1,5 +1,27 @@
 # 專案進度
 
+## 2026-09-14 - Milestone 9：官方課程 API 同步 Adapter
+
+- 實測校方公開課程 API 的欄位，建立從 `CourseNo`、`CreditPoint`、`RequireOption`、`AllYear`、`Node` 與 `ClassRoomNo` 到內部課程快照的轉換層；同課號的多筆時段資料會先合併為一門可選課程。
+- 同步程式預設為 dry run，只有明確傳入 `--write` 才會覆寫專案內的版本化快照。
+- 新增快照差異檢查，將新增、移除、內容異動與僅時間戳變動分開處理。
+- 無法辨識的時段 token 會統計並輸出，避免直接被納入衝堂計算。
+
+### 驗證紀錄
+
+- `npm run sync:courses -- --semester=1151 --course-name=微積分`：取得 48 門課，0 個未辨識時段 token，與原快照差異為新增 46、移除 0、異動 2；dry run 未寫入檔案。
+- `npm run sync:courses -- --semester=1151 --course-name=微積分 --write`：成功寫入通過 schema 驗證的官方快照。
+- `npm run validate:data`：1 份官方課程快照與 1 份 requirement set 通過。
+- `npm run test`：5 個測試檔、11 項測試通過（包含 adapter 欄位轉換、教室對應、多時段合併與快照差異）。
+- `npm run lint`：通過。
+- `npm run build`：通過，成功生成 GitHub Pages 靜態產物。
+
+### 下一步
+
+1. 依不同課名或系所建立經人工審核的課程快照範圍。
+2. 將 requirement set 的人工審核匯入流程寫成可追溯的版本。
+3. 推送後由 GitHub Actions 與 Pages 驗證此里程碑。
+
 ## 2026-09-14 - Milestone 1：專案基礎
 
 - 建立 Next.js、TypeScript、Tailwind CSS 專案。
