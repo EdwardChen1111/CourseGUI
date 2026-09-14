@@ -59,3 +59,22 @@
 1. 在匯入前以 runtime schema 驗證課程 JSON。
 2. 補齊衝堂情境的展示資料與介面測試。
 3. 導入主系必修 requirement set 格式與修課進度頁。
+
+## 2026-09-14 - Milestone 4：資料防護與修課規則核心
+
+- 使用 Zod 在 runtime 驗證課程快照的欄位、來源網址、時間戳記、學期一致性與課號唯一性。
+- 建立獨立的資料載入層，避免介面直接信任原始 JSON。
+- 建立主系、雙主修與輔系共用的 requirement set schema。
+- 實作修課進度計算，能同時列出已完成學分與缺少的指定課號。
+
+### 驗證紀錄
+
+- `npm run test`：7 項測試通過。
+- `npm run lint`：通過。
+- `npm run build`：通過。
+
+### 下一步
+
+1. 建立可顯示 requirement set 的修課進度介面。
+2. 將課程快照驗證納入 GitHub Actions。
+3. 設計校方資料同步 adapter 與失敗告警資料。

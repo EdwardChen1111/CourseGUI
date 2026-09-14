@@ -2,11 +2,11 @@
 
 import { useMemo, useState } from "react";
 
-import snapshot from "@/data/courses/1151.json";
+import { courseSnapshot } from "@/lib/course-data";
 import type { CourseOffering } from "@/lib/course";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
 
-const offerings = snapshot.offerings as CourseOffering[];
+const offerings: CourseOffering[] = courseSnapshot.offerings;
 
 function formatSchedule(course: CourseOffering): string {
   return course.meetings.map((meeting) => `${meeting.weekday}${meeting.period}`).join("、");
