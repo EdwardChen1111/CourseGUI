@@ -11,6 +11,8 @@
 - `npm run validate:data`：1 份課程快照與 1 份 requirement set 通過。
 - `npm run test`：10 個測試檔、28 項測試通過。
 - `npm run lint`、`npm run build`：通過，輸出 GitHub Pages 可用的靜態產物。
+- GitHub Actions：提交 `c0195dc` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
+- 公開網站：已確認課程卡顯示開課類型、去重教室、選課狀況與可展開的課程備註。
 
 ### 下一步
 
