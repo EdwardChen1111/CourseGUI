@@ -15,6 +15,7 @@
 - `npm run test`：5 個測試檔、11 項測試通過（包含 adapter 欄位轉換、教室對應、多時段合併與快照差異）。
 - `npm run lint`：通過。
 - `npm run build`：通過，成功生成 GitHub Pages 靜態產物。
+- GitHub Actions：提交 `468a6d4` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
 
 ### 下一步
 
