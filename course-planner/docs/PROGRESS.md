@@ -12,11 +12,12 @@
 - `npm run test`：8 個測試檔、20 項測試通過；包含文字、學分、必選修與上課日條件的交集篩選。
 - `npm run lint`：通過。
 - `npm run build`：通過，篩選控制項可隨靜態產物生成。
+- GitHub Actions：提交 `92872eb` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
 
 ### 下一步
 
-1. 提交並由 GitHub Actions／Pages 驗證。
-2. 依使用需求擴大並審核其他課程快照範圍。
+1. 依使用需求擴大並審核其他課程快照範圍。
+2. 匯入第一份具備入學年度、學制與系所脈絡的正式規則。
 
 ## 2026-09-14 - Milestone 14：MVP 承諾與部署成品核對
 
