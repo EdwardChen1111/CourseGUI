@@ -3,21 +3,23 @@
 import { useEffect, useMemo, useState } from "react";
 
 import { courseSnapshot } from "@/lib/course-data";
-import type { CourseOffering } from "@/lib/course";
+import type { CourseOffering, Weekday } from "@/lib/course";
 import { COURSE_PLAN_STORAGE_KEY, normalizeCourseSelection } from "@/lib/course-plan";
+import { emptyCourseSearchFilters, filterCourses } from "@/lib/course-search";
 import { demoRequirementSet } from "@/lib/requirements-data";
 import { calculateRequirementProgress, getRequirementReviewPresentation } from "@/lib/requirements";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
 import { WeeklyTimetable } from "@/components/weekly-timetable";
 
 const offerings: CourseOffering[] = courseSnapshot.offerings;
+const weekdayLabels: Record<Weekday, string> = { M: "一", T: "二", W: "三", R: "四", F: "五", S: "六", U: "日" };
 
 function formatSchedule(course: CourseOffering): string {
   return course.meetings.map((meeting) => `${meeting.weekday}${meeting.period}`).join("、");
 }
 
 export function CoursePlanner() {
-  const [query, setQuery] = useState("");
+  const [filters, setFilters] = useState(emptyCourseSearchFilters);
   const [selectedCourseNos, setSelectedCourseNos] = useState<string[]>([]);
   const [hasLoadedSavedPlan, setHasLoadedSavedPlan] = useState(false);
   const availableCourseNos = useMemo(() => offerings.map((course) => course.courseNo), []);
@@ -46,17 +48,7 @@ export function CoursePlanner() {
     }
   }, [hasLoadedSavedPlan, selectedCourseNos]);
 
-  const filteredCourses = useMemo(() => {
-    const normalizedQuery = query.trim().toLocaleLowerCase("zh-Hant");
-    if (!normalizedQuery) return offerings;
-
-    return offerings.filter((course) =>
-      [course.courseNo, course.title, ...course.instructors]
-        .join(" ")
-        .toLocaleLowerCase("zh-Hant")
-        .includes(normalizedQuery),
-    );
-  }, [query]);
+  const filteredCourses = useMemo(() => filterCourses(offerings, filters), [filters]);
 
   const plannedCourses = offerings.filter((course) => selectedCourseNos.includes(course.courseNo));
   const totalCredits = plannedCourses.reduce((total, course) => total + course.credits, 0);
@@ -80,6 +72,15 @@ export function CoursePlanner() {
     setSelectedCourseNos((current) => current.filter((selectedCourseNo) => selectedCourseNo !== courseNo));
   }
 
+  function toggleWeekday(weekday: Weekday) {
+    setFilters((current) => ({
+      ...current,
+      weekdays: current.weekdays.includes(weekday)
+        ? current.weekdays.filter((item) => item !== weekday)
+        : [...current.weekdays, weekday],
+    }));
+  }
+
   return (
     <section className="mx-auto grid max-w-6xl gap-8 px-6 py-14 lg:grid-cols-[1fr_0.8fr]">
       <div>
@@ -97,10 +98,72 @@ export function CoursePlanner() {
         <input
           className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-sky-600 focus:ring-4 focus:ring-sky-100"
           id="course-search"
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) => setFilters((current) => ({ ...current, query: event.target.value }))}
           placeholder="例如：微積分、CE162A001"
-          value={query}
+          value={filters.query}
         />
+
+        <fieldset className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+          <legend className="px-1 text-sm font-semibold text-slate-700">進階篩選</legend>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="text-sm text-slate-700" htmlFor="minimum-credits">
+              最低學分
+              <select
+                className="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2"
+                id="minimum-credits"
+                onChange={(event) => setFilters((current) => ({ ...current, minimumCredits: Number(event.target.value) }))}
+                value={filters.minimumCredits}
+              >
+                <option value={0}>不限</option>
+                <option value={1}>至少 1 學分</option>
+                <option value={2}>至少 2 學分</option>
+                <option value={3}>至少 3 學分</option>
+                <option value={4}>至少 4 學分</option>
+              </select>
+            </label>
+            <label className="text-sm text-slate-700" htmlFor="required-type">
+              必選修
+              <select
+                className="mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2"
+                id="required-type"
+                onChange={(event) => setFilters((current) => ({ ...current, requiredType: event.target.value as typeof current.requiredType }))}
+                value={filters.requiredType}
+              >
+                <option value="all">不限</option>
+                <option value="required">必修</option>
+                <option value="elective">選修</option>
+                <option value="unknown">未提供</option>
+              </select>
+            </label>
+          </div>
+          <div className="mt-4">
+            <p className="text-sm text-slate-700">上課日（符合任一日）</p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {(Object.keys(weekdayLabels) as Weekday[]).map((weekday) => {
+                const isSelected = filters.weekdays.includes(weekday);
+                return (
+                  <button
+                    aria-pressed={isSelected}
+                    className={isSelected ? "rounded-full bg-sky-700 px-3 py-1.5 text-sm font-semibold text-white" : "rounded-full border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700"}
+                    key={weekday}
+                    onClick={() => toggleWeekday(weekday)}
+                    type="button"
+                  >
+                    週{weekdayLabels[weekday]}
+                  </button>
+                );
+              })}
+              <button
+                className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 underline disabled:no-underline disabled:opacity-50"
+                disabled={JSON.stringify(filters) === JSON.stringify(emptyCourseSearchFilters)}
+                onClick={() => setFilters(emptyCourseSearchFilters)}
+                type="button"
+              >
+                清除篩選
+              </button>
+            </div>
+          </div>
+        </fieldset>
 
         <div className="mt-5 space-y-3">
           {filteredCourses.map((course) => {
