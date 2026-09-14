@@ -79,6 +79,24 @@
 2. 將課程快照驗證納入 GitHub Actions。
 3. 設計校方資料同步 adapter 與失敗告警資料。
 
+## 2026-09-14 - Milestone 6：GitHub Actions 根目錄部署修正
+
+- 將 CI 與 GitHub Pages workflow 放到 repository 根目錄，使 GitHub 能實際偵測。
+- 明確設定 workflow 的 `course-planner` 工作目錄與 npm lockfile 快取路徑。
+- CI 現在會依序執行測試、lint 與 production build；部署 workflow 使用相同驗證後發布靜態 `out/`。
+
+### 驗證紀錄
+
+- `npm run test`：7 項測試通過。
+- `npm run lint`：通過。
+- `npm run build`：通過。
+
+### 下一步
+
+1. 在 GitHub Actions 核對 CI 與 Pages workflow 執行結果。
+2. 建立可顯示 requirement set 的修課進度介面。
+3. 設計校方資料同步 adapter 與失敗告警資料。
+
 ## 2026-09-14 - Milestone 5：公開交接文件
 
 - 將預設 Next.js README 改寫為專案的功能、技術、驗證、資料治理與 GitHub Pages 部署文件。
