@@ -118,6 +118,25 @@
 2. 建立校方課程資料同步 adapter 與快照差異檢查。
 3. 將新功能推送並由 GitHub Actions／Pages 驗證。
 
+## 2026-09-14 - Milestone 8：資料驗證部署閘門
+
+- 新增 `npm run validate:data`，掃描並驗證所有課程快照與 requirement set JSON。
+- 將資料驗證放在測試與建置前，納入 GitHub CI 和 Pages workflow。
+- 資料錯誤會提供檔名、欄位路徑與驗證原因，阻止錯誤資料被部署。
+
+### 驗證紀錄
+
+- `npm run validate:data`：1 份課程快照與 1 份 requirement set 通過。
+- `npm run test`：8 項測試通過。
+- `npm run lint`：通過。
+- `npm run build`：通過。
+
+### 下一步
+
+1. 建立校方課程資料同步 adapter 與快照差異檢查。
+2. 建立經人工審核的系所 requirement set 匯入流程。
+3. 由 GitHub Actions 驗證新資料閘門與公開部署。
+
 ## 2026-09-14 - Milestone 5：公開交接文件
 
 - 將預設 Next.js README 改寫為專案的功能、技術、驗證、資料治理與 GitHub Pages 部署文件。
