@@ -1,5 +1,23 @@
 # 專案進度
 
+## 2026-09-14 - Milestone 10：每週課表視圖
+
+- 新增候選課程的每週格狀課表，完整呈現週一至週日及台科時段（1–10、A–D）。
+- 同一格的多門課程會保留並標示為紅色，讓衝堂不只停留在文字提示。
+- 未有可辨識時段的課程不會被錯誤放入格子，並會清楚提示使用者。
+
+### 驗證紀錄
+
+- `npm run validate:data`：1 份課程快照與 1 份 requirement set 通過。
+- `npm run test`：6 個測試檔、13 項測試通過；涵蓋時段定位、同格衝堂與無時段課程排除。
+- `npm run lint`：通過。
+- `npm run build`：通過，課表視圖可隨靜態產物產生。
+
+### 下一步
+
+1. 提交並由 GitHub Actions／Pages 驗證。
+2. 建立經人工審核的系所 requirement set 匯入流程。
+
 ## 2026-09-14 - Milestone 9：官方課程 API 同步 Adapter
 
 - 實測校方公開課程 API 的欄位，建立從 `CourseNo`、`CreditPoint`、`RequireOption`、`AllYear`、`Node` 與 `ClassRoomNo` 到內部課程快照的轉換層；同課號的多筆時段資料會先合併為一門可選課程。

@@ -7,6 +7,7 @@ import type { CourseOffering } from "@/lib/course";
 import { demoRequirementSet } from "@/lib/requirements-data";
 import { calculateRequirementProgress } from "@/lib/requirements";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
+import { WeeklyTimetable } from "@/components/weekly-timetable";
 
 const offerings: CourseOffering[] = courseSnapshot.offerings;
 
@@ -133,6 +134,14 @@ export function CoursePlanner() {
             ? conflicts.map(({ course, otherCourse, meetings }) => <p key={`${course.courseNo}-${otherCourse.courseNo}`}>{course.title} 與 {otherCourse.title} 在 {meetings.map((meeting) => `${meeting.weekday}${meeting.period}`).join("、")} 衝堂。</p>)
             : "目前候選課表沒有衝堂。"}
         </div>
+
+        <section className="mt-6 border-t border-slate-200 pt-6" aria-labelledby="timetable-heading">
+          <div className="mb-4">
+            <p className="text-sm font-semibold text-sky-700">視覺化課表</p>
+            <h2 className="mt-1 text-lg font-bold" id="timetable-heading">每週時段</h2>
+          </div>
+          <WeeklyTimetable courses={plannedCourses} />
+        </section>
 
         <section className="mt-6 border-t border-slate-200 pt-6" aria-labelledby="progress-heading">
           <div className="flex items-start justify-between gap-3">
