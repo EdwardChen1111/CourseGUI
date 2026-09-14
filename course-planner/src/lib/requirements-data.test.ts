@@ -6,5 +6,6 @@ describe("demoRequirementSet", () => {
   it("is explicitly marked as a non-official presentation rule", () => {
     expect(demoRequirementSet.departmentCode).toBe("DEMO");
     expect(demoRequirementSet.departmentName).toContain("非正式");
+    expect(demoRequirementSet.reviewStatus).toBe("demo");
   });
 });

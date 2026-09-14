@@ -51,7 +51,7 @@ npm run build
 | 雙主修 | [雙主修應修科目表](https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/T-DOUBLE.pdf) | 將各年度正式規則轉為版本化 JSON。 |
 | 輔系 | [輔系應修科目表](https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/T-MINOR.pdf) | 將各年度正式規則轉為版本化 JSON。 |
 
-不會保存學生 SSO 密碼、成績或正式選課紀錄。所有畢業規則都需保留來源網址、適用年度、版本、驗證日期與審核紀錄。
+不會保存學生 SSO 密碼、成績或正式選課紀錄。所有畢業規則都需保留來源網址、來源名稱、適用年度、版本、擷取時間與審核紀錄；詳見[修課規則匯入與審核流程](docs/REQUIREMENT_REVIEW.md)。
 
 ## 部署至 GitHub Pages
 

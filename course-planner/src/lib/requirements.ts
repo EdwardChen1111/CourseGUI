@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+export const requirementReviewStatusSchema = z.enum(["demo", "draft", "reviewed"]);
+export type RequirementReviewStatus = z.infer<typeof requirementReviewStatusSchema>;
+
 export const requirementGroupSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -16,9 +19,42 @@ export const requirementSetSchema = z.object({
   degreeType: z.enum(["undergraduate", "master"]),
   version: z.string().min(1),
   sourceUrl: z.url(),
-  verifiedAt: z.iso.datetime(),
+  sourceTitle: z.string().min(1),
+  sourceRetrievedAt: z.iso.datetime(),
+  reviewStatus: requirementReviewStatusSchema,
+  reviewedBy: z.string().min(1).optional(),
+  reviewedAt: z.iso.datetime().optional(),
+  reviewNotes: z.string().min(1).optional(),
   groups: z.array(requirementGroupSchema).min(1),
+}).superRefine((requirements, context) => {
+  if (requirements.reviewStatus !== "reviewed") return;
+
+  (["reviewedBy", "reviewedAt", "reviewNotes"] as const).forEach((field) => {
+    if (!requirements[field]) {
+      context.addIssue({
+        code: "custom",
+        message: `${field} is required when reviewStatus is reviewed`,
+        path: [field],
+      });
+    }
+  });
 });
+
+export type RequirementReviewPresentation = {
+  label: string;
+  description: string;
+  isOfficial: boolean;
+};
+
+export function getRequirementReviewPresentation(status: RequirementReviewStatus): RequirementReviewPresentation {
+  if (status === "reviewed") {
+    return { label: "已人工審核", description: "此規則已依來源與審核紀錄完成資料審查，仍須以校方正式審核為準。", isOfficial: true };
+  }
+  if (status === "draft") {
+    return { label: "審核中", description: "此規則正在與原始公告核對，尚不可作為正式修課判定。", isOfficial: false };
+  }
+  return { label: "展示資料", description: "此區塊僅驗證介面與計算流程，並非正式修課規則。", isOfficial: false };
+}
 
 export type RequirementProgress = {
   groupId: string;

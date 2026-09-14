@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import { courseSnapshot } from "@/lib/course-data";
 import type { CourseOffering } from "@/lib/course";
 import { demoRequirementSet } from "@/lib/requirements-data";
-import { calculateRequirementProgress } from "@/lib/requirements";
+import { calculateRequirementProgress, getRequirementReviewPresentation } from "@/lib/requirements";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
 import { WeeklyTimetable } from "@/components/weekly-timetable";
 
@@ -37,6 +37,7 @@ export function CoursePlanner() {
     demoRequirementSet,
     plannedCourses.map((course) => ({ courseNo: course.courseNo, credits: course.credits })),
   );
+  const requirementReview = getRequirementReviewPresentation(demoRequirementSet.reviewStatus);
   const conflicts = plannedCourses.flatMap((course, index) =>
     plannedCourses.slice(index + 1).flatMap((otherCourse) => {
       const meetings = getConflictingMeetings(course.meetings, otherCourse.meetings);
@@ -147,11 +148,12 @@ export function CoursePlanner() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-sm font-semibold text-sky-700">修課進度</p>
-              <h2 className="mt-1 text-lg font-bold" id="progress-heading">規則比對展示</h2>
-            </div>
-            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-800">非正式</span>
+            <h2 className="mt-1 text-lg font-bold" id="progress-heading">{demoRequirementSet.departmentName}</h2>
           </div>
-          <p className="mt-2 text-xs leading-5 text-slate-500">此區塊使用示範規則驗證介面流程；正式系所、雙主修與輔系規則須完成來源審核後才會上線。</p>
+            <span className={requirementReview.isOfficial ? "rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-semibold text-emerald-800" : "rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-800"}>{requirementReview.label}</span>
+          </div>
+          <p className="mt-2 text-xs leading-5 text-slate-500">{requirementReview.description}</p>
+          <p className="mt-1 text-xs leading-5 text-slate-500">來源：<a className="text-sky-700 underline" href={demoRequirementSet.sourceUrl} rel="noreferrer" target="_blank">{demoRequirementSet.sourceTitle}</a>；擷取時間：{new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium" }).format(new Date(demoRequirementSet.sourceRetrievedAt))}</p>
           <div className="mt-4 space-y-3">
             {requirementProgress.map((group) => (
               <div className="rounded-lg bg-slate-50 p-4" key={group.groupId}>

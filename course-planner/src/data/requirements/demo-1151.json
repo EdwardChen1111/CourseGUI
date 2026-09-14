@@ -7,7 +7,9 @@
   "degreeType": "undergraduate",
   "version": "2026-09-14-demo",
   "sourceUrl": "https://dss20.ntust.edu.tw/edua/list/lst_eduneed.aspx",
-  "verifiedAt": "2026-09-14T00:00:00.000Z",
+  "sourceTitle": "台科大各系必修科目表（示範資料來源）",
+  "sourceRetrievedAt": "2026-09-14T00:00:00.000Z",
+  "reviewStatus": "demo",
   "groups": [
     {
       "id": "calculus-demo",
