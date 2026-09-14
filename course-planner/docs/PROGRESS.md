@@ -12,6 +12,8 @@
 - `npm run test`：8 個測試檔、23 項測試通過；涵蓋選修學分群組、必修與可計入清單一致性、重複課號拒絕。
 - `npm run lint`：通過。
 - `npm run build`：通過，輸出 GitHub Pages 可用的靜態產物。
+- GitHub Actions：提交 `5dd5a69` 的 Continuous Integration 與 Deploy to GitHub Pages workflow 均成功完成。
+- 公開網站：已確認最新部署顯示每個規則群組可計入學分的課程數量。
 
 ### 下一步
 
