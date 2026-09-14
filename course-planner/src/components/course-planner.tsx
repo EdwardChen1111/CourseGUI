@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { courseSnapshot } from "@/lib/course-data";
 import type { CourseOffering } from "@/lib/course";
+import { COURSE_PLAN_STORAGE_KEY, normalizeCourseSelection } from "@/lib/course-plan";
 import { demoRequirementSet } from "@/lib/requirements-data";
 import { calculateRequirementProgress, getRequirementReviewPresentation } from "@/lib/requirements";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
@@ -18,6 +19,32 @@ function formatSchedule(course: CourseOffering): string {
 export function CoursePlanner() {
   const [query, setQuery] = useState("");
   const [selectedCourseNos, setSelectedCourseNos] = useState<string[]>([]);
+  const [hasLoadedSavedPlan, setHasLoadedSavedPlan] = useState(false);
+  const availableCourseNos = useMemo(() => offerings.map((course) => course.courseNo), []);
+
+  useEffect(() => {
+    const loadSavedPlan = window.setTimeout(() => {
+      try {
+        const savedPlan = JSON.parse(window.localStorage.getItem(COURSE_PLAN_STORAGE_KEY) ?? "[]") as unknown;
+        setSelectedCourseNos(normalizeCourseSelection(savedPlan, availableCourseNos));
+      } catch {
+        window.localStorage.removeItem(COURSE_PLAN_STORAGE_KEY);
+      } finally {
+        setHasLoadedSavedPlan(true);
+      }
+    }, 0);
+
+    return () => window.clearTimeout(loadSavedPlan);
+  }, [availableCourseNos]);
+
+  useEffect(() => {
+    if (!hasLoadedSavedPlan) return;
+    try {
+      window.localStorage.setItem(COURSE_PLAN_STORAGE_KEY, JSON.stringify(selectedCourseNos));
+    } catch {
+      // Storage may be disabled by the browser; the in-memory plan still works.
+    }
+  }, [hasLoadedSavedPlan, selectedCourseNos]);
 
   const filteredCourses = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("zh-Hant");
@@ -117,8 +144,19 @@ export function CoursePlanner() {
             <p className="text-sm font-semibold text-sky-700">個人候選課表</p>
             <h2 className="mt-1 text-2xl font-bold">{totalCredits} 學分</h2>
           </div>
-          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">{plannedCourses.length} 門課</span>
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">{plannedCourses.length} 門課</span>
+            <button
+              className="rounded-lg border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={selectedCourseNos.length === 0}
+              onClick={() => setSelectedCourseNos([])}
+              type="button"
+            >
+              清除
+            </button>
+          </div>
         </div>
+        <p className="mt-2 text-xs leading-5 text-slate-500">候選課表只保存在此裝置的瀏覽器，不會上傳或連結校務帳號。</p>
 
         <div className="mt-6 space-y-3">
           {plannedCourses.length === 0 ? <p className="rounded-lg bg-slate-50 p-4 text-sm text-slate-600">從左側加入想修的課程，開始規劃課表。</p> : null}
