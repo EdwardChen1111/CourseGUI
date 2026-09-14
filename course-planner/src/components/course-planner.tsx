@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { courseSnapshot } from "@/lib/course-data";
 import type { CourseOffering, Weekday } from "@/lib/course";
 import { COURSE_PLAN_STORAGE_KEY, normalizeCourseSelection } from "@/lib/course-plan";
+import { getCourseTypeLabels, getUniqueCourseLocations } from "@/lib/course-presentation";
 import { emptyCourseSearchFilters, filterCourses } from "@/lib/course-search";
 import { demoRequirementSet } from "@/lib/requirements-data";
 import { calculateRequirementProgress, getRequirementReviewPresentation } from "@/lib/requirements";
@@ -190,9 +191,17 @@ export function CoursePlanner() {
                 <dl className="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
                   <div><dt className="inline font-semibold text-slate-800">教師：</dt><dd className="inline">{course.instructors.join("、")}</dd></div>
                   <div><dt className="inline font-semibold text-slate-800">學分：</dt><dd className="inline">{course.credits}</dd></div>
+                  <div><dt className="inline font-semibold text-slate-800">類型：</dt><dd className="inline">{getCourseTypeLabels(course).join(" · ")}</dd></div>
                   <div><dt className="inline font-semibold text-slate-800">時段：</dt><dd className="inline">{formatSchedule(course)}</dd></div>
-                  <div><dt className="inline font-semibold text-slate-800">教室：</dt><dd className="inline">{course.meetings.map((meeting) => meeting.location).filter(Boolean).join("、")}</dd></div>
+                  <div><dt className="inline font-semibold text-slate-800">教室：</dt><dd className="inline">{getUniqueCourseLocations(course).join("、") || "未提供"}</dd></div>
+                  {course.enrollmentText ? <div><dt className="inline font-semibold text-slate-800">選課狀況：</dt><dd className="inline">{course.enrollmentText}</dd></div> : null}
                 </dl>
+                {course.notes ? (
+                  <details className="mt-4 rounded-lg bg-slate-50 px-3 py-2 text-sm text-slate-600">
+                    <summary className="cursor-pointer font-semibold text-slate-700">課程備註</summary>
+                    <p className="mt-2 whitespace-pre-wrap leading-6">{course.notes}</p>
+                  </details>
+                ) : null}
                 {conflictsWithPlan && !isPlanned ? <p className="mt-3 text-sm font-medium text-rose-700">與候選課表中的課程衝堂</p> : null}
               </article>
             );
