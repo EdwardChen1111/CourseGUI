@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 
 import { courseSnapshot } from "@/lib/course-data";
 import type { CourseOffering } from "@/lib/course";
+import { demoRequirementSet } from "@/lib/requirements-data";
+import { calculateRequirementProgress } from "@/lib/requirements";
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
 
 const offerings: CourseOffering[] = courseSnapshot.offerings;
@@ -30,6 +32,10 @@ export function CoursePlanner() {
 
   const plannedCourses = offerings.filter((course) => selectedCourseNos.includes(course.courseNo));
   const totalCredits = plannedCourses.reduce((total, course) => total + course.credits, 0);
+  const requirementProgress = calculateRequirementProgress(
+    demoRequirementSet,
+    plannedCourses.map((course) => ({ courseNo: course.courseNo, credits: course.credits })),
+  );
   const conflicts = plannedCourses.flatMap((course, index) =>
     plannedCourses.slice(index + 1).flatMap((otherCourse) => {
       const meetings = getConflictingMeetings(course.meetings, otherCourse.meetings);
@@ -127,6 +133,34 @@ export function CoursePlanner() {
             ? conflicts.map(({ course, otherCourse, meetings }) => <p key={`${course.courseNo}-${otherCourse.courseNo}`}>{course.title} 與 {otherCourse.title} 在 {meetings.map((meeting) => `${meeting.weekday}${meeting.period}`).join("、")} 衝堂。</p>)
             : "目前候選課表沒有衝堂。"}
         </div>
+
+        <section className="mt-6 border-t border-slate-200 pt-6" aria-labelledby="progress-heading">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-sm font-semibold text-sky-700">修課進度</p>
+              <h2 className="mt-1 text-lg font-bold" id="progress-heading">規則比對展示</h2>
+            </div>
+            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-800">非正式</span>
+          </div>
+          <p className="mt-2 text-xs leading-5 text-slate-500">此區塊使用示範規則驗證介面流程；正式系所、雙主修與輔系規則須完成來源審核後才會上線。</p>
+          <div className="mt-4 space-y-3">
+            {requirementProgress.map((group) => (
+              <div className="rounded-lg bg-slate-50 p-4" key={group.groupId}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-800">{group.groupName}</p>
+                  <span className={group.isComplete ? "text-sm font-semibold text-emerald-700" : "text-sm font-semibold text-slate-600"}>
+                    {group.completedCredits} / {group.minimumCredits} 學分
+                  </span>
+                </div>
+                {group.missingRequiredCourseNos.length > 0 ? (
+                  <p className="mt-2 text-xs leading-5 text-slate-600">尚缺：{group.missingRequiredCourseNos.join("、")}</p>
+                ) : (
+                  <p className="mt-2 text-xs font-medium text-emerald-700">此示範規則已完成。</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
       </aside>
     </section>
   );

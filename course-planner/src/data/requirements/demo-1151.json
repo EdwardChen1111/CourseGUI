@@ -1,0 +1,19 @@
+{
+  "id": "demo-1151-planning",
+  "category": "major",
+  "departmentCode": "DEMO",
+  "departmentName": "修課規則展示（非正式）",
+  "entryYear": "115",
+  "degreeType": "undergraduate",
+  "version": "2026-09-14-demo",
+  "sourceUrl": "https://dss20.ntust.edu.tw/edua/list/lst_eduneed.aspx",
+  "verifiedAt": "2026-09-14T00:00:00.000Z",
+  "groups": [
+    {
+      "id": "calculus-demo",
+      "name": "示範：候選微積分課程",
+      "minimumCredits": 8,
+      "requiredCourseNos": ["CE162A001", "CS161A001"]
+    }
+  ]
+}
