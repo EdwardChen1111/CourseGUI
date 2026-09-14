@@ -90,7 +90,8 @@
 - `npm run test`：7 項測試通過。
 - `npm run lint`：通過。
 - `npm run build`：通過。
-- GitHub Actions：CI 已於 GitHub 成功完成；GitHub Pages 已啟用，待此次推送重新部署。
+- GitHub Actions：CI 與 GitHub Pages workflow 已於 GitHub 成功完成。
+- 公開部署：<https://edwardchen1111.github.io/CourseGUI/> 已實測可載入，候選課表可正常累計學分。
 
 ### 下一步
 
