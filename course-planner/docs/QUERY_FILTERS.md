@@ -16,6 +16,12 @@
 
 本次對齊公開課程查詢的篩選條件，不包含校務登入、正式選課、獨立停開課程查詢或歷年課名／大綱彙總專區。
 
+## 額外驗證
+
+`npx tsx scripts/verify-official-query.ts` 唯讀比對官方 API 與本機資料的系所、校區複選、教學類型複選及學制案例。
+
+`node scripts/verify-query-ui.cjs` 以無視窗 Edge 實測靜態匯出；需要可用的 Playwright runtime，可透過 `PLAYWRIGHT_MODULE` 指定模組位置。`UI_VERIFY_URL` 可改為公開網址。測試包含年度索引與停用選項一致性、篩選、最早年度、暑期、分學期保存、載入失敗重試與手機版寬度。
+
 ## 功能對照
 
 | 校方條件 | 實作 |

@@ -53,6 +53,11 @@ async function main() {
     await page.reload();
     await page.getByRole("button", { name: "移出課表", exact: true }).first().waitFor();
     const availableYears = await page.getByLabel("學年度", { exact: true }).locator("option:not(:disabled)").evaluateAll((options) => options.map((option) => option.value));
+    const expectedCatalog = JSON.parse(await fs.readFile(path.resolve(__dirname, "../src/data/catalog-index.json"), "utf8"));
+    const expectedYears = [...new Set(expectedCatalog.semesters.map((item) => item.semester.slice(0, -1).trim()))].sort((a, b) => Number(b) - Number(a));
+    assert.deepEqual(availableYears, expectedYears, "Deployed catalog does not match verified local academic years");
+    const expectedUnavailableYears = new Set((expectedCatalog.unavailableSemesters || []).map((item) => item.semester.slice(0, -1).trim()));
+    assert.equal(await page.getByLabel("學年度", { exact: true }).locator("option:disabled").count(), expectedUnavailableYears.size);
     const years = availableYears.length;
     if (years > 1) {
       await page.getByLabel("學年度", { exact: true }).selectOption({ index: 1 });
