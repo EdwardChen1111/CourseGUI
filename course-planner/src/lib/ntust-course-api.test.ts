@@ -6,6 +6,10 @@ import { calculateCourseSnapshotDiff, combineNtustCourseOfferings, mapNtustCours
 const retrievedAt = "2026-09-14T00:00:00.000Z";
 
 describe("NTUST course API adapter", () => {
+  it("uses external ThreeNode and permits official full-year zero-credit records", () => {
+    const result = mapNtustCourse({ Semester: "114H", CourseNo: "3T001", CourseName: "服務學習", CourseTeacher: "林老師", CreditPoint: "0", AllYear: "F", Node: "M1", ThreeNode: "T6、T7" }, retrievedAt);
+    expect(result.offering).toMatchObject({ credits: 0, yearType: "full", meetings: [{ weekday: "T", period: "6" }, { weekday: "T", period: "7" }] });
+  });
   it("maps the documented public API fields and preserves schedule locations", () => {
     const result = mapNtustCourse(
       {
@@ -30,7 +34,7 @@ describe("NTUST course API adapter", () => {
       credits: 3,
       requiredType: "elective",
       yearType: "half",
-      enrollmentText: "已選 12／名額 45",
+      enrollmentText: "本校已選 12／總已選 45",
       meetings: [
         { weekday: "R", period: "6", location: "公館 E302" },
         { weekday: "R", period: "7", location: "公館 E302" },

@@ -16,6 +16,8 @@ export type NtustCourseApiRecord = {
   ClassRoomNo?: string;
   Node?: string;
   Contents?: string;
+  ThreeNode?: string | null;
+  Dimension?: string;
 };
 
 export type CourseSnapshotDiff = {
@@ -43,7 +45,7 @@ function mapRequiredType(value: string | undefined): CourseOffering["requiredTyp
 }
 
 function mapYearType(value: string | undefined): CourseOffering["yearType"] {
-  if (value === "A") return "full";
+  if (value === "F" || value === "A") return "full";
   if (value === "H") return "half";
   return "unknown";
 }
@@ -59,11 +61,11 @@ export function mapNtustCourse(record: NtustCourseApiRecord, retrievedAt: string
   const semester = record.Semester?.trim();
   const credits = Number(record.CreditPoint);
 
-  if (!courseNo || !title || !semester || !Number.isFinite(credits) || credits <= 0) {
+  if (!courseNo || !title || !semester || record.CreditPoint == null || !Number.isFinite(credits) || credits < 0) {
     throw new Error(`Cannot map incomplete NTUST course record: ${courseNo ?? "missing course number"}`);
   }
 
-  const parsedSchedule = parseScheduleSlots(record.Node ?? "", splitValues(record.ClassRoomNo));
+  const parsedSchedule = parseScheduleSlots((courseNo.startsWith("3") ? record.ThreeNode ?? record.Node : record.Node) ?? "", splitValues(record.ClassRoomNo));
   const instructors = splitValues(record.CourseTeacher);
 
   return {
@@ -77,11 +79,13 @@ export function mapNtustCourse(record: NtustCourseApiRecord, retrievedAt: string
       instructors: instructors.length > 0 ? instructors : ["未提供"],
       enrollmentText:
         typeof record.ChooseStudent === "number" && typeof record.AllStudent === "number"
-          ? `已選 ${record.ChooseStudent}／名額 ${record.AllStudent}`
+          ? `本校已選 ${record.ChooseStudent}／總已選 ${record.AllStudent}`
           : undefined,
       meetings: parsedSchedule.meetings,
       notes: record.Contents?.trim() || undefined,
       sourceUpdatedAt: retrievedAt,
+      dimension: record.Dimension?.trim() || undefined,
+      hasUnrecognizedSchedule: parsedSchedule.unrecognizedSlots.length > 0,
     },
     unrecognizedScheduleTokens: parsedSchedule.unrecognizedSlots,
   };
@@ -108,7 +112,6 @@ export function combineNtustCourseOfferings(mappedCourses: MappedNtustCourse[]):
       credits: first.offering.credits,
       requiredType: first.offering.requiredType,
       yearType: first.offering.yearType,
-      instructors: first.offering.instructors,
     });
     if (remaining.some((item) => JSON.stringify({
       semester: item.offering.semester,
@@ -117,7 +120,6 @@ export function combineNtustCourseOfferings(mappedCourses: MappedNtustCourse[]):
       credits: item.offering.credits,
       requiredType: item.offering.requiredType,
       yearType: item.offering.yearType,
-      instructors: item.offering.instructors,
     }) !== identity)) {
       throw new Error(`Conflicting metadata for course ${first.offering.courseNo}`);
     }
@@ -131,7 +133,7 @@ export function combineNtustCourseOfferings(mappedCourses: MappedNtustCourse[]):
     const notes = [...new Set(group.map((item) => item.offering.notes).filter(Boolean))].join("\n") || undefined;
 
     return {
-      offering: { ...first.offering, meetings, notes },
+      offering: { ...first.offering, meetings, notes, instructors: [...new Set(group.flatMap((item) => item.offering.instructors))], hasUnrecognizedSchedule: group.some((item) => item.offering.hasUnrecognizedSchedule) },
       unrecognizedScheduleTokens: group.flatMap((item) => item.unrecognizedScheduleTokens),
     };
   });

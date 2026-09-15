@@ -7,10 +7,10 @@ export const meetingSchema = z.object({
 });
 
 export const courseOfferingSchema = z.object({
-  semester: z.string().regex(/^\d{4}$/, "semester must use the ROC academic format, such as 1151"),
+  semester: z.string().regex(/^\d{2,3}\s?[12H]$/, "semester must use the ROC academic format, such as 1151 or 114H"),
   courseNo: z.string().min(1),
   title: z.string().min(1),
-  credits: z.number().positive(),
+  credits: z.number().nonnegative(),
   requiredType: z.enum(["required", "elective", "unknown"]),
   yearType: z.enum(["full", "half", "unknown"]),
   instructors: z.array(z.string().min(1)).min(1),
@@ -18,10 +18,13 @@ export const courseOfferingSchema = z.object({
   meetings: z.array(meetingSchema),
   notes: z.string().optional(),
   sourceUpdatedAt: z.iso.datetime(),
+  dimension: z.string().optional(),
+  facets: z.array(z.string()).optional(),
+  hasUnrecognizedSchedule: z.boolean().optional(),
 });
 
 export const courseSnapshotSchema = z.object({
-  semester: z.string().regex(/^\d{4}$/),
+  semester: z.string().regex(/^\d{2,3}\s?[12H]$/),
   source: z.url(),
   retrievedAt: z.iso.datetime(),
   scope: z.object({

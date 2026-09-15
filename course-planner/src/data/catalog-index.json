@@ -1,0 +1,403 @@
+{
+  "retrievedAt": "2026-09-15T08:00:59.497Z",
+  "semesters": [
+    {
+      "semester": "1151",
+      "label": "1151（2026 Fall）",
+      "file": "1151.json",
+      "count": 4310
+    },
+    {
+      "semester": "114H",
+      "label": "114H（2026 Summer）",
+      "file": "114H.json",
+      "count": 77
+    },
+    {
+      "semester": "1142",
+      "label": "1142（2026 Spring）",
+      "file": "1142.json",
+      "count": 4446
+    },
+    {
+      "semester": "113H",
+      "label": "113H（2025 Summer）",
+      "file": "113H.json",
+      "count": 79
+    },
+    {
+      "semester": "112H",
+      "label": "112H（2024 Summer）",
+      "file": "112H.json",
+      "count": 68
+    },
+    {
+      "semester": "111H",
+      "label": "111H（2023 Summer）",
+      "file": "111H.json",
+      "count": 77
+    },
+    {
+      "semester": "110H",
+      "label": "110H（2022 Summer）",
+      "file": "110H.json",
+      "count": 84
+    },
+    {
+      "semester": "109H",
+      "label": "109H（2021 Summer）",
+      "file": "109H.json",
+      "count": 78
+    },
+    {
+      "semester": "108H",
+      "label": "108H（2020 Summer）",
+      "file": "108H.json",
+      "count": 89
+    },
+    {
+      "semester": "107H",
+      "label": "107H（2019 Summer）",
+      "file": "107H.json",
+      "count": 116
+    },
+    {
+      "semester": "106H",
+      "label": "106H（2018 Summer）",
+      "file": "106H.json",
+      "count": 126
+    }
+  ],
+  "colleges": [
+    {
+      "code": "1",
+      "name": "工程學院"
+    },
+    {
+      "code": "2",
+      "name": "電資學院"
+    },
+    {
+      "code": "3",
+      "name": "管理學院"
+    },
+    {
+      "code": "4",
+      "name": "設計學院"
+    },
+    {
+      "code": "5",
+      "name": "人文社會學院"
+    },
+    {
+      "code": "7",
+      "name": "產學創新學院"
+    },
+    {
+      "code": "0",
+      "name": "應用科技學院"
+    }
+  ],
+  "departments": [
+    {
+      "code": "AC",
+      "name": "自動化及控制研究所",
+      "college": "1"
+    },
+    {
+      "code": "AE",
+      "name": "先進科技全英語學士學位學程",
+      "college": "1"
+    },
+    {
+      "code": "CE",
+      "name": "工程學士班",
+      "college": "1"
+    },
+    {
+      "code": "CH",
+      "name": "化學工程系",
+      "college": "1"
+    },
+    {
+      "code": "CT",
+      "name": "營建工程系",
+      "college": "1"
+    },
+    {
+      "code": "GD",
+      "name": "全球發展工程學士學位學程",
+      "college": "1"
+    },
+    {
+      "code": "GX",
+      "name": "綠能產業機電工程學士學位學程",
+      "college": "1"
+    },
+    {
+      "code": "IS",
+      "name": "國際半導體製程設備學士後外國學生專班",
+      "college": "1"
+    },
+    {
+      "code": "ME",
+      "name": "機械工程系",
+      "college": "1"
+    },
+    {
+      "code": "MS",
+      "name": "材料科技研究所",
+      "college": "1"
+    },
+    {
+      "code": "RD",
+      "name": "高階科技研發碩士學位學程",
+      "college": "1"
+    },
+    {
+      "code": "RS",
+      "name": "跨系所學程",
+      "college": "1"
+    },
+    {
+      "code": "SD",
+      "name": "半導體高階經營暨研發碩士在職學位學程",
+      "college": "1"
+    },
+    {
+      "code": "TE",
+      "name": "先進科技全英語外國學生專班",
+      "college": "1"
+    },
+    {
+      "code": "TX",
+      "name": "材料科學與工程系",
+      "college": "1"
+    },
+    {
+      "code": "CS",
+      "name": "資訊工程系",
+      "college": "2"
+    },
+    {
+      "code": "EC",
+      "name": "電資學士班",
+      "college": "2"
+    },
+    {
+      "code": "EE",
+      "name": "電機工程系",
+      "college": "2"
+    },
+    {
+      "code": "EO",
+      "name": "光電工程研究所",
+      "college": "2"
+    },
+    {
+      "code": "ET",
+      "name": "電子工程系",
+      "college": "2"
+    },
+    {
+      "code": "IC",
+      "name": "資通科技國際學士學位學程",
+      "college": "2"
+    },
+    {
+      "code": "BA",
+      "name": "企業管理系",
+      "college": "3"
+    },
+    {
+      "code": "FB",
+      "name": "財務金融學士學位學程",
+      "college": "3"
+    },
+    {
+      "code": "FN",
+      "name": "財務金融研究所",
+      "college": "3"
+    },
+    {
+      "code": "IM",
+      "name": "工業管理系",
+      "college": "3"
+    },
+    {
+      "code": "MA",
+      "name": "MBA",
+      "college": "3"
+    },
+    {
+      "code": "MB",
+      "name": "管理學士班",
+      "college": "3"
+    },
+    {
+      "code": "MG",
+      "name": "管理研究所",
+      "college": "3"
+    },
+    {
+      "code": "MG",
+      "name": "管理研究所EMBA工管組",
+      "college": "3"
+    },
+    {
+      "code": "MI",
+      "name": "資訊管理系",
+      "college": "3"
+    },
+    {
+      "code": "SG",
+      "name": "新加坡管理碩士在職專班",
+      "college": "3"
+    },
+    {
+      "code": "TB",
+      "name": "科技管理學士學位學程",
+      "college": "3"
+    },
+    {
+      "code": "TM",
+      "name": "科技管理研究所",
+      "college": "3"
+    },
+    {
+      "code": "AD",
+      "name": "建築系",
+      "college": "4"
+    },
+    {
+      "code": "CD",
+      "name": "創意設計學士班",
+      "college": "4"
+    },
+    {
+      "code": "DT",
+      "name": "設計系",
+      "college": "4"
+    },
+    {
+      "code": "DX",
+      "name": "創意設計學士學位學程",
+      "college": "4"
+    },
+    {
+      "code": "FL",
+      "name": "應用外語系",
+      "college": "5"
+    },
+    {
+      "code": "VE",
+      "name": "數位學習與教育研究所",
+      "college": "5"
+    },
+    {
+      "code": "AI",
+      "name": "人工智慧跨域科技研究所",
+      "college": "7"
+    },
+    {
+      "code": "AS",
+      "name": "先進半導體科技研究所",
+      "college": "7"
+    },
+    {
+      "code": "ES",
+      "name": "能源永續科技研究所",
+      "college": "7"
+    },
+    {
+      "code": "SI",
+      "name": "智慧製造科技研究所",
+      "college": "7"
+    },
+    {
+      "code": "AT",
+      "name": "應用科技學士學位學程",
+      "college": "0"
+    },
+    {
+      "code": "BB",
+      "name": "醫學工程學士學位學程",
+      "college": "0"
+    },
+    {
+      "code": "BE",
+      "name": "醫學工程研究所",
+      "college": "0"
+    },
+    {
+      "code": "CI",
+      "name": "色彩與照明科技研究所",
+      "college": "0"
+    },
+    {
+      "code": "CX",
+      "name": "色彩影像與照明科技學士學位學程",
+      "college": "0"
+    },
+    {
+      "code": "EN",
+      "name": "應用科技研究所",
+      "college": "0"
+    },
+    {
+      "code": "GD",
+      "name": "全球發展工程學士學位學程",
+      "college": "0"
+    },
+    {
+      "code": "HC",
+      "name": "不分系學士班",
+      "college": "0"
+    },
+    {
+      "code": "IB",
+      "name": "智慧財產權學士學位學程",
+      "college": "0"
+    },
+    {
+      "code": "MS",
+      "name": "應用科技研究所材料科技學程",
+      "college": "0"
+    },
+    {
+      "code": "PA",
+      "name": "專利研究所",
+      "college": "0"
+    }
+  ],
+  "dimensions": [
+    {
+      "code": "0",
+      "name": "(0)"
+    },
+    {
+      "code": "A",
+      "name": "人文素養(A)"
+    },
+    {
+      "code": "B",
+      "name": "當代文明(B)"
+    },
+    {
+      "code": "C",
+      "name": "美感與人生探索(C)"
+    },
+    {
+      "code": "D",
+      "name": "社會與歷史文化(D)"
+    },
+    {
+      "code": "E",
+      "name": "群己與制度發展(E)"
+    },
+    {
+      "code": "F",
+      "name": "自然與生命科學(F)"
+    }
+  ]
+}

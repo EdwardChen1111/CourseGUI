@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { courseSnapshot } from "@/lib/course-data";
-import type { CourseOffering, Weekday } from "@/lib/course";
+import type { CourseOffering, CourseSnapshot, Weekday } from "@/lib/course";
+import type { QueryCatalog } from "@/lib/query-options";
+import { QueryFilters } from "@/components/query-filters";
 import { COURSE_PLAN_STORAGE_KEY, normalizeCourseSelection } from "@/lib/course-plan";
 import { getCourseTypeLabels, getUniqueCourseLocations } from "@/lib/course-presentation";
 import { emptyCourseSearchFilters, filterCourses } from "@/lib/course-search";
@@ -12,44 +13,46 @@ import { calculateRequirementProgress, getRequirementReviewPresentation } from "
 import { getConflictingMeetings, hasScheduleConflict } from "@/lib/schedule";
 import { WeeklyTimetable } from "@/components/weekly-timetable";
 
-const offerings: CourseOffering[] = courseSnapshot.offerings;
 const weekdayLabels: Record<Weekday, string> = { M: "一", T: "二", W: "三", R: "四", F: "五", S: "六", U: "日" };
 
 function formatSchedule(course: CourseOffering): string {
   return course.meetings.map((meeting) => `${meeting.weekday}${meeting.period}`).join("、");
 }
 
-export function CoursePlanner() {
+export function CoursePlanner({ snapshot: courseSnapshot, catalog }: { snapshot: CourseSnapshot; catalog: QueryCatalog }) {
+  const offerings = courseSnapshot.offerings;
+  const storageKey = `${COURSE_PLAN_STORAGE_KEY}:${courseSnapshot.semester}`;
+  const [displayCount, setDisplayCount] = useState(50);
   const [filters, setFilters] = useState(emptyCourseSearchFilters);
   const [selectedCourseNos, setSelectedCourseNos] = useState<string[]>([]);
   const [hasLoadedSavedPlan, setHasLoadedSavedPlan] = useState(false);
-  const availableCourseNos = useMemo(() => offerings.map((course) => course.courseNo), []);
+  const availableCourseNos = useMemo(() => offerings.map((course) => course.courseNo), [offerings]);
 
   useEffect(() => {
     const loadSavedPlan = window.setTimeout(() => {
       try {
-        const savedPlan = JSON.parse(window.localStorage.getItem(COURSE_PLAN_STORAGE_KEY) ?? "[]") as unknown;
+        const savedPlan = JSON.parse(window.localStorage.getItem(storageKey) ?? (courseSnapshot.semester === "1151" ? window.localStorage.getItem(COURSE_PLAN_STORAGE_KEY) : null) ?? "[]") as unknown;
         setSelectedCourseNos(normalizeCourseSelection(savedPlan, availableCourseNos));
       } catch {
-        window.localStorage.removeItem(COURSE_PLAN_STORAGE_KEY);
+        setSelectedCourseNos([]);
       } finally {
         setHasLoadedSavedPlan(true);
       }
     }, 0);
 
     return () => window.clearTimeout(loadSavedPlan);
-  }, [availableCourseNos]);
+  }, [availableCourseNos, storageKey, courseSnapshot.semester]);
 
   useEffect(() => {
     if (!hasLoadedSavedPlan) return;
     try {
-      window.localStorage.setItem(COURSE_PLAN_STORAGE_KEY, JSON.stringify(selectedCourseNos));
+      window.localStorage.setItem(storageKey, JSON.stringify(selectedCourseNos));
     } catch {
       // Storage may be disabled by the browser; the in-memory plan still works.
     }
-  }, [hasLoadedSavedPlan, selectedCourseNos]);
+  }, [hasLoadedSavedPlan, selectedCourseNos, storageKey]);
 
-  const filteredCourses = useMemo(() => filterCourses(offerings, filters), [filters]);
+  const filteredCourses = useMemo(() => filterCourses(offerings, filters), [offerings, filters]);
 
   const plannedCourses = offerings.filter((course) => selectedCourseNos.includes(course.courseNo));
   const totalCredits = plannedCourses.reduce((total, course) => total + course.credits, 0);
@@ -90,7 +93,7 @@ export function CoursePlanner() {
             <p className="text-sm font-semibold text-sky-700">{courseSnapshot.scope.description}</p>
             <h2 className="mt-1 text-2xl font-bold">搜尋課程</h2>
           </div>
-          <p className="text-sm text-slate-500">快照共 {offerings.length} 門；目前顯示 {filteredCourses.length} 門</p>
+          <p className="text-sm text-slate-500">快照共 {offerings.length} 門；符合 {filteredCourses.length} 門<br />擷取時間：{courseSnapshot.retrievedAt}（非即時名額）</p>
         </div>
 
         <label className="mt-5 block text-sm font-semibold text-slate-700" htmlFor="course-search">
@@ -105,7 +108,7 @@ export function CoursePlanner() {
         />
 
         <fieldset className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
-          <legend className="px-1 text-sm font-semibold text-slate-700">進階篩選</legend>
+          <legend className="px-1 text-sm font-semibold text-slate-700">學分與星期篩選</legend>
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="text-sm text-slate-700" htmlFor="minimum-credits">
               最低學分
@@ -167,7 +170,9 @@ export function CoursePlanner() {
         </fieldset>
 
         <div className="mt-5 space-y-3">
-          {filteredCourses.map((course) => {
+          <QueryFilters filters={filters} onChange={setFilters} catalog={catalog} />
+          <label className="block text-sm">最多顯示課程數<select className="ml-2 rounded border p-2" value={displayCount} onChange={(event) => setDisplayCount(Number(event.target.value))}><option value={50}>50</option><option value={100}>100</option><option value={100000}>全部</option></select></label>
+          {filteredCourses.slice(0, displayCount).map((course) => {
             const isPlanned = selectedCourseNos.includes(course.courseNo);
             const conflictsWithPlan = plannedCourses.some(
               (plannedCourse) => plannedCourse.courseNo !== course.courseNo && hasScheduleConflict(course.meetings, plannedCourse.meetings),

@@ -22,6 +22,9 @@ export type CourseOffering = {
   meetings: Meeting[];
   notes?: string;
   sourceUpdatedAt: string;
+  dimension?: string;
+  facets?: string[];
+  hasUnrecognizedSchedule?: boolean;
 };
 
 export type CourseSnapshot = {
