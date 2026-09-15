@@ -59,8 +59,8 @@ npm run build
 
 1. 將 repository 的 GitHub Pages source 設為 **GitHub Actions**。
 2. 推送至 `main` 分支。
-3. `.github/workflows/ci.yml` 會執行測試、lint 與 production build。
-4. `.github/workflows/deploy-pages.yml` 會部署 `out/`。
+3. 儲存庫根目錄 `.github/workflows/ci.yml` 會執行資料驗證、測試、lint 與 production build。
+4. 根目錄 `.github/workflows/deploy-pages.yml` 會部署 `course-planner/out/`。
 
 部署工作流程會在 GitHub Actions 環境中自動設定 Next.js 的 repository base path；本機開發不會加入此前綴。
 
@@ -71,14 +71,26 @@ npm run build
 目前 MVP 的已交付功能、資料邊界與待人工審核項目見 [docs/MVP_SCOPE.md](docs/MVP_SCOPE.md)。
 ## 課程資料同步
 
-網站部署時只讀取已提交的靜態快照，不會在使用者瀏覽時向校方 API 發出請求。維護者可用下列指令從公開 API 產生課程資料，先預覽差異，再明確指定 `--write` 寫入快照；每次寫入前都會以 schema 驗證。
+網站按學期載入已提交的完整靜態快照，不會在使用者瀏覽時向校方 API 發出請求。完整查詢使用下列同步流程；沒有 `--write` 時只驗證，不寫入。`--resume` 接續已完成的快照，若要重新更新人數／分類請勿使用 resume。
+
+```bash
+npm run sync:catalog -- --semesters=1151
+npm run sync:catalog -- --write
+npm run sync:catalog -- --write --resume
+npm run sync:catalog -- --write --index-only --audit-unavailable --require-complete
+npm run validate:data
+```
+
+完整快照位於 `public/courses/`；索引與來源不可用紀錄位於 `src/data/catalog-index.json`。校方 95–99 年度 API 格式錯誤的學期會單獨標示，不以空課程快照替代。
+
+舊版單一關鍵字快照 adapter 仍保留供範例與差異測試，以下不會更新公開完整查詢索引：
 
 ```bash
 npm run sync:courses -- --semester=1151 --course-name=微積分
 npm run sync:courses -- --semester=1151 --course-name=微積分 --write
 ```
 
-第一個指令是唯讀的 dry run。第二個指令才會更新 `src/data/courses/1151.json`；目前以課名篩選示範，避免意外寫入過大的全校課程資料。同步會輸出新增、移除、異動課號數量與無法辨識的時段 token 數量，供人工審核後再提交版本。
+第一個指令是唯讀的 dry run。第二個指令更新範例 `src/data/courses/1151.json`；會輸出新增、移除、異動課號數量與無法辨識的時段 token 數量，供人工審核後再提交版本。
 
 ## 修課規則匯入
 

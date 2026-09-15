@@ -25,7 +25,10 @@ async function main() {
     const page = await browser.newPage();
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
-    await page.goto("http://127.0.0.1:4173/CourseGUI/");
+    page.on("console", (message) => {
+      if (message.type() === "error" && !message.text().includes("Failed to load resource")) errors.push(message.text());
+    });
+    await page.goto(process.env.UI_VERIFY_URL || "http://127.0.0.1:4173/CourseGUI/");
     await page.getByText("校方課程查詢條件", { exact: true }).waitFor();
     await page.getByLabel("學校", { exact: true }).selectOption("3N");
     await page.waitForTimeout(300);
@@ -49,7 +52,8 @@ async function main() {
     await page.waitForTimeout(300);
     await page.reload();
     await page.getByRole("button", { name: "移出課表", exact: true }).first().waitFor();
-    const years = await page.getByLabel("學年度", { exact: true }).locator("option").count();
+    const availableYears = await page.getByLabel("學年度", { exact: true }).locator("option:not(:disabled)").evaluateAll((options) => options.map((option) => option.value));
+    const years = availableYears.length;
     if (years > 1) {
       await page.getByLabel("學年度", { exact: true }).selectOption({ index: 1 });
       await page.getByText("校方課程查詢條件", { exact: true }).waitFor();
@@ -58,6 +62,14 @@ async function main() {
       await page.getByLabel("學年度", { exact: true }).selectOption(originalYear);
       await page.getByLabel("學期", { exact: true }).selectOption(originalTerm);
       await page.getByRole("button", { name: "移出課表", exact: true }).first().waitFor();
+      await page.getByLabel("學年度", { exact: true }).selectOption(availableYears[years - 1]);
+      await page.getByText("校方課程查詢條件", { exact: true }).waitFor();
+      const summer = await page.getByLabel("學期", { exact: true }).locator("option").evaluateAll((options) => options.map((option) => option.value).find((value) => value.endsWith("H")));
+      if (summer) {
+        await page.getByLabel("學期", { exact: true }).selectOption(summer);
+        await page.getByText("校方課程查詢條件", { exact: true }).waitFor();
+        assert.equal(await page.getByLabel("學期", { exact: true }).inputValue(), summer);
+      }
     }
     await page.route("**/courses/*.json", (route) => route.fulfill({ status: 503, body: "unavailable" }));
     await page.reload();
@@ -65,6 +77,9 @@ async function main() {
     await page.unroute("**/courses/*.json");
     await page.getByRole("button", { name: "重新載入", exact: true }).click();
     await page.getByText("校方課程查詢條件", { exact: true }).waitFor();
+    await page.setViewportSize({ width: 390, height: 844 });
+    const overflow = await page.evaluate(() => ({ width: window.innerWidth, scroll: document.documentElement.scrollWidth, elements: [...document.querySelectorAll("#planner *")].map((element) => ({ tag: element.tagName, className: element.className, right: element.getBoundingClientRect().right })).filter((element) => element.right > window.innerWidth + 2).slice(0, 8) }));
+    assert(overflow.scroll <= overflow.width + 2, `Mobile page has horizontal overflow: ${JSON.stringify(overflow)}`);
     assert.deepEqual(errors, []);
     console.log(`Browser query checks passed; ${years} academic years available`);
   } finally { await browser.close(); }

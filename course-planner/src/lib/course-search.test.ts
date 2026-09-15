@@ -37,6 +37,13 @@ describe("filterCourses", () => {
     expect(filterCourses(catalogCourses, { ...emptyCourseSearchFilters, category: "general", dimension: "A" }).map((item) => item.courseNo)).toEqual(["3T123"]);
     expect(filterCourses(catalogCourses, { ...emptyCourseSearchFilters, department: "EE" })).toEqual([]);
   });
+  it("supports each special category without inferring it from the title", () => {
+    for (const category of ["general", "LCC", "foreign", "PE", "EP"]) {
+      const matching = { ...courses[0], courseNo: `${category}001`, facets: [category], title: "相同課名" };
+      const unrelated = { ...courses[1], title: "相同課名" };
+      expect(filterCourses([matching, unrelated], { ...emptyCourseSearchFilters, category })).toEqual([matching]);
+    }
+  });
   it("distinguishes any matching period from the whole-course restriction", () => {
     expect(filterCourses(courses, { ...emptyCourseSearchFilters, slots: ["M6"] }).map((item) => item.courseNo)).toEqual(["MA101"]);
     expect(filterCourses(courses, { ...emptyCourseSearchFilters, slots: ["M6"], onlyListedSlots: true })).toEqual([]);

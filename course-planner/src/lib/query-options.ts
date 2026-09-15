@@ -12,6 +12,7 @@ export const categoryOptions = [
 export type QueryCatalog = {
   retrievedAt: string;
   semesters: Array<{ semester: string; label: string; file: string; count: number }>;
+  unavailableSemesters?: Array<{ semester: string; label: string; reason: string; checkedAt: string }>;
   colleges: Array<{ code: string; name: string }>;
   departments: Array<{ code: string; name: string; college: string }>;
   dimensions: Array<{ code: string; name: string }>;

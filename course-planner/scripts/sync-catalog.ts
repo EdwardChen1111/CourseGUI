@@ -11,6 +11,8 @@ const write = process.argv.includes("--write");
 const requested = process.argv.find((arg) => arg.startsWith("--semesters="))?.slice(12).split(",");
 const resume = process.argv.includes("--resume");
 const indexOnly = process.argv.includes("--index-only");
+const requireComplete = process.argv.includes("--require-complete");
+const auditUnavailable = process.argv.includes("--audit-unavailable");
 const retrievedAt = new Date().toISOString();
 let requestCount = 0;
 const historicalSemesters = new Set<string>();
@@ -29,6 +31,7 @@ async function api<T>(endpoint: string, body?: Record<string, unknown>): Promise
       if (!response.ok) throw new Error(`${endpoint}: HTTP ${response.status}`);
       return await response.json() as T;
     } catch (error) {
+      if (error instanceof Error && error.message.includes("HTTP 400")) throw error;
       if (attempt === attempts - 1) throw error;
       await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
     }
@@ -68,12 +71,17 @@ async function main() {
   });
   const dimensions = await api<Array<{ DimNo: string; DimContent: string }>>("dimensions");
   const catalog: QueryCatalog = {
-    retrievedAt, semesters: [], colleges: colleges.map((c) => ({ code: c.CollegeNo, name: c.CollegeName })),
+    retrievedAt, semesters: [], unavailableSemesters: [], colleges: colleges.map((c) => ({ code: c.CollegeNo, name: c.CollegeName })),
     departments: departmentLists.flat(), dimensions: dimensions.map((d) => ({ code: d.DimNo, name: d.DimContent })),
   };
   const selected = requested ? semesters.filter((s) => requested.includes(s.Semester.trim())) : semesters;
   if (requested && selected.length !== requested.length) throw new Error("Unknown semester requested");
   const outputDirectory = path.join(root, "public", "courses");
+  let priorUnavailable: NonNullable<QueryCatalog["unavailableSemesters"]> = [];
+  if (indexOnly && !auditUnavailable) {
+    try { priorUnavailable = (JSON.parse(await readFile(path.join(root, "src/data/catalog-index.json"), "utf8")) as QueryCatalog).unavailableSemesters ?? []; }
+    catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
+  }
   if (write) await mkdir(outputDirectory, { recursive: true });
 
   // Partition by the leading course-code character; external courses use 3T/3N
@@ -88,6 +96,21 @@ async function main() {
   ];
   for (const selectedSemester of selected) {
     const semester = selectedSemester.Semester.trim();
+    const priorIssue = priorUnavailable.find((item) => item.semester === semester);
+    if (priorIssue) { catalog.unavailableSemesters!.push(priorIssue); continue; }
+    if (semester.slice(0, -1).trim().length === 2 && (!indexOnly || auditUnavailable)) {
+      try {
+        await query(semester, { CourseNo: "EE" });
+      } catch (error) {
+        if (!(error instanceof Error) || !error.message.includes("HTTP 400")) throw error;
+        const normalized = semester.replace(/\s/g, "").padStart(4, "0");
+        const alternative = await query(normalized, { OldCourse: true });
+        if (alternative.length) throw new Error(`${semester}: normalized source has data; explicit semester mapping needs review`);
+        catalog.unavailableSemesters!.push({ semester, label: `${semester}（${selectedSemester.EngSemester}）`, reason: "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。", checkedAt: new Date().toISOString() });
+        console.log(`${semester}: confirmed unavailable from official source`);
+        continue;
+      }
+    }
     const file = `${semester.replace(/\s/g, "")}.json`;
     const output = path.join(outputDirectory, file);
     if (resume || indexOnly) {
@@ -103,7 +126,10 @@ async function main() {
         console.log(`${semester}: resumed ${previous.offerings.length} courses`);
         continue;
       } catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
-      if (indexOnly) continue;
+      if (indexOnly) {
+        if (requireComplete) throw new Error(`${semester}: complete coverage required but snapshot is missing`);
+        continue;
+      }
     }
     console.log(`${semester}: fetching partitioned course list`);
     const responses = await pool(prefixes, (prefix) => query(semester, { CourseNo: prefix }));
@@ -133,7 +159,10 @@ async function main() {
     if (write) await writeFile(output, JSON.stringify(snapshot) + "\n");
     console.log(`${semester}: ${snapshot.offerings.length} courses validated; ${write ? "written" : "dry run"}`);
   }
-  if (write) await writeFile(path.join(root, "src", "data", "catalog-index.json"), JSON.stringify(catalog, null, 2) + "\n");
-  console.log(`${catalog.semesters.length} semesters; ${requestCount} requests; ${write ? "catalog written" : "dry run only"}`);
+  if (write) {
+    if (!catalog.semesters.length) throw new Error("Refusing to publish a catalog without available semester snapshots");
+    await writeFile(path.join(root, "src", "data", "catalog-index.json"), JSON.stringify(catalog, null, 2) + "\n");
+  }
+  console.log(`${catalog.semesters.length} available semesters; ${catalog.unavailableSemesters!.length} source-unavailable; ${requestCount} requests; ${write ? "catalog written" : "dry run only"}`);
 }
 main().catch((error: unknown) => { console.error(error); process.exitCode = 1; });

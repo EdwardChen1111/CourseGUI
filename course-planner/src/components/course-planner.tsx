@@ -87,7 +87,7 @@ export function CoursePlanner({ snapshot: courseSnapshot, catalog }: { snapshot:
 
   return (
     <section className="mx-auto grid max-w-6xl gap-8 px-6 py-14 lg:grid-cols-[1fr_0.8fr]">
-      <div>
+      <div className="min-w-0">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold text-sky-700">{courseSnapshot.scope.description}</p>
@@ -215,7 +215,7 @@ export function CoursePlanner({ snapshot: courseSnapshot, catalog }: { snapshot:
         </div>
       </div>
 
-      <aside className="h-fit rounded-2xl border border-sky-100 bg-white p-6 shadow-sm lg:sticky lg:top-6">
+      <aside className="min-w-0 h-fit rounded-2xl border border-sky-100 bg-white p-6 shadow-sm lg:sticky lg:top-6">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-sm font-semibold text-sky-700">個人候選課表</p>

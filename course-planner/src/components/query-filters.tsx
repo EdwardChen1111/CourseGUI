@@ -15,7 +15,7 @@ export function QueryFilters({ filters, onChange, catalog }: Props) {
     update({ [field]: values.includes(value) ? values.filter((item) => item !== value) : [...values, value] });
   };
   return (
-    <fieldset className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+    <fieldset className="mt-4 min-w-0 rounded-xl border border-slate-200 bg-white p-4">
       <legend className="px-1 text-sm font-semibold text-slate-700">校方課程查詢條件</legend>
       <div className="grid gap-4 sm:grid-cols-2">
         {([ ["courseNo", "課程代碼"], ["courseName", "課程名稱"], ["instructor", "教師名稱"] ] as const).map(([field, label]) => (
@@ -28,7 +28,7 @@ export function QueryFilters({ filters, onChange, catalog }: Props) {
           <option value="">所有學院</option>{catalog.colleges.map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}
         </select></label>
         <label className="text-sm text-slate-700">系所學程<select aria-label="系所學程" className={inputClass} value={filters.department ?? ""} onChange={(event) => update({ department: event.target.value })}>
-          <option value="">所有系所</option>{catalog.departments.filter((item) => !college || item.college === college).map((item) => <option key={item.code} value={item.code}>{item.name}（{item.code}）</option>)}
+          <option value="">所有系所</option>{catalog.departments.filter((item) => !college || item.college === college).map((item) => <option key={`${item.college}-${item.code}-${item.name}`} value={item.code}>{item.name}（{item.code}）</option>)}
         </select></label>
         <label className="text-sm text-slate-700">課程類別<select aria-label="課程類別" className={inputClass} value={filters.category ?? "all"} onChange={(event) => update({ category: event.target.value, dimension: "" })}>
           {categoryOptions.map(([code, label]) => <option key={code} value={code}>{label}</option>)}

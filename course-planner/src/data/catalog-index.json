@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-09-15T08:00:59.497Z",
+  "retrievedAt": "2026-09-15T08:26:55.629Z",
   "semesters": [
     {
       "semester": "1151",
@@ -20,10 +20,28 @@
       "count": 4446
     },
     {
+      "semester": "1141",
+      "label": "1141（2025 Fall）",
+      "file": "1141.json",
+      "count": 4367
+    },
+    {
       "semester": "113H",
       "label": "113H（2025 Summer）",
       "file": "113H.json",
       "count": 79
+    },
+    {
+      "semester": "1132",
+      "label": "1132（2025 Spring）",
+      "file": "1132.json",
+      "count": 4374
+    },
+    {
+      "semester": "1131",
+      "label": "1131（2024 Fall）",
+      "file": "1131.json",
+      "count": 5002
     },
     {
       "semester": "112H",
@@ -32,10 +50,34 @@
       "count": 68
     },
     {
+      "semester": "1122",
+      "label": "1122（2024 Spring）",
+      "file": "1122.json",
+      "count": 3774
+    },
+    {
+      "semester": "1121",
+      "label": "1121（2023 Fall）",
+      "file": "1121.json",
+      "count": 3660
+    },
+    {
       "semester": "111H",
       "label": "111H（2023 Summer）",
       "file": "111H.json",
       "count": 77
+    },
+    {
+      "semester": "1112",
+      "label": "1112（2023 Spring）",
+      "file": "1112.json",
+      "count": 3560
+    },
+    {
+      "semester": "1111",
+      "label": "1111（2022 Fall）",
+      "file": "1111.json",
+      "count": 3485
     },
     {
       "semester": "110H",
@@ -44,10 +86,34 @@
       "count": 84
     },
     {
+      "semester": "1102",
+      "label": "1102（2022 Spring）",
+      "file": "1102.json",
+      "count": 3402
+    },
+    {
+      "semester": "1101",
+      "label": "1101（2021 Fall）",
+      "file": "1101.json",
+      "count": 3285
+    },
+    {
       "semester": "109H",
       "label": "109H（2021 Summer）",
       "file": "109H.json",
       "count": 78
+    },
+    {
+      "semester": "1092",
+      "label": "1092（2021 Spring）",
+      "file": "1092.json",
+      "count": 3162
+    },
+    {
+      "semester": "1091",
+      "label": "1091（2020 Fall）",
+      "file": "1091.json",
+      "count": 3273
     },
     {
       "semester": "108H",
@@ -56,16 +122,252 @@
       "count": 89
     },
     {
+      "semester": "1082",
+      "label": "1082（2020 Spring）",
+      "file": "1082.json",
+      "count": 3067
+    },
+    {
+      "semester": "1081",
+      "label": "1081（2019 Fall）",
+      "file": "1081.json",
+      "count": 3073
+    },
+    {
       "semester": "107H",
       "label": "107H（2019 Summer）",
       "file": "107H.json",
       "count": 116
     },
     {
+      "semester": "1072",
+      "label": "1072（2019 Spring）",
+      "file": "1072.json",
+      "count": 2858
+    },
+    {
+      "semester": "1071",
+      "label": "1071（2018 Fall）",
+      "file": "1071.json",
+      "count": 2989
+    },
+    {
       "semester": "106H",
       "label": "106H（2018 Summer）",
       "file": "106H.json",
       "count": 126
+    },
+    {
+      "semester": "1062",
+      "label": "1062（2018 Spring）",
+      "file": "1062.json",
+      "count": 2805
+    },
+    {
+      "semester": "1061",
+      "label": "1061（2017 Fall）",
+      "file": "1061.json",
+      "count": 2854
+    },
+    {
+      "semester": "105H",
+      "label": "105H（2017 Summer）",
+      "file": "105H.json",
+      "count": 123
+    },
+    {
+      "semester": "1052",
+      "label": "1052（2017 Spring）",
+      "file": "1052.json",
+      "count": 2701
+    },
+    {
+      "semester": "1051",
+      "label": "1051（2016 Fall）",
+      "file": "1051.json",
+      "count": 2867
+    },
+    {
+      "semester": "104H",
+      "label": "104H（2016 Summer）",
+      "file": "104H.json",
+      "count": 124
+    },
+    {
+      "semester": "1042",
+      "label": "1042（2016 Spring）",
+      "file": "1042.json",
+      "count": 2701
+    },
+    {
+      "semester": "1041",
+      "label": "1041（2015 Fall）",
+      "file": "1041.json",
+      "count": 2820
+    },
+    {
+      "semester": "103H",
+      "label": "103H（2015 Summer）",
+      "file": "103H.json",
+      "count": 122
+    },
+    {
+      "semester": "1032",
+      "label": "1032（2015 Spring）",
+      "file": "1032.json",
+      "count": 2536
+    },
+    {
+      "semester": "1031",
+      "label": "1031（2014 Fall）",
+      "file": "1031.json",
+      "count": 1828
+    },
+    {
+      "semester": "102H",
+      "label": "102H（2014 Summer）",
+      "file": "102H.json",
+      "count": 103
+    },
+    {
+      "semester": "1022",
+      "label": "1022（2014 Spring）",
+      "file": "1022.json",
+      "count": 1698
+    },
+    {
+      "semester": "1021",
+      "label": "1021（2013 Fall）",
+      "file": "1021.json",
+      "count": 1726
+    },
+    {
+      "semester": "101H",
+      "label": "101H（2013 Summer）",
+      "file": "101H.json",
+      "count": 108
+    },
+    {
+      "semester": "1012",
+      "label": "1012（2013 Spring）",
+      "file": "1012.json",
+      "count": 1686
+    },
+    {
+      "semester": "1011",
+      "label": "1011（2012 Fall）",
+      "file": "1011.json",
+      "count": 1710
+    },
+    {
+      "semester": "100H",
+      "label": "100H（2012 Summer）",
+      "file": "100H.json",
+      "count": 84
+    },
+    {
+      "semester": "1002",
+      "label": "1002（2012 Spring）",
+      "file": "1002.json",
+      "count": 1684
+    },
+    {
+      "semester": "1001",
+      "label": "1001（2011 Fall）",
+      "file": "1001.json",
+      "count": 1709
+    }
+  ],
+  "unavailableSemesters": [
+    {
+      "semester": "99 H",
+      "label": "99 H（2011 Summer）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:57.976Z"
+    },
+    {
+      "semester": "99 2",
+      "label": "99 2（2011 Spring）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:58.148Z"
+    },
+    {
+      "semester": "99 1",
+      "label": "99 1（2010 Fall）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:58.313Z"
+    },
+    {
+      "semester": "98 H",
+      "label": "98 H（2010 Summer）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:58.481Z"
+    },
+    {
+      "semester": "98 2",
+      "label": "98 2（2010 Spring）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:58.670Z"
+    },
+    {
+      "semester": "98 1",
+      "label": "98 1（2009 Fall）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:58.836Z"
+    },
+    {
+      "semester": "97 H",
+      "label": "97 H（2009 Summer）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:59.092Z"
+    },
+    {
+      "semester": "97 2",
+      "label": "97 2（2009 Spring）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:59.252Z"
+    },
+    {
+      "semester": "97 1",
+      "label": "97 1（2008 Fall）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:59.442Z"
+    },
+    {
+      "semester": "96 H",
+      "label": "96 H（2008 Summer）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:59.657Z"
+    },
+    {
+      "semester": "96 2",
+      "label": "96 2（2008 Spring）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:26:59.858Z"
+    },
+    {
+      "semester": "96 1",
+      "label": "96 1（2007 Fall）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:27:00.024Z"
+    },
+    {
+      "semester": "95 H",
+      "label": "95 H（2007 Summer）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:27:00.195Z"
+    },
+    {
+      "semester": "95 2",
+      "label": "95 2（2007 Spring）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:27:00.390Z"
+    },
+    {
+      "semester": "95 1",
+      "label": "95 1（2006 Fall）",
+      "reason": "官方學期格式回傳 HTTP 400；補零格式回傳空資料，未視為沒有開課。",
+      "checkedAt": "2026-09-15T08:27:00.561Z"
     }
   ],
   "colleges": [
