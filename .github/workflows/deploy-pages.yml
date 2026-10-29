@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '20 22 * * *'
 
 permissions:
   contents: read
@@ -31,10 +33,14 @@ jobs:
           cache: npm
           cache-dependency-path: course-planner/package-lock.json
       - run: npm ci
+      - name: Refresh latest official semester (keep previous deployment on failure)
+        run: npm run sync:catalog -- --latest --write
       - run: npm run validate:data
       - run: npm run test
       - run: npm run lint
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
       - uses: actions/upload-pages-artifact@v3
         with:
           path: course-planner/out

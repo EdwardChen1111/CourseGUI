@@ -14,13 +14,20 @@ describe("parseScheduleSlots", () => {
   });
 
   it("records unknown formats instead of treating them as valid NTUST schedule slots", () => {
-    expect(parseScheduleSlots("M6、R10、二67")).toEqual({
+    expect(parseScheduleSlots("M6、R10、二6X")).toEqual({
       meetings: [
         { weekday: "M", period: "6" },
         { weekday: "R", period: "10" },
       ],
-      unrecognizedSlots: ["二67"],
+      unrecognizedSlots: ["二6X"],
     });
+  });
+  it("reads historical Chinese weekday notation and lowercase evening slots without guessing malformed tokens", () => {
+    expect(parseScheduleSlots("三78；四10a", ["教室甲", "教室乙"]).meetings).toEqual([
+      { weekday: "W", period: "7", location: "教室甲" }, { weekday: "W", period: "8", location: "教室甲" },
+      { weekday: "R", period: "10", location: "教室乙" }, { weekday: "R", period: "A", location: "教室乙" },
+    ]);
+    expect(parseScheduleSlots("五010A,U73").unrecognizedSlots).toEqual(["五010A", "U73"]);
   });
 });
 

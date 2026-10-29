@@ -13,6 +13,8 @@ export type NtustCourseApiRecord = {
   AllYear?: string;
   ChooseStudent?: number;
   AllStudent?: number;
+  Restrict1?: string | number;
+  Restrict2?: string | number;
   ClassRoomNo?: string;
   Node?: string;
   Contents?: string;
@@ -61,11 +63,15 @@ export function mapNtustCourse(record: NtustCourseApiRecord, retrievedAt: string
   const semester = record.Semester?.trim();
   const credits = Number(record.CreditPoint);
 
-  if (!courseNo || !title || !semester || record.CreditPoint == null || !Number.isFinite(credits) || credits < 0) {
+  if (!courseNo || !title || !semester || record.CreditPoint == null || String(record.CreditPoint).trim() === "" || !Number.isFinite(credits) || credits < 0) {
     throw new Error(`Cannot map incomplete NTUST course record: ${courseNo ?? "missing course number"}`);
   }
 
-  const parsedSchedule = parseScheduleSlots((courseNo.startsWith("3") ? record.ThreeNode ?? record.Node : record.Node) ?? "", splitValues(record.ClassRoomNo));
+  // Node is the school's normalized timetable (e.g. W8,W9). ThreeNode is
+  // external-school display text (e.g. 三89), not machine-readable NTUST slots.
+  const schedule = record.Node?.trim() || record.ThreeNode?.trim() || "";
+  const parsedSchedule = parseScheduleSlots(schedule, splitValues(record.ClassRoomNo));
+  const capacityNumber = (value: string | number | undefined) => value != null && String(value).trim() !== "" && Number.isFinite(Number(value)) && Number(value) >= 0 ? Number(value) : undefined;
   const instructors = splitValues(record.CourseTeacher);
 
   return {
@@ -86,6 +92,9 @@ export function mapNtustCourse(record: NtustCourseApiRecord, retrievedAt: string
       sourceUpdatedAt: retrievedAt,
       dimension: record.Dimension?.trim() || undefined,
       hasUnrecognizedSchedule: parsedSchedule.unrecognizedSlots.length > 0,
+      sourceSchedule: record.ThreeNode?.trim() || schedule || undefined,
+      sourceLocation: record.ClassRoomNo?.trim() || undefined,
+      capacity: { preselection: capacityNumber(record.Restrict1), addDrop: capacityNumber(record.Restrict2) },
     },
     unrecognizedScheduleTokens: parsedSchedule.unrecognizedSlots,
   };
@@ -133,7 +142,7 @@ export function combineNtustCourseOfferings(mappedCourses: MappedNtustCourse[]):
     const notes = [...new Set(group.map((item) => item.offering.notes).filter(Boolean))].join("\n") || undefined;
 
     return {
-      offering: { ...first.offering, meetings, notes, instructors: [...new Set(group.flatMap((item) => item.offering.instructors))], hasUnrecognizedSchedule: group.some((item) => item.offering.hasUnrecognizedSchedule) },
+      offering: { ...first.offering, meetings, notes, sourceSchedule: [...new Set(group.map((item) => item.offering.sourceSchedule).filter(Boolean))].join("；") || undefined, sourceLocation: [...new Set(group.map((item) => item.offering.sourceLocation).filter(Boolean))].join("；") || undefined, instructors: [...new Set(group.flatMap((item) => item.offering.instructors))], hasUnrecognizedSchedule: group.some((item) => item.offering.hasUnrecognizedSchedule) },
       unrecognizedScheduleTokens: group.flatMap((item) => item.unrecognizedScheduleTokens),
     };
   });

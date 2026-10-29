@@ -102,6 +102,12 @@ export type RequirementProgress = {
 };
 
 export function calculateRequirementProgress(requirements: RequirementSet, completedCourses: Array<{ courseNo: string; credits: number }>): RequirementProgress[] {
+  // Repeated entries must never inflate earned credit totals.
+  const uniqueCourses = new Map<string, { courseNo: string; credits: number }>();
+  for (const course of completedCourses) {
+    if (!uniqueCourses.has(course.courseNo) || uniqueCourses.get(course.courseNo)!.credits < course.credits) uniqueCourses.set(course.courseNo, course);
+  }
+  completedCourses = [...uniqueCourses.values()];
   const completedCourseNos = new Set(completedCourses.map((course) => course.courseNo));
 
   return requirements.groups.map((group) => {

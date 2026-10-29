@@ -5,7 +5,8 @@ import { emptyCourseSearchFilters, filterCourses, type CourseSearchFilters } fro
 import { NTUST_COURSE_API_URL, type NtustCourseApiRecord } from "../src/lib/ntust-course-api";
 
 async function main() {
-  const snapshot = courseSnapshotSchema.parse(JSON.parse(await readFile("public/courses/1151.json", "utf8")));
+  const catalog = JSON.parse(await readFile("src/data/catalog-index.json", "utf8"));
+  const snapshot = courseSnapshotSchema.parse(JSON.parse(await readFile(`public/courses/${catalog.semesters[0].file}`, "utf8")));
   const cases: Array<[string, Record<string, unknown>, Partial<CourseSearchFilters>]> = [
     ["department", {}, {}],
     ["campus multiple", { CampusNotes: "Main_Campus,Hwa_Hsia_Campus" }, { campuses: ["Main_Campus", "Hwa_Hsia_Campus"] }],
@@ -17,7 +18,7 @@ async function main() {
   for (const [name, overrides, filters] of cases) {
     const response = await fetch(NTUST_COURSE_API_URL, {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Semester: "1151", CourseNo: "CS", CourseName: "", CourseTeacher: "", Dimension: "", CourseNotes: "", CampusNotes: "", ForeignLanguage: 0, OnlyIntensive: 0, OnlyGeneral: 0, OnleyNTUST: 0, OnlyMaster: 0, OnlyUnderGraduate: 0, OnlyNode: 0, Language: "zh", ...overrides }),
+      body: JSON.stringify({ Semester: snapshot.semester, CourseNo: "CS", CourseName: "", CourseTeacher: "", Dimension: "", CourseNotes: "", CampusNotes: "", ForeignLanguage: 0, OnlyIntensive: 0, OnlyGeneral: 0, OnleyNTUST: 0, OnlyMaster: 0, OnlyUnderGraduate: 0, OnlyNode: 0, Language: "zh", ...overrides }),
       signal: AbortSignal.timeout(45_000),
     });
     assert(response.ok, `${name}: HTTP ${response.status}`);

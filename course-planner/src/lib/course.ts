@@ -25,6 +25,10 @@ export type CourseOffering = {
   dimension?: string;
   facets?: string[];
   hasUnrecognizedSchedule?: boolean;
+  sourceSchedule?: string;
+  scheduleVerifiedAt?: string;
+  sourceLocation?: string;
+  capacity?: { preselection?: number; addDrop?: number };
 };
 
 export type CourseSnapshot = {

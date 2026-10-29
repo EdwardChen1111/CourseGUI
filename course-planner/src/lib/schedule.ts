@@ -10,17 +10,27 @@ export type ParsedSchedule = {
 /** Parses the NTUST-style schedule tokens used by the course query site, such as `T6` or `R10`. */
 export function parseScheduleSlots(value: string, locations: string[] = []): ParsedSchedule {
   const tokens = value
-    .split(/[、,，\s]+/)
+    .split(/[、,，;；\s]+/)
     .map((token) => token.trim())
     .filter(Boolean);
 
   const meetings: Meeting[] = [];
   const unrecognizedSlots: string[] = [];
 
-  tokens.forEach((token, index) => {
+  tokens.forEach((sourceToken, index) => {
+    const token = sourceToken.toUpperCase();
+    const chinese = token.match(/^([一二三四五六日天])((?:10|[1-9ABCD])+)$/);
+    if (chinese) {
+      const days: Record<string, Weekday> = { 一: "M", 二: "T", 三: "W", 四: "R", 五: "F", 六: "S", 日: "U", 天: "U" };
+      const location = locations.length === 1 ? locations[0] : locations[index];
+      for (const period of chinese[2].match(/10|[1-9ABCD]/g) ?? []) {
+        meetings.push({ weekday: days[chinese[1]], period: period as Period, ...(location ? { location } : {}) });
+      }
+      return;
+    }
     const match = token.match(slotPattern);
     if (!match) {
-      unrecognizedSlots.push(token);
+      unrecognizedSlots.push(sourceToken);
       return;
     }
 

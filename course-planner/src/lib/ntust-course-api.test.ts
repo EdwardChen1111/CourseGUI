@@ -6,9 +6,9 @@ import { calculateCourseSnapshotDiff, combineNtustCourseOfferings, mapNtustCours
 const retrievedAt = "2026-09-14T00:00:00.000Z";
 
 describe("NTUST course API adapter", () => {
-  it("uses external ThreeNode and permits official full-year zero-credit records", () => {
-    const result = mapNtustCourse({ Semester: "114H", CourseNo: "3T001", CourseName: "服務學習", CourseTeacher: "林老師", CreditPoint: "0", AllYear: "F", Node: "M1", ThreeNode: "T6、T7" }, retrievedAt);
-    expect(result.offering).toMatchObject({ credits: 0, yearType: "full", meetings: [{ weekday: "T", period: "6" }, { weekday: "T", period: "7" }] });
+  it("uses normalized Node for external courses, preserving ThreeNode only for display", () => {
+    const result = mapNtustCourse({ Semester: "1151", CourseNo: "3T1001701", CourseName: "一般醫學保健", CourseTeacher: "陳慧玲", CreditPoint: "2", AllYear: "H", Node: "W8,W9", ThreeNode: "三89", ClassRoomNo: "普101" }, retrievedAt);
+    expect(result.offering).toMatchObject({ sourceSchedule: "三89", hasUnrecognizedSchedule: false, meetings: [{ weekday: "W", period: "8", location: "普101" }, { weekday: "W", period: "9", location: "普101" }] });
   });
   it("maps the documented public API fields and preserves schedule locations", () => {
     const result = mapNtustCourse(

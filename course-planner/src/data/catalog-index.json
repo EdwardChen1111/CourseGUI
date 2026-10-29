@@ -1,11 +1,11 @@
 {
-  "retrievedAt": "2026-09-15T08:26:55.629Z",
+  "retrievedAt": "2026-10-28T04:49:10.239Z",
   "semesters": [
     {
       "semester": "1151",
       "label": "1151（2026 Fall）",
       "file": "1151.json",
-      "count": 4310
+      "count": 4303
     },
     {
       "semester": "114H",

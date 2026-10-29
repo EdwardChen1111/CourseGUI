@@ -14,6 +14,9 @@
 - 候選課表儲存在使用者自己的瀏覽器，可隨時清除；不會傳送到伺服器或校務系統。
 - 在載入時驗證課程快照，檢查資料格式、來源、學期一致性與課號唯一性。
 - 提供主系、雙主修與輔系共用的 requirement set schema 與修課進度計算核心。
+- 每學期可建立多份課表、移除與復原、匯入／匯出備份、下載 CSV 及列印；重新整理保留所選學期與方案。
+- 獨立記錄已通過、修讀中及未通過的課程；同科目重修只計一次。可以在畫面建立附官方來源的個人規則草稿，或匯入規則 JSON，檢視主系／雙主修／輔系的缺修項目。
+- 尚未提供經核對的各系各年度正式規則庫；個人草稿不代表校方認定。
 
 ## 技術選型
 
@@ -39,6 +42,8 @@ npm run dev
 npm run test
 npm run lint
 npm run build
+npm run validate:data
+npm run test:e2e
 ```
 
 `npm run build` 會產生 `out/` 靜態網站。專案不使用需要伺服器執行的 Next.js API route，因此可部署至 GitHub Pages。
@@ -53,14 +58,16 @@ npm run build
 | 雙主修 | [雙主修應修科目表](https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/T-DOUBLE.pdf) | 將各年度正式規則轉為版本化 JSON。 |
 | 輔系 | [輔系應修科目表](https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/T-MINOR.pdf) | 將各年度正式規則轉為版本化 JSON。 |
 
-不會保存學生 SSO 密碼、成績或正式選課紀錄。所有畢業規則都需保留來源網址、來源名稱、適用年度、版本、擷取時間與審核紀錄；詳見[修課規則匯入與審核流程](docs/REQUIREMENT_REVIEW.md)。
+不收集 SSO 密碼或自動讀取校務資料。使用者手動輸入的修課結果、課表及個人規則只保存於自己的瀏覽器，需自行下載備份。所有規則保留來源網址、來源名稱、適用年度、版本、擷取時間與審核狀態；詳見[修課規則匯入與審核流程](docs/REQUIREMENT_REVIEW.md)。
 
 ## 部署至 GitHub Pages
 
 1. 將 repository 的 GitHub Pages source 設為 **GitHub Actions**。
 2. 推送至 `main` 分支。
 3. 儲存庫根目錄 `.github/workflows/ci.yml` 會執行資料驗證、測試、lint 與 production build。
-4. 根目錄 `.github/workflows/deploy-pages.yml` 會部署 `course-planner/out/`。
+4. 根目錄 `.github/workflows/deploy-pages.yml` 先更新官方最新學期，再執行資料、單元、瀏覽器測試及建置，最後部署 `course-planner/out/`。同步或檢查失敗時保留上一次已發布網站。
+
+部署流程也排程於每日臺灣時間 06:20 執行（GitHub 排程可能延遲）。更新產物不自動提交回 Git，因此線上最新學期的時間與筆數可能比儲存庫快照新；歷史學期需另行同步。網站顯示各學期實際擷取時間，超過七日會提醒資料可能過期。
 
 部署工作流程會在 GitHub Actions 環境中自動設定 Next.js 的 repository base path；本機開發不會加入此前綴。
 
@@ -71,10 +78,11 @@ npm run build
 目前 MVP 的已交付功能、資料邊界與待人工審核項目見 [docs/MVP_SCOPE.md](docs/MVP_SCOPE.md)。
 ## 課程資料同步
 
-網站按學期載入已提交的完整靜態快照，不會在使用者瀏覽時向校方 API 發出請求。完整查詢使用下列同步流程；沒有 `--write` 時只驗證，不寫入。`--resume` 接續已完成的快照，若要重新更新人數／分類請勿使用 resume。
+網站按學期載入靜態快照，不會在使用者瀏覽時向校方 API 發出請求。完整查詢使用下列同步流程；沒有 `--write` 時只驗證，不寫入。`--resume` 接續已完成的快照，若要重新更新人數／分類請勿使用 resume。局部更新會保留其他學期索引。
 
 ```bash
 npm run sync:catalog -- --semesters=1151
+npm run sync:catalog -- --latest --write
 npm run sync:catalog -- --write
 npm run sync:catalog -- --write --resume
 npm run sync:catalog -- --write --index-only --audit-unavailable --require-complete

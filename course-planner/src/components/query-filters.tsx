@@ -34,7 +34,7 @@ export function QueryFilters({ filters, onChange, catalog }: Props) {
           {categoryOptions.map(([code, label]) => <option key={code} value={code}>{label}</option>)}
         </select></label>
         <label className="text-sm text-slate-700">通識向度<select aria-label="通識向度" className={inputClass} value={filters.dimension ?? ""} onChange={(event) => update({ dimension: event.target.value, category: event.target.value ? "general" : filters.category })}>
-          <option value="">所有向度</option>{catalog.dimensions.map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}
+          <option value="">所有向度</option>{catalog.dimensions.filter((item) => item.code !== "0").map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}
         </select></label>
       </div>
       <fieldset className="mt-4"><legend className="text-sm font-semibold">上課校區（可複選）</legend><div className="mt-2 flex flex-wrap gap-4">
@@ -52,7 +52,7 @@ export function QueryFilters({ filters, onChange, catalog }: Props) {
         <p className="mt-2 text-xs text-slate-600">未選節次時不限時間；選取後列出至少一節符合的課程。勾選「僅列出勾選節次」則整門課所有節次都必須在選取範圍內。</p>
         <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
           <button type="button" className="text-sky-700 underline" onClick={() => update({ slots: WEEKDAYS.flatMap((day) => PERIODS.map((period) => `${day}${period}`)) })}>全選節次</button>
-          <button type="button" className="text-sky-700 underline" onClick={() => update({ slots: [] })}>清除節次</button>
+          <button type="button" className="text-sky-700 underline" onClick={() => update({ slots: [], onlyListedSlots: false })}>清除節次</button>
           <label className="flex items-center gap-2"><input type="checkbox" checked={filters.onlyListedSlots ?? false} onChange={(event) => update({ onlyListedSlots: event.target.checked })} />僅列出勾選節次</label>
         </div>
         <div className="mt-3 overflow-x-auto"><table className="w-full min-w-[350px] text-center text-xs"><caption className="sr-only">每週可選上課節次</caption>

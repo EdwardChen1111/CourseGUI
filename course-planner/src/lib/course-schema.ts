@@ -21,6 +21,10 @@ export const courseOfferingSchema = z.object({
   dimension: z.string().optional(),
   facets: z.array(z.string()).optional(),
   hasUnrecognizedSchedule: z.boolean().optional(),
+  sourceSchedule: z.string().optional(),
+  scheduleVerifiedAt: z.iso.datetime().optional(),
+  sourceLocation: z.string().optional(),
+  capacity: z.object({ preselection: z.number().nonnegative().optional(), addDrop: z.number().nonnegative().optional() }).optional(),
 });
 
 export const courseSnapshotSchema = z.object({

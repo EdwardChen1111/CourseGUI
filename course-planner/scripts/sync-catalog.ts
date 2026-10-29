@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { courseSnapshotSchema } from "../src/lib/course-schema";
 import { combineNtustCourseOfferings, mapNtustCourse, NTUST_COURSE_API_URL, type NtustCourseApiRecord } from "../src/lib/ntust-course-api";
 import { campusOptions, teachingOptions, type QueryCatalog } from "../src/lib/query-options";
+import { mergeCatalog } from "../src/lib/catalog-merge";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const base = NTUST_COURSE_API_URL.replace(/courses$/, "");
@@ -13,6 +14,7 @@ const resume = process.argv.includes("--resume");
 const indexOnly = process.argv.includes("--index-only");
 const requireComplete = process.argv.includes("--require-complete");
 const auditUnavailable = process.argv.includes("--audit-unavailable");
+const latestOnly = process.argv.includes("--latest");
 const retrievedAt = new Date().toISOString();
 let requestCount = 0;
 const historicalSemesters = new Set<string>();
@@ -74,7 +76,7 @@ async function main() {
     retrievedAt, semesters: [], unavailableSemesters: [], colleges: colleges.map((c) => ({ code: c.CollegeNo, name: c.CollegeName })),
     departments: departmentLists.flat(), dimensions: dimensions.map((d) => ({ code: d.DimNo, name: d.DimContent })),
   };
-  const selected = requested ? semesters.filter((s) => requested.includes(s.Semester.trim())) : semesters;
+  const selected = requested ? semesters.filter((s) => requested.includes(s.Semester.trim())) : latestOnly ? semesters.slice(0, 1) : semesters;
   if (requested && selected.length !== requested.length) throw new Error("Unknown semester requested");
   const outputDirectory = path.join(root, "public", "courses");
   let priorUnavailable: NonNullable<QueryCatalog["unavailableSemesters"]> = [];
@@ -147,6 +149,9 @@ async function main() {
         const activePrefixes = prefixes.filter((prefix) => records.some((record) => record.CourseNo?.startsWith(prefix)));
         matching = (await pool(activePrefixes, (prefix) => query(semester, { ...overrides, CourseNo: prefix }))).flat();
       }
+      const existingCodes = new Set(records.map((record) => record.CourseNo?.trim()));
+      const additionalCodes = new Set(matching.filter((record) => !existingCodes.has(record.CourseNo?.trim())).map((record) => record.CourseNo?.trim()));
+      records.push(...matching.filter((record) => additionalCodes.has(record.CourseNo?.trim())));
       return [facet, new Set(matching.map((record) => record.CourseNo?.trim()))] as const;
     });
     const mapped = combineNtustCourseOfferings(records.map((record) => mapNtustCourse(record, retrievedAt)));
@@ -161,6 +166,11 @@ async function main() {
   }
   if (write) {
     if (!catalog.semesters.length) throw new Error("Refusing to publish a catalog without available semester snapshots");
+    // Refreshing one semester must not delete all other semesters from the index.
+    if (requested || latestOnly) {
+      const previous = JSON.parse(await readFile(path.join(root, "src/data/catalog-index.json"), "utf8")) as QueryCatalog;
+      Object.assign(catalog, mergeCatalog(previous, catalog, semesters.map((entry) => entry.Semester.trim())));
+    }
     await writeFile(path.join(root, "src", "data", "catalog-index.json"), JSON.stringify(catalog, null, 2) + "\n");
   }
   console.log(`${catalog.semesters.length} available semesters; ${catalog.unavailableSemesters!.length} source-unavailable; ${requestCount} requests; ${write ? "catalog written" : "dry run only"}`);
