@@ -5,6 +5,14 @@ export const academicSchema = z.object({
   profile: z.object({ entryYear: z.string().regex(/^\d{0,3}$/), department: z.string().max(100), degree: z.enum(["undergraduate", "master"]) }),
   records: z.array(z.object({ id: z.string().min(1), courseNo: z.string().trim().min(1).max(40), title: z.string().trim().min(1).max(200), credits: z.number().min(0).max(30), semester: z.string().max(10), status: z.enum(["passed", "taking", "failed"]) })).max(2000),
   requirements: z.array(requirementSetSchema).max(20),
+  trackedSheets: z.array(z.string().min(1).max(80)).max(30).optional(),
+  recognitions: z.array(z.object({
+    sheetId: z.string().min(1).max(80),
+    fromCode: z.string().trim().min(1).max(40),
+    target: z.string().min(1).max(200),
+    credits: z.number().min(0).max(30),
+    evidence: z.string().trim().min(1).max(240),
+  })).max(2000).optional(),
 });
 export type AcademicData = z.infer<typeof academicSchema>;
 export const ACADEMIC_KEY = "ntust:academic:v1";

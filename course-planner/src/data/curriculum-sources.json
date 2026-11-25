@@ -1,0 +1,566 @@
+[
+  {
+    "year": "101",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/101ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "102",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/102ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "103",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/103ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "104",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/104ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "105",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/105ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "106",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/1061ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "107",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/171041070.pdf",
+    "departments": []
+  },
+  {
+    "year": "108",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/169094846.pdf",
+    "departments": []
+  },
+  {
+    "year": "109",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/295726743.pdf",
+    "departments": []
+  },
+  {
+    "year": "110",
+    "category": "minor",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/110ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "111",
+    "category": "minor",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/111ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "112",
+    "category": "minor",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/112ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "113",
+    "category": "minor",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/113ass-sub.pdf",
+    "departments": []
+  },
+  {
+    "year": "114",
+    "category": "minor",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/114ass-sub.pdf",
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 7,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 19,
+        "closed": false
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 20,
+        "closed": false
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 21,
+        "closed": false
+      }
+    ]
+  },
+  {
+    "year": "115",
+    "category": "minor",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/115ass-sub.pdf",
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 19,
+        "closed": false
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 21,
+        "closed": false
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 22,
+        "closed": false
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 23,
+        "closed": false
+      }
+    ]
+  },
+  {
+    "year": "101",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/101double.pdf",
+    "departments": []
+  },
+  {
+    "year": "102",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/102double.pdf",
+    "departments": []
+  },
+  {
+    "year": "103",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/103double.pdf",
+    "departments": []
+  },
+  {
+    "year": "104",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/104double.pdf",
+    "departments": []
+  },
+  {
+    "year": "105",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/0728-105double.pdf",
+    "departments": []
+  },
+  {
+    "year": "106",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/1061double-1.pdf",
+    "departments": []
+  },
+  {
+    "year": "107",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/383729329.pdf",
+    "departments": []
+  },
+  {
+    "year": "108",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/608017995.pdf",
+    "departments": []
+  },
+  {
+    "year": "109",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/815083744.pdf",
+    "departments": []
+  },
+  {
+    "year": "110",
+    "category": "double-major",
+    "url": "https://demoadmin.ntust.edu.tw/var/file/48/1048/img/2790/110double.pdf",
+    "departments": []
+  },
+  {
+    "year": "111",
+    "category": "double-major",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/111double.pdf",
+    "departments": []
+  },
+  {
+    "year": "112",
+    "category": "double-major",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/112double.pdf",
+    "departments": []
+  },
+  {
+    "year": "113",
+    "category": "double-major",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/113double.pdf",
+    "departments": []
+  },
+  {
+    "year": "114",
+    "category": "double-major",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/114double.pdf",
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 18,
+        "closed": true
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 19,
+        "closed": true
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 20,
+        "closed": true
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 21,
+        "closed": true
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 22,
+        "closed": true
+      }
+    ]
+  },
+  {
+    "year": "115",
+    "category": "double-major",
+    "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/115double.pdf",
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 19,
+        "closed": true
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 20,
+        "closed": true
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 21,
+        "closed": true
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 22,
+        "closed": true
+      }
+    ]
+  }
+]

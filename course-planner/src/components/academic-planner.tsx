@@ -4,6 +4,7 @@ import { ACADEMIC_KEY, academicProgress, academicSchema, earnedCourses, emptyAca
 import { requirementSetSchema } from "@/lib/requirements";
 import { downloadFile } from "@/lib/planner-workspace";
 import { RuleBuilder } from "./rule-builder";
+import { CurriculumLibrary } from "./curriculum-library";
 
 export function AcademicPlanner() {
   const [data, setData] = useState<AcademicData>(emptyAcademic);
@@ -43,7 +44,7 @@ export function AcademicPlanner() {
         setMessage(`已匯入 ${rule.departmentName} ${rule.entryYear} 入學年度規則。`);
       } else {
         const imported = academicSchema.parse(value);
-        if (data.records.length || data.requirements.length) throw new Error("為避免覆寫現有紀錄，完整備份請匯入尚未建立修課資料的瀏覽器。");
+        if (data.records.length || data.requirements.length || data.trackedSheets?.length || data.recognitions?.length) throw new Error("為避免覆寫現有紀錄，完整備份請匯入尚未建立修課資料的瀏覽器。");
         save(imported); setMessage("已還原修課資料。");
       }
     } catch (error) { setMessage(error instanceof Error ? error.message : "檔案格式無法辨識。"); }
@@ -69,7 +70,8 @@ export function AcademicPlanner() {
       <div className="selected-list">{data.records.map((item) => <div className="selected-course" key={item.id}><div><strong>{item.title}</strong><small>{item.courseNo} · {item.credits} 學分 · {item.semester}</small><small>{{ passed: "已通過", taking: "修讀中", failed: "未通過" }[item.status]}</small></div><button aria-label={`刪除紀錄 ${item.courseNo}`} onClick={() => save({ ...data, records: data.records.filter((row) => row.id !== item.id) })}>×</button></div>)}</div>
       <div className="plan-actions"><button disabled={!ready} onClick={() => downloadFile("修課資料備份.json", JSON.stringify(data, null, 2))}>備份修課資料</button><button disabled={!ready} onClick={() => backupInput.current?.click()}>還原修課資料</button></div><input className="sr-only" type="file" ref={backupInput} aria-label="修課資料備份檔案" accept=".json" onChange={(event) => void importFile(event.target.files?.[0], "backup")} />
     </section><section className="academic-card"><div className="result-heading"><h3>主系・雙主修・輔系</h3><button disabled={!ready} onClick={() => ruleInput.current?.click()}>匯入規則</button></div><input className="sr-only" type="file" ref={ruleInput} aria-label="修課規則檔案" accept=".json" onChange={(event) => void importFile(event.target.files?.[0], "rule")} />
-      {data.requirements.length === 0 && !buildingRule && <div className="empty-state"><h4>尚未匯入適用規則</h4><p>目前沒有經核對的各系完整規則庫。你可以依官方科目表建立個人草稿，或匯入附來源與入學年度的規則檔。</p></div>}
+      <CurriculumLibrary data={data} ready={ready} save={save} />
+      {data.requirements.length === 0 && !buildingRule && !data.trackedSheets?.length && <div className="empty-state"><h4>尚未匯入適用規則</h4><p>也可以依其他科目表建立個人草稿，或匯入附來源的規則檔。</p></div>}
       <p className="small muted">目前逐群組檢查列出的課號；群組間學分重複採計、抵免及替代課程，請依校方規定另行核對。</p>
       {!buildingRule && <button disabled={!ready || data.requirements.length >= 20} onClick={() => setBuildingRule(true)}>建立個人規則草稿</button>}
       {buildingRule && <RuleBuilder profile={data.profile} onCancel={() => setBuildingRule(false)} onSave={(rule) => { save({ ...data, requirements: [...data.requirements, rule] }); setBuildingRule(false); setMessage("已建立規則草稿，請依官方公告核對。"); }} />}

@@ -1,0 +1,38 @@
+import { expect, test } from "@playwright/test";
+
+test("browse official year and page, track a sheet, record a substitution and reload its backup", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("");
+  const tab = page.getByRole("button", { name: "修課紀錄與規則" });
+  await tab.click();
+  const library = page.getByRole("region", { name: "校方科目表" });
+  await library.getByLabel("科目表年度").selectOption("114");
+  await library.getByLabel("查閱系所").selectOption("電子工程系");
+  await expect(library.getByRole("link").first()).toHaveAttribute("href", /114ass-sub.pdf#page=6$/);
+  await library.getByLabel("查閱系所").selectOption("材料科學與工程系");
+  await library.getByRole("button", { name: "追蹤這份科目表" }).click();
+  const panel = page.getByRole("region", { name: "修課紀錄與規則" });
+  await panel.getByLabel("課程代碼", { exact: true }).fill("TX4611301");
+  await panel.getByLabel("課程名稱", { exact: true }).fill("材料科學(一)");
+  await panel.getByRole("button", { name: "新增紀錄", exact: true }).click();
+  const tracked = library.locator(".tracked-sheet");
+  await expect(tracked).toContainText("1 / 7 科");
+  await tracked.locator(".recognition summary").click();
+  await tracked.getByLabel("已通過課號").selectOption("TX46113");
+  await tracked.getByLabel("核准抵免科目").selectOption("材料科學(二)");
+  await tracked.getByLabel("核定依據").fill("操作測試用認定");
+  await tracked.getByRole("button", { name: "儲存認定" }).click();
+  const download = page.waitForEvent("download");
+  await panel.getByRole("button", { name: "備份修課資料" }).click();
+  const backup = await download;
+  await page.evaluate(() => localStorage.removeItem("ntust:academic:v1"));
+  await page.reload();
+  await tab.click();
+  await expect(panel.getByRole("button", { name: "還原修課資料" })).toBeEnabled();
+  await panel.getByLabel("修課資料備份檔案").setInputFiles((await backup.path())!);
+  await expect(tracked).toContainText("1 / 7 科");
+  await tracked.locator(".sheet-group summary").first().click();
+  await expect(tracked.getByText(/已通過 · 材料科學\(二\)/)).toBeVisible();
+  await expect(tracked.getByText(/待修 · 材料科學\(一\)/)).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(392);
+});
