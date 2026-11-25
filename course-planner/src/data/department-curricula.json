@@ -1,0 +1,5456 @@
+[
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "建築系",
+    "shortName": "建築系",
+    "code": "AD",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 23,
+        "subjects": [
+          {"title": "中國建築史", "credits": 3, "codes": ["AD41083"]},
+          {"title": "西洋建築史", "credits": 3, "codes": ["AD23013"]},
+          {"title": "近代建築史", "credits": 3, "codes": ["AD31063"]},
+          {"title": "建築材料", "credits": 3, "codes": ["AD28043"]},
+          {"title": "建築計畫", "credits": 3, "codes": ["AD25013"]},
+          {"title": "建築設計(一)", "credits": 3, "codes": ["AD11013","AD50017"]},
+          {"title": "建築設計(七)", "credits": 6, "codes": ["AD40013"]},
+          {"title": "建築設計(二)", "credits": 3, "codes": ["AD11023"]},
+          {"title": "建築設計(八)", "credits": 6, "codes": ["AD40023"]},
+          {"title": "建築設計(三)", "credits": 5, "codes": ["AD20013","AD21113"]},
+          {"title": "建築設計(五)", "credits": 6, "codes": ["AD30013"]},
+          {"title": "建築設計(六)", "credits": 6, "codes": ["AD30023"]},
+          {"title": "建築設計(四)", "credits": 5, "codes": ["AD21123"]},
+          {"title": "建築構造", "credits": 3, "codes": ["AD39033"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["AD14043"]},
+          {"title": "設計素描(一)", "credits": 1, "codes": ["AD12053"]},
+          {"title": "設計素描(二)", "credits": 1, "codes": ["AD12063"]},
+          {"title": "結構行為(一)", "credits": 3, "codes": ["AD24013"]},
+          {"title": "結構行為(二)", "credits": 3, "codes": ["AD24023"]},
+          {"title": "敷地計畫", "credits": 3, "codes": ["AD32033"]},
+          {"title": "營建管理與工程倫理", "credits": 3, "codes": ["AD42063"]},
+          {"title": "環境控制系統(一)", "credits": 3, "codes": ["AD26023"]},
+          {"title": "環境控制系統(二)", "credits": 3, "codes": ["AD32053"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "建築暑期校外實習", "credits": 3, "codes": ["AD48993","AD48997"]},
+          {"title": "實務專題", "credits": 2, "codes": ["AD49090","AD49093"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0AD00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "企業管理系",
+    "shortName": "企管系",
+    "code": "BA",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 23,
+        "subjects": [
+          {"title": "人力資源管理", "credits": 3, "codes": ["BA32093","BA32097","BA66057"]},
+          {"title": "人工智慧應用", "credits": 3, "codes": ["BA49183","BA49187"]},
+          {"title": "人工智慧應用實作", "credits": 3, "codes": ["BA49193"]},
+          {"title": "成本會計", "credits": 3, "codes": ["BA22083","BA22087"]},
+          {"title": "行銷資料科學", "credits": 3, "codes": ["BA47173","BA47177","BA61507"]},
+          {"title": "行銷管理", "credits": 3, "codes": ["BA22013","BA52007"]},
+          {"title": "供應鏈管理", "credits": 3, "codes": ["BA36163","BA64087"]},
+          {"title": "科技創新創業", "credits": 3, "codes": ["BA42073","BA42077"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007"]},
+          {"title": "商事法", "credits": 3, "codes": ["BA44083","BA44087"]},
+          {"title": "商業品牌故事力:英語口說訓練", "credits": 2, "codes": ["BA21123","BA21127"]},
+          {"title": "商業品牌故事力:英語實務寫作", "credits": 2, "codes": ["BA21113","BA21117"]},
+          {"title": "統計實務分析", "credits": 3, "codes": ["BA47073","BA47077"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["BA305A0"]},
+          {"title": "策略管理", "credits": 3, "codes": ["BA44103","BA44107","BA55017"]},
+          {"title": "微積分", "credits": 3, "codes": ["BA16010","BA16013","BA16017","EC16010"]},
+          {"title": "經濟學(下)", "credits": 3, "codes": ["BA130B0"]},
+          {"title": "經濟學(上)", "credits": 3, "codes": ["BA130A0"]},
+          {"title": "管理會計", "credits": 3, "codes": ["BA23003","BA23007","BA53027"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": ["BA47113","BA47117"]},
+          {"title": "領導學", "credits": 3, "codes": ["BA31113","BA31117"]},
+          {"title": "數位商業與行銷", "credits": 3, "codes": ["BA15133","BA50057"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "專業必修4學分（BA0004）",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題與實習（擇一路徑）",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "實務專題(上)", "credits": 2, "codes": ["BA499A0"]},
+                {"title": "實務專題(下)", "credits": 2, "codes": ["BA499B0"]}
+              ],
+              [
+                {"title": "企管校外實習(一)或企管校外實習(二)", "credits": 4, "codes": ["BA12047","BA12057","BA12067","BA12077","BA12087","BA12097","BA12147","BA12157","BA12167"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0BA00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "化學工程系",
+    "shortName": "化工系",
+    "code": "CH",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 23,
+        "subjects": [
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CE30003","CH20003","CH30003","EC30063"]},
+          {"title": "化工概論與工程倫理", "credits": 0, "codes": ["CH10063"]},
+          {"title": "化工熱力學", "credits": 3, "codes": ["CH32033","CH32133"]},
+          {"title": "化學(下)", "credits": 3, "codes": ["CE163B0","CH165B0"]},
+          {"title": "化學(上)", "credits": 3, "codes": ["CE163A0","CH165A0"]},
+          {"title": "反應工程", "credits": 3, "codes": ["CH32063"]},
+          {"title": "有機化學(下)", "credits": 3, "codes": ["CE202B0","CH213B0"]},
+          {"title": "有機化學(上)", "credits": 3, "codes": ["CE202A0","CH213A0"]},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0"]},
+          {"title": "物理化學(下)", "credits": 3, "codes": ["CE201B0","CH215B0"]},
+          {"title": "物理化學(上)", "credits": 3, "codes": ["CE201A0","CH215A0"]},
+          {"title": "初階數學(一)", "credits": 0, "codes": ["CE15073","CE15083"]},
+          {"title": "計算機語言", "credits": 3, "codes": ["CH10043"]},
+          {"title": "單元操作與輸送現象(一)", "credits": 3, "codes": ["CH22053"]},
+          {"title": "單元操作與輸送現象(二)", "credits": 3, "codes": ["CH22063"]},
+          {"title": "單元操作與輸送現象(三)", "credits": 3, "codes": ["CH22073"]},
+          {"title": "程序控制", "credits": 3, "codes": ["CH42033"]},
+          {"title": "程序設計", "credits": 3, "codes": ["CH42053","CH42153"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0"]},
+          {"title": "儀器分析", "credits": 3, "codes": ["CH33083","CH33087"]},
+          {"title": "質能均衡", "credits": 3, "codes": ["CH22013"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 10,
+        "subjects": [
+          {"title": "化學工程實習(一)", "credits": 1, "codes": ["CH48043"]},
+          {"title": "化學工程實習(二)", "credits": 1, "codes": ["CH48053"]},
+          {"title": "化學技術實習(一)", "credits": 1, "codes": ["CH28003"]},
+          {"title": "化學技術實習(二)", "credits": 1, "codes": ["CH28023"]},
+          {"title": "化學技術實習(三)", "credits": 1, "codes": ["CH38033"]},
+          {"title": "化學技術實習(四)", "credits": 1, "codes": ["CH38043"]},
+          {"title": "化學實習(下)", "credits": 1, "codes": ["CE175B0","CH175B0"]},
+          {"title": "化學實習(上)", "credits": 1, "codes": ["CE175A0","CH175A0"]},
+          {"title": "物理實習(下)", "credits": 1, "codes": ["CE173B0","CH173B0","EC173B0"]},
+          {"title": "物理實習(上)", "credits": 1, "codes": ["CE173A0","CH173A0","EC173A0"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "專業必修三選二（CH0003）",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "化工製程暨淨零技術專題討論", "credits": 0, "codes": ["CH49083"]},
+          {"title": "光電半導體前瞻科技專題討論", "credits": 0, "codes": ["CH49133"]},
+          {"title": "生物科技與生醫工程專題討論", "credits": 0, "codes": ["CH49063"]}
+        ]
+      },
+      {
+        "label": "專業必修至少4學分（CH0002）",
+        "mode": "credits",
+        "minimum": 4,
+        "subjects": [
+          {
+            "title": "化工暑期校外實習(二)",
+            "credits": 3,
+            "codes": ["CH38073"],
+            "actual": true
+          },
+          {
+            "title": "實務專題(一)",
+            "credits": 2,
+            "codes": ["CE21163", "CH49103"],
+            "actual": true
+          },
+          {
+            "title": "化工暑期校外實習",
+            "credits": 3,
+            "codes": ["CH38053", "CH38057"],
+            "actual": true
+          },
+          {
+            "title": "實務專題(二)",
+            "credits": 2,
+            "codes": ["CE21173", "CH49113"],
+            "actual": true
+          },
+          {
+            "title": "化工校外實習(一)",
+            "credits": 9,
+            "codes": ["CH48073", "CH48077"],
+            "actual": true
+          },
+          {
+            "title": "化工校外實習(二)",
+            "credits": 9,
+            "codes": ["CH48083", "CH48087"],
+            "actual": true
+          },
+          {
+            "title": "化工校外實習(三)",
+            "credits": 3,
+            "codes": ["CH48093", "CH48097"],
+            "actual": true
+          },
+          {
+            "title": "化工校外實習(四)",
+            "credits": 3,
+            "codes": ["CH48103"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0CH00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "資訊工程系",
+    "shortName": "資工系",
+    "code": "CS",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 20,
+        "subjects": [
+          {"title": "工程數學", "credits": 3, "codes": ["CS20013"]},
+          {"title": "作業系統", "credits": 3, "codes": ["CS30093"]},
+          {"title": "物件導向程式設計", "credits": 3, "codes": ["CS30053"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["CS20063"]},
+          {"title": "計算機程式設計", "credits": 3, "codes": ["CS10033"]},
+          {"title": "計算機網路概論", "credits": 3, "codes": ["CS30043"]},
+          {"title": "軟體工程", "credits": 3, "codes": ["CS30253"]},
+          {"title": "程式語言", "credits": 3, "codes": ["CE20003","CS40013"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","CS161B0","EC161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","CS161A0","EC161A0"]},
+          {"title": "資料庫系統", "credits": 3, "codes": ["CS30103","CS30107"]},
+          {"title": "資料結構", "credits": 3, "codes": ["CS20023"]},
+          {"title": "資訊工程導論", "credits": 3, "codes": ["CS10053"]},
+          {"title": "演算法", "credits": 3, "codes": ["CS30013"]},
+          {"title": "數位系統設計", "credits": 3, "codes": ["CS20223"]},
+          {"title": "數位電子導論", "credits": 3, "codes": ["CS10113"]},
+          {"title": "編譯器設計", "credits": 3, "codes": ["CS30203"]},
+          {"title": "線性代數", "credits": 3, "codes": ["CS10063"]},
+          {"title": "機率與統計", "credits": 3, "codes": ["CS20083"]},
+          {"title": "離散數學", "credits": 3, "codes": ["CS30033"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "物件導向程式設計實習", "credits": 1, "codes": ["CS10103"]},
+          {"title": "計算機程式設計實習", "credits": 1, "codes": ["CS10043"]},
+          {"title": "資工實務專題(下)", "credits": 2, "codes": ["CS490B0"]},
+          {"title": "資工實務專題(上)", "credits": 2, "codes": ["CS490A0"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "專業必修三選一（CS0202）",
+        "mode": "credits",
+        "minimum": 2,
+        "subjects": [
+          {
+            "title": "台灣電資產業論壇與工程倫理",
+            "credits": 2,
+            "codes": ["ECG0033"],
+            "actual": true
+          },
+          {
+            "title": "電資概論與工程倫理",
+            "credits": 2,
+            "codes": ["EC10083"],
+            "actual": true
+          },
+          {
+            "title": "電資工程倫理與法律實務",
+            "credits": 2,
+            "codes": ["EC30103", "EC30107"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0CS00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "營建工程系",
+    "shortName": "營建系",
+    "code": "CT",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 22,
+        "subjects": [
+          {"title": "土壤力學", "credits": 3, "codes": ["CT34103"]},
+          {"title": "工程材料", "credits": 3, "codes": ["CT33093"]},
+          {"title": "工程規劃與控制", "credits": 3, "codes": ["CT43013"]},
+          {"title": "工程管理", "credits": 3, "codes": ["CT43083"]},
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CE30003","CT20013","EC30063"]},
+          {"title": "工程靜力學", "credits": 3, "codes": ["CT10023"]},
+          {"title": "化學", "credits": 3, "codes": []},
+          {"title": "材料力學", "credits": 3, "codes": ["CT10033","CT20033"]},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0"]},
+          {"title": "初階數學(一)", "credits": 0, "codes": ["CE15073","CE15083"]},
+          {"title": "基礎工程", "credits": 3, "codes": ["CT34033"]},
+          {"title": "混凝土品質控制", "credits": 3, "codes": ["CT36083"]},
+          {"title": "結構學", "credits": 3, "codes": ["CT32003"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0"]},
+          {"title": "鋼筋混凝土設計", "credits": 3, "codes": ["CT33043"]},
+          {"title": "鋼結構設計", "credits": 3, "codes": ["CT33073"]},
+          {"title": "營建工程初階設計與實作", "credits": 3, "codes": ["CT11023"]},
+          {"title": "營建工程概念設計", "credits": 3, "codes": ["CT11013"]},
+          {"title": "營建工程整合設計實務", "credits": 3, "codes": ["CT44093"]},
+          {"title": "營建工程職涯發展與工程倫理", "credits": 0, "codes": ["CT20053"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "土壤力學試驗", "credits": 1, "codes": ["CT37073"]},
+          {"title": "化學實習", "credits": 1, "codes": ["CE17050","CT17053"]},
+          {"title": "物理實習(下)", "credits": 1, "codes": ["CE173B0","CT173B0","EC173B0"]},
+          {"title": "物理實習(上)", "credits": 1, "codes": ["CE173A0","CT173A0","EC173A0"]},
+          {"title": "混凝土試驗", "credits": 1, "codes": ["CT37013"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "FORTRAN或C/VB至少選一科（CT0202）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "C/VB程式與應用",
+            "credits": 3,
+            "codes": ["CT34073", "CT34077"],
+            "actual": true
+          },
+          {
+            "title": "Fortran程式與應用",
+            "credits": 3,
+            "codes": ["CT34063"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0CT00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "設計系工業設計組",
+    "shortName": "設計系工業設計組",
+    "code": "DTA",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 25,
+        "subjects": [
+          {"title": "人因工程", "credits": 3, "codes": ["DT32033"]},
+          {"title": "工業專題設計(下)", "credits": 4, "codes": ["DT491B0"]},
+          {"title": "工業專題設計(上)", "credits": 4, "codes": ["DT491A0"]},
+          {"title": "色彩材質與表面處理", "credits": 3, "codes": ["DT26353"]},
+          {"title": "材料與加工", "credits": 3, "codes": ["DT22043"]},
+          {"title": "基本設計(一)", "credits": 3, "codes": ["DT10113"]},
+          {"title": "基本設計(二)", "credits": 3, "codes": ["DT10123"]},
+          {"title": "基礎產品設計(一)", "credits": 3, "codes": ["DT22103"]},
+          {"title": "基礎產品設計(二)", "credits": 3, "codes": ["DT22113"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "產品設計(一)", "credits": 3, "codes": ["DT32093"]},
+          {"title": "產品設計(二)", "credits": 3, "codes": ["DT32103"]},
+          {"title": "設計方法", "credits": 3, "codes": ["DT22073"]},
+          {"title": "設計史", "credits": 3, "codes": ["DT10073","DTG0013"]},
+          {"title": "設計表現技法(一)", "credits": 2, "codes": ["DT22053"]},
+          {"title": "設計表現技法(二)", "credits": 2, "codes": ["DT22063"]},
+          {"title": "設計素描(一)", "credits": 1, "codes": ["DT10033"]},
+          {"title": "設計素描(二)", "credits": 1, "codes": ["DT10043"]},
+          {"title": "設計概論與職業倫理", "credits": 3, "codes": ["DT10163"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "電腦輔助設計(三)", "credits": 3, "codes": ["DT32083"]},
+          {"title": "製造程序", "credits": 3, "codes": ["DT12033"]},
+          {"title": "模型製作", "credits": 2, "codes": ["DT12023"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0DTA0。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "設計系商業設計組",
+    "shortName": "設計系商業設計組",
+    "code": "DTB",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 26,
+        "subjects": [
+          {"title": "文字造形", "credits": 3, "codes": ["DT26033","DT26037"]},
+          {"title": "包裝設計(一)", "credits": 3, "codes": ["DT35053"]},
+          {"title": "包裝設計(二)", "credits": 3, "codes": ["DT35063"]},
+          {"title": "立體造形", "credits": 2, "codes": ["DT25083"]},
+          {"title": "印刷與設計", "credits": 3, "codes": ["DT25053"]},
+          {"title": "色彩計畫", "credits": 3, "codes": ["DT16063"]},
+          {"title": "品牌行銷", "credits": 3, "codes": ["DT26273"]},
+          {"title": "商業專題設計(下)", "credits": 4, "codes": ["DT493B0"]},
+          {"title": "商業專題設計(上)", "credits": 4, "codes": ["DT493A0"]},
+          {"title": "基本設計(一)", "credits": 3, "codes": ["DT10113"]},
+          {"title": "基本設計(二)", "credits": 3, "codes": ["DT10123"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "基礎攝影", "credits": 2, "codes": ["DT15023","DT15027"]},
+          {"title": "設計史", "credits": 3, "codes": ["DT10073","DTG0013"]},
+          {"title": "設計素描(一)", "credits": 1, "codes": ["DT10033"]},
+          {"title": "設計素描(二)", "credits": 1, "codes": ["DT10043"]},
+          {"title": "設計概論與職業倫理", "credits": 3, "codes": ["DT10163"]},
+          {"title": "設計繪畫", "credits": 2, "codes": ["DT25073"]},
+          {"title": "視覺傳達設計(一)", "credits": 3, "codes": ["DT25013"]},
+          {"title": "視覺傳達設計(二)", "credits": 3, "codes": ["DT25023"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "電腦輔助設計(三)", "credits": 3, "codes": ["DT32083"]},
+          {"title": "數位媒體設計(一)", "credits": 3, "codes": ["DT36393"]},
+          {"title": "數位媒體設計(二)", "credits": 3, "codes": ["DT36403"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0DTB0。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "電機工程系",
+    "shortName": "電機系",
+    "code": "EE",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 16,
+        "subjects": [
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0"]},
+          {"title": "計算機程式與應用", "credits": 3, "codes": ["CE20023","EC10113","EE34053"]},
+          {"title": "微分方程", "credits": 3, "codes": ["EE20113"]},
+          {"title": "微算機概論", "credits": 3, "codes": ["EE34023"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0","EE161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0","EE161A0"]},
+          {"title": "電子電路", "credits": 3, "codes": ["EE22183"]},
+          {"title": "電子學", "credits": 3, "codes": ["EE22173"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["EE22013"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["EE22023"]},
+          {"title": "電磁學", "credits": 3, "codes": ["EE32013"]},
+          {"title": "電機機械", "credits": 3, "codes": ["EE32043"]},
+          {"title": "數位邏輯", "credits": 3, "codes": ["EE34033"]},
+          {"title": "線性代數", "credits": 3, "codes": ["EE40053"]},
+          {"title": "機率", "credits": 3, "codes": ["EE20223"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 7,
+        "subjects": [
+          {"title": "計算機程式與應用實習", "credits": 1, "codes": ["EC10123","EE14083"]},
+          {"title": "微算機概論實習", "credits": 1, "codes": ["EE38023"]},
+          {"title": "電子電路實習", "credits": 1, "codes": ["EE37053"]},
+          {"title": "電子學實習", "credits": 1, "codes": ["EE27073"]},
+          {"title": "電機實務專題(下)", "credits": 2, "codes": ["EE490B0"]},
+          {"title": "電機實務專題(上)", "credits": 2, "codes": ["EE490A0","EE490A5"]},
+          {"title": "電機機械實習", "credits": 1, "codes": ["EE37023"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "正課十選四（EE5798）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [
+          {
+            "title": "信號與系統",
+            "credits": 3,
+            "codes": ["EE36033"],
+            "actual": true
+          },
+          {
+            "title": "計算機組織",
+            "credits": 3,
+            "codes": ["EE30053", "EE54017"],
+            "actual": true
+          },
+          {
+            "title": "控制系統",
+            "credits": 3,
+            "codes": ["EE36013"],
+            "actual": true
+          },
+          {
+            "title": "超大型積體電路設計導論",
+            "credits": 3,
+            "codes": ["EE34083", "EE34087"],
+            "actual": true
+          },
+          {
+            "title": "資料結構",
+            "credits": 3,
+            "codes": ["EC20023", "EE34073", "EE34077"],
+            "actual": true
+          },
+          {
+            "title": "電力系統",
+            "credits": 3,
+            "codes": ["EE32083"],
+            "actual": true
+          },
+          {
+            "title": "電機控制",
+            "credits": 3,
+            "codes": ["EE42033"],
+            "actual": true
+          },
+          {
+            "title": "電磁波",
+            "credits": 3,
+            "codes": ["EE32063"],
+            "actual": true
+          },
+          {
+            "title": "類比及混合訊號積體電路與系統",
+            "credits": 3,
+            "codes": ["EE34163"],
+            "actual": true
+          },
+          {
+            "title": "通信系統",
+            "credits": 3,
+            "codes": ["EE46003"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "專業必修2學分（EE0020）",
+        "mode": "credits",
+        "minimum": 2,
+        "subjects": [
+          {
+            "title": "台灣電資產業論壇與工程倫理",
+            "credits": 2,
+            "codes": ["ECG0033"],
+            "actual": true
+          },
+          {
+            "title": "電資概論與工程倫理",
+            "credits": 2,
+            "codes": ["EC10083"],
+            "actual": true
+          },
+          {
+            "title": "電資工程倫理與法律實務",
+            "credits": 2,
+            "codes": ["EC30103", "EC30107"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "實習八選三（EE5797）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "電磁波實習",
+            "credits": 1,
+            "codes": ["EE47073", "EE47077"],
+            "actual": true,
+            "pairedWith": [
+              "電磁波"
+            ]
+          },
+          {
+            "title": "超大型積體電路設計實習",
+            "credits": 1,
+            "codes": ["EE34103"],
+            "actual": true,
+            "pairedWith": [
+              "超大型積體電路設計導論",
+              "類比及混合訊號積體電路與系統"
+            ]
+          },
+          {
+            "title": "電力系統實習",
+            "credits": 1,
+            "codes": ["EE47023"],
+            "actual": true,
+            "pairedWith": [
+              "電力系統"
+            ]
+          },
+          {
+            "title": "電機控制實習",
+            "credits": 1,
+            "codes": ["EE47013"],
+            "actual": true,
+            "pairedWith": [
+              "電機控制"
+            ]
+          },
+          {
+            "title": "信號與系統實習",
+            "credits": 1,
+            "codes": ["EE33013", "EE33017"],
+            "actual": true,
+            "pairedWith": [
+              "信號與系統"
+            ]
+          },
+          {
+            "title": "控制系統實習",
+            "credits": 1,
+            "codes": ["EE47053"],
+            "actual": true,
+            "pairedWith": [
+              "控制系統"
+            ]
+          },
+          {
+            "title": "通信系統實習",
+            "credits": 1,
+            "codes": ["EE48063"],
+            "actual": true,
+            "pairedWith": [
+              "通信系統"
+            ]
+          },
+          {
+            "title": "數位系統設計實習",
+            "credits": 1,
+            "codes": ["EE34093"],
+            "actual": true,
+            "pairedWith": [
+              "超大型積體電路設計導論",
+              "類比及混合訊號積體電路與系統"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0EE00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114"
+    ],
+    "category": "major",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 15,
+        "subjects": [
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CE30003","EC30063","ET30013"]},
+          {"title": "工程數學(二)", "credits": 3, "codes": ["ET30023"]},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0","ET163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0","ET163A0"]},
+          {"title": "計算機程式與應用", "credits": 3, "codes": ["CE20023","EC10113","ET34053","ET34057"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0","ET161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0","ET161A0"]},
+          {"title": "電子工程總整課程", "credits": 3, "codes": ["ET49303","ET49307"]},
+          {"title": "電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "電子學(二)", "credits": 3, "codes": ["ET21083"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["ET21043"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "線性系統", "credits": 3, "codes": ["ET31053"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "物理實習(下)", "credits": 1, "codes": ["CE173B0","EC173B0","ET173B0"]},
+          {"title": "物理實習(上)", "credits": 1, "codes": ["CE173A0","EC173A0","ET173A0"]},
+          {"title": "電子學實習(一)", "credits": 1, "codes": ["ET37063"]},
+          {"title": "電子學實習(二)", "credits": 1, "codes": ["ET37073"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "專業必修2學分（ET0010）",
+        "mode": "credits",
+        "minimum": 2,
+        "subjects": [
+          {
+            "title": "台灣電資產業論壇與工程倫理",
+            "credits": 2,
+            "codes": ["ECG0033"],
+            "actual": true
+          },
+          {
+            "title": "電資概論與工程倫理",
+            "credits": 2,
+            "codes": ["EC10083"],
+            "actual": true
+          },
+          {
+            "title": "電資工程倫理與法律實務",
+            "credits": 2,
+            "codes": ["EC30103", "EC30107"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "專業必修三選一（ET0009）",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "微算機原理及應用/微算機原理及應用實習",
+            "credits": 0,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "微算機原理及應用", "credits": 0, "codes": ["ET34033"]},
+                {"title": "微算機原理及應用實習", "credits": 0, "codes": ["ET38013"]}
+              ]
+            ]
+          },
+          {
+            "title": "嵌入式系統設計/嵌入式系統設計實習",
+            "credits": 0,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "嵌入式系統設計", "credits": 0, "codes": ["ET34143","ET34147"]},
+                {"title": "嵌入式系統設計實習", "credits": 0, "codes": ["ET38123"]}
+              ]
+            ]
+          },
+          {
+            "title": "數位系統設計/數位系統設計實習",
+            "credits": 0,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "數位系統設計", "credits": 0, "codes": ["ET34063","ET34067"]},
+                {"title": "數位系統設計實習", "credits": 0, "codes": ["ET38043"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "四年制實習選四（ET0008）",
+        "mode": "subjects",
+        "minimum": 4,
+        "subjects": [
+          {"title": "FPGA系統設計實習", "credits": 0, "codes": ["ET48103"]},
+          {"title": "半導體元件製作實習", "credits": 0, "codes": ["ET48033"]},
+          {"title": "電子儀器學實習", "credits": 0, "codes": ["ET38053"]},
+          {"title": "精密儀器學實習", "credits": 0, "codes": ["ET47093"]},
+          {"title": "通信系統實習", "credits": 0, "codes": ["ET47023"]},
+          {"title": "數位信號處理實習", "credits": 0, "codes": ["ET48003"]},
+          {"title": "電力電子實習", "credits": 0, "codes": ["ET45113"]},
+          {"title": "微波工程實習", "credits": 0, "codes": ["ET47033"]},
+          {"title": "電子電路設計實習", "credits": 0, "codes": ["ET47043"]},
+          {"title": "無線通訊網路實習", "credits": 0, "codes": ["ET48063","ET48067"]},
+          {"title": "積體電路佈局原理與實習", "credits": 0, "codes": ["ET48083","ET48087"]},
+          {"title": "射頻模組實習", "credits": 0, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 0, "codes": ["ET37083"]},
+          {"title": "類比積體電路設計實習", "credits": 0, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 0, "codes": ["ET27023","ET27027"]},
+          {"title": "混合雲平台技術實習", "credits": 0, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 0, "codes": ["ET37093","ET37097"]},
+          {"title": "光子學工程導論實習", "credits": 0, "codes": ["ET48053","ET48057"]},
+          {"title": "光纖光學實習", "credits": 0, "codes": ["ET48043"]},
+          {"title": "光纖感測實習", "credits": 0, "codes": []},
+          {"title": "固態照明實習", "credits": 0, "codes": ["ET48073"]},
+          {"title": "光電半導體量測實習", "credits": 0, "codes": ["ET48113"]},
+          {"title": "數位系統設計實習", "credits": 0, "codes": ["ET38043"]},
+          {"title": "嵌入式系統設計實習", "credits": 0, "codes": ["ET38123"]},
+          {"title": "微算機原理及應用實習", "credits": 0, "codes": ["ET38013"]}
+        ]
+      },
+      {
+        "label": "專業必修4學分（ET0007）",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題與實習（擇一路徑）",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]}
+              ],
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ],
+              [
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0ET00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "major",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 15,
+        "subjects": [
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CE30003","EC30063","ET30013"]},
+          {"title": "工程數學(二)", "credits": 3, "codes": ["ET30023"]},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0","ET163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0","ET163A0"]},
+          {"title": "計算機程式與應用", "credits": 3, "codes": ["CE20023","EC10113","ET34053","ET34057"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0","ET161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0","ET161A0"]},
+          {"title": "電子工程總整課程", "credits": 3, "codes": ["ET49303","ET49307"]},
+          {"title": "電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "電子學(二)", "credits": 3, "codes": ["ET21083"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["ET21043"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "線性系統", "credits": 3, "codes": ["ET31053"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "物理實習(下)", "credits": 1, "codes": ["CE173B0","EC173B0","ET173B0"]},
+          {"title": "物理實習(上)", "credits": 1, "codes": ["CE173A0","EC173A0","ET173A0"]},
+          {"title": "電子學實習(一)", "credits": 1, "codes": ["ET37063"]},
+          {"title": "電子學實習(二)", "credits": 1, "codes": ["ET37073"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "必修正課三選一(須搭配同課名必修實習)（ET0011）",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "嵌入式系統設計", "credits": 0, "codes": ["ET34143","ET34147"]},
+          {"title": "微算機原理及應用", "credits": 0, "codes": ["EC34033","ET34033"]},
+          {"title": "數位系統設計", "credits": 0, "codes": ["ET34063","ET34067"]}
+        ]
+      },
+      {
+        "label": "必修實習三選一(須搭配同課名必修正課)（ET0012）",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "數位系統設計實習",
+            "credits": 0,
+            "codes": ["ET38043"],
+            "pairedWith": [
+              "數位系統設計"
+            ]
+          },
+          {
+            "title": "嵌入式系統設計實習",
+            "credits": 0,
+            "codes": ["ET38123"],
+            "pairedWith": [
+              "嵌入式系統設計"
+            ]
+          },
+          {
+            "title": "微算機原理及應用實習",
+            "credits": 0,
+            "codes": ["ET38013"],
+            "pairedWith": [
+              "微算機原理及應用"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "專業必修2學分（ET0010）",
+        "mode": "credits",
+        "minimum": 2,
+        "subjects": [
+          {
+            "title": "台灣電資產業論壇與工程倫理",
+            "credits": 2,
+            "codes": ["ECG0033"],
+            "actual": true
+          },
+          {
+            "title": "電資概論與工程倫理",
+            "credits": 2,
+            "codes": ["EC10083"],
+            "actual": true
+          },
+          {
+            "title": "電資工程倫理與法律實務",
+            "credits": 2,
+            "codes": ["EC30103", "EC30107"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "四年制實習選四（ET0008）",
+        "mode": "subjects",
+        "minimum": 4,
+        "subjects": [
+          {"title": "FPGA系統設計實習", "credits": 0, "codes": ["ET48103"]},
+          {"title": "半導體元件製作實習", "credits": 0, "codes": ["ET48033"]},
+          {"title": "電子儀器學實習", "credits": 0, "codes": ["ET38053"]},
+          {"title": "精密儀器學實習", "credits": 0, "codes": ["ET47093"]},
+          {"title": "通信系統實習", "credits": 0, "codes": ["ET47023"]},
+          {"title": "數位信號處理實習", "credits": 0, "codes": ["ET48003"]},
+          {"title": "電力電子實習", "credits": 0, "codes": ["ET45113"]},
+          {"title": "微波工程實習", "credits": 0, "codes": ["ET47033"]},
+          {"title": "電子電路設計實習", "credits": 0, "codes": ["ET47043"]},
+          {"title": "無線通訊網路實習", "credits": 0, "codes": ["ET48063","ET48067"]},
+          {"title": "積體電路佈局原理與實習", "credits": 0, "codes": ["ET48083","ET48087"]},
+          {"title": "射頻模組實習", "credits": 0, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 0, "codes": ["ET37083"]},
+          {"title": "類比積體電路設計實習", "credits": 0, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 0, "codes": ["ET27023","ET27027"]},
+          {"title": "混合雲平台技術實習", "credits": 0, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 0, "codes": ["ET37093","ET37097"]},
+          {"title": "光子學工程導論實習", "credits": 0, "codes": ["ET48053","ET48057"]},
+          {"title": "光纖光學實習", "credits": 0, "codes": ["ET48043"]},
+          {"title": "光纖感測實習", "credits": 0, "codes": []},
+          {"title": "固態照明實習", "credits": 0, "codes": ["ET48073"]},
+          {"title": "光電半導體量測實習", "credits": 0, "codes": ["ET48113"]},
+          {"title": "數位系統設計實習", "credits": 0, "codes": ["ET38043"]},
+          {"title": "嵌入式系統設計實習", "credits": 0, "codes": ["ET38123"]},
+          {"title": "微算機原理及應用實習", "credits": 0, "codes": ["ET38013"]}
+        ]
+      },
+      {
+        "label": "專業必修4學分（ET0007）",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題與實習（擇一路徑）",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]}
+              ],
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ],
+              [
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0ET00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。",
+      "必修正課三選一(須搭配同課名必修實習)：正課與實習的配對須另行核對。",
+      "必修實習三選一(須搭配同課名必修正課)：正課與實習的配對須另行核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "應用外語系",
+    "shortName": "應外系",
+    "code": "FL",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 24,
+        "subjects": [
+          {"title": "多元識能:問題導向式英文閱讀與寫作(一)", "credits": 3, "codes": ["FL20613"]},
+          {"title": "多元識能:問題導向式英文閱讀與寫作(二)", "credits": 3, "codes": ["FL20633"]},
+          {"title": "西洋文學概論(一)", "credits": 2, "codes": ["FL20073"]},
+          {"title": "西洋文學概論(二)", "credits": 2, "codes": ["FL20083"]},
+          {"title": "批判識能:議題導向式英文閱讀與寫作(一)", "credits": 3, "codes": ["FL10133"]},
+          {"title": "批判識能:議題導向式英文閱讀與寫作(二)", "credits": 3, "codes": ["FL10153"]},
+          {"title": "研究方法", "credits": 2, "codes": ["FL30053"]},
+          {"title": "英文報告寫作", "credits": 2, "codes": ["FL30133"]},
+          {"title": "英語口語訓練(一)", "credits": 2, "codes": ["FL32013"]},
+          {"title": "英語口語訓練(二)", "credits": 2, "codes": ["FL32023"]},
+          {"title": "英語能力評量與職業倫理", "credits": 0, "codes": ["FL40993","FL40997"]},
+          {"title": "英語演講(一)", "credits": 2, "codes": ["FL20033","FL20037"]},
+          {"title": "英語演講(二)", "credits": 2, "codes": ["FL20043","FL20047"]},
+          {"title": "英語語音學", "credits": 2, "codes": ["FL34023","FL34027"]},
+          {"title": "問題導向式英文閱讀與寫作工作坊(一)", "credits": 1, "codes": ["FL20623"]},
+          {"title": "問題導向式英文閱讀與寫作工作坊(二)", "credits": 1, "codes": ["FL20643"]},
+          {"title": "進階文法與修辭應用", "credits": 2, "codes": ["FL10173"]},
+          {"title": "語言與文化", "credits": 2, "codes": ["FL10123","FL10127","FL20107"]},
+          {"title": "語言學概論(一)", "credits": 2, "codes": ["FL10063","FL10067"]},
+          {"title": "語言學概論(二)", "credits": 2, "codes": ["FL20093"]},
+          {"title": "數位媒體與英語內容設計", "credits": 2, "codes": ["FL30153"]},
+          {"title": "翻譯與習作", "credits": 2, "codes": ["FL33233","FL33237"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(一)", "credits": 1, "codes": ["FL10143"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(二)", "credits": 1, "codes": ["FL10163"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "英文實務專題(一)", "credits": 2, "codes": ["FL30063"]},
+          {"title": "英文實務專題(二)", "credits": 2, "codes": ["FL30073"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0FL00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "資通學程",
+    "shortName": "資通學程",
+    "code": "IC",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 16,
+        "subjects": [
+          {"title": "工程數學", "credits": 3, "codes": []},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0"]},
+          {"title": "計算機組織", "credits": 3, "codes": []},
+          {"title": "計算機程式與應用", "credits": 3, "codes": ["CE20023","EC10113","IC11313"]},
+          {"title": "計算機網路概論", "credits": 3, "codes": ["IC30043"]},
+          {"title": "微算機概論", "credits": 3, "codes": []},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0","IC114B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0","IC114A0"]},
+          {"title": "資料結構", "credits": 3, "codes": ["IC20023"]},
+          {"title": "演算法", "credits": 3, "codes": []},
+          {"title": "數位系統設計", "credits": 3, "codes": []},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["IC10073"]},
+          {"title": "線性代數", "credits": 3, "codes": ["IC20033"]},
+          {"title": "機率", "credits": 3, "codes": []},
+          {"title": "離散數學", "credits": 3, "codes": ["IC20013"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "計算機程式與應用實習", "credits": 1, "codes": ["EC10123","IC18123"]},
+          {"title": "國際研修", "credits": 0, "codes": []},
+          {"title": "微算機概論實習", "credits": 1, "codes": []},
+          {"title": "資通實務專題(一)", "credits": 2, "codes": []},
+          {"title": "資通實務專題(二)", "credits": 2, "codes": []}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "必修任選4科（IC0002）",
+        "mode": "subjects",
+        "minimum": 4,
+        "subjects": [
+          {"title": "軟體工程", "credits": 0, "codes": []},
+          {"title": "資料庫系統", "credits": 0, "codes": ["IC30113"]},
+          {"title": "作業系統", "credits": 0, "codes": ["IC30123"]},
+          {"title": "線性系統或信號與系統", "credits": 0, "codes": []},
+          {"title": "通訊系統(一)或通信系統", "credits": 0, "codes": []},
+          {"title": "數位信號處理之原理與應用", "credits": 0, "codes": []},
+          {"title": "電磁學", "credits": 0, "codes": []}
+        ]
+      },
+      {
+        "label": "專業必修2學分（IC0001）",
+        "mode": "credits",
+        "minimum": 2,
+        "subjects": [
+          {
+            "title": "電資工程倫理與法律實務",
+            "credits": 2,
+            "codes": ["EC30103", "EC30107", "IC30103", "IC30107"],
+            "actual": true
+          },
+          {
+            "title": "台灣電資產業論壇與工程倫理",
+            "credits": 2,
+            "codes": ["ECG0033"],
+            "actual": true
+          },
+          {
+            "title": "電資概論與工程倫理",
+            "credits": 2,
+            "codes": ["EC10083", "IC10083"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0IC00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "工業管理系",
+    "shortName": "工管系",
+    "code": "IM",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 18,
+        "subjects": [
+          {"title": "人因工程學", "credits": 2, "codes": ["IM31033","IM46063"]},
+          {"title": "工作研究", "credits": 2, "codes": ["IM44033"]},
+          {"title": "工業管理概論", "credits": 3, "codes": ["IM11013"]},
+          {"title": "生產與作業管理", "credits": 3, "codes": ["IM34073","IM34077"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["IM41033"]},
+          {"title": "作業研究(二)", "credits": 3, "codes": ["IM41043"]},
+          {"title": "品質管理", "credits": 3, "codes": ["IM47043"]},
+          {"title": "計算機程式", "credits": 2, "codes": ["IM12013"]},
+          {"title": "計算機概論", "credits": 2, "codes": ["IM35093"]},
+          {"title": "統計學(一)", "credits": 3, "codes": ["IM30033"]},
+          {"title": "統計學(二)", "credits": 3, "codes": ["IM30043"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["CE162B0","EC161B0","IM160B0"]},
+          {"title": "微積分(上)", "credits": 3, "codes": ["CE162A0","EC161A0","IM160A0"]},
+          {"title": "會計學", "credits": 3, "codes": ["IM33093"]},
+          {"title": "經濟學", "credits": 3, "codes": ["IM33013"]},
+          {"title": "電子化企業概論", "credits": 2, "codes": ["IM46203"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": []},
+          {"title": "管理數學", "credits": 3, "codes": ["IM30053"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 7,
+        "subjects": [
+          {"title": "人因工程實習", "credits": 1, "codes": ["IM47083"]},
+          {"title": "工作研究實習", "credits": 1, "codes": ["IM47033"]},
+          {"title": "計算機程式實習", "credits": 1, "codes": ["IM12023"]},
+          {"title": "計算機概論實習", "credits": 1, "codes": ["IM38093"]},
+          {"title": "電子化企業概論實習", "credits": 1, "codes": ["IM46243"]},
+          {"title": "實務專題(下)", "credits": 2, "codes": ["IM499B0"]},
+          {"title": "實務專題(上)", "credits": 2, "codes": ["IM499A0"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0IM00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "管理學士班",
+    "shortName": "管理學士班",
+    "code": "MB",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 22,
+        "subjects": [
+          {"title": "企業倫理與永續", "credits": 3, "codes": ["MB21083"]},
+          {"title": "投資學", "credits": 3, "codes": ["MB25023"]},
+          {"title": "金融科技概論", "credits": 3, "codes": ["MB21013","MB21017"]},
+          {"title": "科技政策", "credits": 3, "codes": ["MB21093"]},
+          {"title": "科技管理概論", "credits": 3, "codes": ["MB21023"]},
+          {"title": "計算機概論", "credits": 3, "codes": ["MB12003"]},
+          {"title": "財務金融概論", "credits": 3, "codes": ["MB12043"]},
+          {"title": "財務管理", "credits": 3, "codes": ["MB12053"]},
+          {"title": "專案管理", "credits": 3, "codes": ["MB27123","MB27127"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["MB270B0"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["MB270A0"]},
+          {"title": "創新與創業管理", "credits": 3, "codes": ["MB20003","MB20007"]},
+          {"title": "智慧財產權法", "credits": 3, "codes": ["MB12023"]},
+          {"title": "期貨與選擇權", "credits": 3, "codes": ["MB22023","MB22027"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["CE162B0","EC161B0","MB160B0"]},
+          {"title": "微積分(上)", "credits": 3, "codes": ["CE162A0","EC161A0","MB160A0"]},
+          {"title": "會計學(下)", "credits": 3, "codes": ["MB200B0"]},
+          {"title": "會計學(上)", "credits": 3, "codes": ["MB200A0"]},
+          {"title": "經濟學(下)", "credits": 3, "codes": ["MB112B0"]},
+          {"title": "經濟學(上)", "credits": 3, "codes": ["MB112A0"]},
+          {"title": "資料分析與程式設計入門", "credits": 3, "codes": ["MB12063"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": ["MB21003"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "實務專題(下)", "credits": 2, "codes": ["MB499B0"]},
+          {"title": "實務專題(上)", "credits": 2, "codes": ["MB499A0"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0MB00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "機械工程系",
+    "shortName": "機械系",
+    "code": "ME",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 20,
+        "subjects": [
+          {"title": "工程材料(一)", "credits": 3, "codes": ["ME34013"]},
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CE30003","EC30063","ME30003"]},
+          {"title": "化學", "credits": 3, "codes": ["ME16053"]},
+          {"title": "自動控制(一)", "credits": 3, "codes": ["ME36043"]},
+          {"title": "材料力學", "credits": 3, "codes": ["ME21063"]},
+          {"title": "物理(下)", "credits": 3, "codes": ["CE161B0","EC163B0"]},
+          {"title": "物理(上)", "credits": 3, "codes": ["CE161A0","EC163A0"]},
+          {"title": "初階數學(一)", "credits": 0, "codes": ["CE15073","CE15083"]},
+          {"title": "流體力學", "credits": 3, "codes": ["ME38013"]},
+          {"title": "動力學", "credits": 3, "codes": ["ME31003"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["CE162B0","EC161B0"]},
+          {"title": "微積分(上)", "credits": 4, "codes": ["CE162A0","EC161A0"]},
+          {"title": "製造學", "credits": 3, "codes": ["ME33003"]},
+          {"title": "熱力學", "credits": 3, "codes": ["ME27033","ME27063"]},
+          {"title": "熱傳學", "credits": 3, "codes": ["ME37053"]},
+          {"title": "機動學", "credits": 3, "codes": ["ME41043"]},
+          {"title": "機械工程與工程倫理", "credits": 1, "codes": ["ME10003"]},
+          {"title": "機械設計", "credits": 3, "codes": ["ME32113"]},
+          {"title": "靜力學", "credits": 3, "codes": ["ME21033"]},
+          {"title": "應用電子學", "credits": 3, "codes": ["ME34093"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 9,
+        "subjects": [
+          {"title": "化學實習", "credits": 1, "codes": ["CE17050","ME17053"]},
+          {"title": "物理實習(下)", "credits": 1, "codes": ["CE173B0","EC173B0","ME173B0"]},
+          {"title": "物理實習(上)", "credits": 1, "codes": ["CE173A0","EC173A0","ME173A0"]},
+          {"title": "基礎英文能力檢定", "credits": 0, "codes": ["ME10103"]},
+          {"title": "實務專題(下)", "credits": 2, "codes": ["ME499B0"]},
+          {"title": "實務專題(上)", "credits": 2, "codes": ["ME499A0"]},
+          {"title": "機械實習(一)-材料與製造領域", "credits": 1, "codes": ["ME24083"]},
+          {"title": "機械實習(二)-電子與自控領域", "credits": 1, "codes": ["ME35093"]},
+          {"title": "機械實習(三)-熱流領域", "credits": 1, "codes": ["ME37093"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "自選程式語言課程（ME0804）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "VB程式語言",
+            "credits": 3,
+            "codes": ["ME20093"],
+            "actual": true
+          },
+          {
+            "title": "MATLAB程式設計與應用",
+            "credits": 3,
+            "codes": ["ME40013"],
+            "actual": true
+          },
+          {
+            "title": "LISP程式應用",
+            "credits": 0,
+            "codes": [],
+            "actual": true
+          },
+          {
+            "title": "福傳程式語言",
+            "credits": 0,
+            "codes": [],
+            "actual": true
+          },
+          {
+            "title": "C程式語言",
+            "credits": 3,
+            "codes": ["ME20083"],
+            "actual": true
+          },
+          {
+            "title": "計算機程式與應用",
+            "credits": 3,
+            "codes": ["CE20023", "EC10113", "ME20023", "ME20027"],
+            "actual": true
+          },
+          {
+            "title": "LabVIEW程式語言與設計",
+            "credits": 3,
+            "codes": ["ME20113"],
+            "actual": true
+          },
+          {
+            "title": "Python程式語言與應用",
+            "credits": 3,
+            "codes": ["ME20143"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "本系所開設之實習課程（ME0014）",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "五軸NC加工實習", "credits": 0, "codes": ["ME33123","ME33127"]},
+          {"title": "光電量測實習", "credits": 0, "codes": ["ME46043"]},
+          {"title": "微製程實習", "credits": 0, "codes": ["ME33183"]},
+          {"title": "自動化機械設計與製作實習(一)", "credits": 0, "codes": []},
+          {"title": "自動控制實習", "credits": 0, "codes": ["ME36073"]},
+          {"title": "微處理機實習", "credits": 0, "codes": []},
+          {"title": "電腦輔助製圖實習(一)", "credits": 0, "codes": ["ME21013"]},
+          {"title": "電機控制實習", "credits": 0, "codes": ["ME36163"]},
+          {"title": "精密量測學實習", "credits": 0, "codes": ["ME40083"]},
+          {"title": "熱工實驗", "credits": 0, "codes": []},
+          {"title": "噪音與振動量測實習", "credits": 0, "codes": []},
+          {"title": "機械系統設計實習", "credits": 0, "codes": []},
+          {"title": "機械製造實習", "credits": 0, "codes": ["ME33073"]},
+          {"title": "機電工程學實習", "credits": 0, "codes": ["ME25073"]},
+          {"title": "機器人控制實習", "credits": 0, "codes": ["ME36153","ME36157"]},
+          {"title": "鑄造焊接實習", "credits": 0, "codes": ["ME43083"]},
+          {"title": "電機工程學實習", "credits": 0, "codes": []},
+          {"title": "伺服控制實習", "credits": 0, "codes": []},
+          {"title": "光學元件製造實習", "credits": 0, "codes": []},
+          {"title": "應用電子學實習(一)", "credits": 0, "codes": []},
+          {"title": "材料實驗", "credits": 0, "codes": []},
+          {"title": "數位影像監控系統實習", "credits": 0, "codes": ["ME35107"]},
+          {"title": "工業機械手臂操作與程式設計實習", "credits": 0, "codes": ["ME36173"]},
+          {"title": "電腦輔助設計實習", "credits": 0, "codes": ["ME32253"]},
+          {"title": "自動化光電元件檢測與實務", "credits": 0, "codes": ["ME45113"]},
+          {"title": "自動化機械設計與製作實習(二)", "credits": 0, "codes": []},
+          {"title": "材料試驗", "credits": 0, "codes": ["ME34083","ME34103"]},
+          {"title": "流體力學實驗", "credits": 0, "codes": []},
+          {"title": "電腦輔助製圖實習(二)", "credits": 0, "codes": ["ME21023"]},
+          {"title": "數控工具機實習", "credits": 0, "codes": ["ME32063","ME32323"]},
+          {"title": "應用電子學實習", "credits": 0, "codes": []},
+          {"title": "應用電子學實習(二)", "credits": 0, "codes": []},
+          {"title": "汽車產業實務", "credits": 0, "codes": ["ME39077"]},
+          {"title": "機械設計實習", "credits": 0, "codes": []}
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0ME00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "major",
+    "department": "資訊管理系",
+    "shortName": "資管系",
+    "code": "MI",
+    "groups": [
+      {
+        "label": "專業指定必修",
+        "mode": "all",
+        "minimum": 16,
+        "subjects": [
+          {"title": "行動裝置程式設計", "credits": 3, "codes": ["MI31143"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["MI32013"]},
+          {"title": "系統分析與設計", "credits": 3, "codes": ["MI40013"]},
+          {"title": "物件導向程式語言", "credits": 3, "codes": ["MI42043","MI42047"]},
+          {"title": "計算機概論", "credits": 3, "codes": ["MI10063"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["MI306B0"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["MI306A0"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["CE162B0","EC161B0","MI161B0"]},
+          {"title": "微積分(上)", "credits": 3, "codes": ["CE162A0","EC161A0","MI161A0"]},
+          {"title": "資料庫管理系統", "credits": 3, "codes": ["MI40023"]},
+          {"title": "資料結構", "credits": 3, "codes": ["MI30023"]},
+          {"title": "資訊網路", "credits": 3, "codes": ["MI42063"]},
+          {"title": "資管導論", "credits": 3, "codes": ["MI10103"]},
+          {"title": "管理資訊系統", "credits": 3, "codes": ["MI30033","MI30037"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": []},
+          {"title": "管理數學", "credits": 3, "codes": ["MI30083"]}
+        ]
+      },
+      {
+        "label": "實習指定必修",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "實務專題(下)", "credits": 2, "codes": ["MI499B0"]},
+          {"title": "實務專題(上)", "credits": 2, "codes": ["MI499A0"]}
+        ]
+      },
+      {
+        "label": "共同指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "社會實踐", "credits": 1, "codes": ["TC10103"]},
+          {"title": "校定英文能力檢測", "credits": 0, "codes": ["CC10113"]},
+          {"title": "新生中文說寫專題", "credits": 3, "codes": ["CC12573"]}
+        ]
+      },
+      {
+        "label": "會計學或程式設計（MI17）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "會計學",
+            "credits": 3,
+            "codes": ["MI10033"],
+            "actual": true
+          },
+          {
+            "title": "程式設計",
+            "credits": 3,
+            "codes": ["EC10033", "EC10037", "MI12067"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "經濟學或應用程式語言（MI18）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "經濟學",
+            "credits": 3,
+            "codes": ["MI10023"],
+            "actual": true
+          },
+          {
+            "title": "應用程式語言",
+            "credits": 3,
+            "codes": ["MI22027"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "英文課程(詳語言中心網頁公告)（ENG4）",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：英文課程(詳語言中心網頁公告)（ENG4）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "國文課程（LCB02）",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "表達與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12533"],
+            "actual": true
+          },
+          {
+            "title": "表達與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12543"],
+            "actual": true
+          },
+          {
+            "title": "創意與文學閱讀",
+            "credits": 3,
+            "codes": ["CC12553"],
+            "actual": true
+          },
+          {
+            "title": "創意與經典閱讀",
+            "credits": 3,
+            "codes": ["CC12563"],
+            "actual": true
+          }
+        ]
+      },
+      {
+        "label": "通識課程（GEB01）",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：通識課程（GEB01）",
+          "prefixes": []
+        }
+      },
+      {
+        "label": "體育",
+        "mode": "subjects",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "核定採計：體育",
+          "prefixes": []
+        }
+      }
+    ],
+    "conditions": [
+      "適用四技 B0MI00。本表追蹤教務處必修課程明細，畢業總學分、選修與系上其他門檻另依入學年度公告。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "機械工程系",
+    "shortName": "機械系",
+    "code": "ME",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 8,
+        "subjects": [
+          {"title": "工程數學(一)", "credits": 3, "codes": ["ME30003"]},
+          {"title": "熱力學", "credits": 3, "codes": ["ME27033","ME27063"]},
+          {"title": "動力學", "credits": 3, "codes": ["ME31003"]},
+          {"title": "材料力學", "credits": 3, "codes": ["ME21063"]},
+          {"title": "流體力學", "credits": 3, "codes": ["ME38013"]},
+          {"title": "機械設計", "credits": 3, "codes": ["ME32113"]},
+          {"title": "自動控制(一)", "credits": 3, "codes": ["ME36043"]},
+          {"title": "製造學", "credits": 3, "codes": ["ME33003"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "(1)應先修至少6學分微積分及至少6學分物理。(2)106學年度(含)以前入學學生仍需取得「工程數學(二)」學分。107學年度入學的學生未修習或未通過「工程數學(二)」者,須修習「工程數學(一)」,免修工程數學(二)。",
+      "微積分、物理及實習先修資格請依原表備註核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "營建工程系",
+    "shortName": "營建系",
+    "code": "CT",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 7,
+        "subjects": [
+          {"title": "工程靜力學或靜力學", "credits": 3, "codes": ["CT10023"]},
+          {"title": "材料力學", "credits": 3, "codes": ["CT10033","CT20033"]},
+          {"title": "結構學", "credits": 3, "codes": ["CT32003"]},
+          {"title": "鋼筋混凝土設計", "credits": 3, "codes": ["CT33043"]},
+          {"title": "混凝土品質控制", "credits": 3, "codes": ["CT36083"]},
+          {"title": "混凝土試驗", "credits": 1, "codes": ["CT37013"]},
+          {"title": "土壤力學", "credits": 3, "codes": ["CT34103"]}
+        ]
+      },
+      {
+        "label": "指定選修",
+        "mode": "credits",
+        "minimum": 3,
+        "subjects": [
+          {"title": "鋼結構設計", "credits": 3, "codes": ["CT33073"]},
+          {"title": "工程材料", "credits": 3, "codes": ["CT33093"]},
+          {"title": "工程管理", "credits": 3, "codes": ["CT43083"]},
+          {"title": "基礎工程", "credits": 3, "codes": ["CT34033"]},
+          {"title": "工程規劃與控制", "credits": 3, "codes": ["CT43013"]},
+          {"title": "土壤力學試驗", "credits": 1, "codes": ["CT37073"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "結構相關科目的先修成績及開課單位須依原表核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "化學工程系",
+    "shortName": "化工系",
+    "code": "CH",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "質能均衡", "credits": 3, "codes": ["CH22013"]},
+          {"title": "單元操作與輸送現象(一)", "credits": 3, "codes": ["CH22053"]},
+          {"title": "單元操作與輸送現象(二)", "credits": 3, "codes": ["CH22063"]},
+          {"title": "反應工程", "credits": 3, "codes": ["CH32063"]}
+        ]
+      },
+      {
+        "label": "化工專門選修",
+        "mode": "credits",
+        "minimum": 8,
+        "subjects": [
+          {"title": "化工熱力學", "credits": 3, "codes": ["CH32033","CH32133"]},
+          {"title": "程序設計", "credits": 3, "codes": ["CH42053","CH42153"]},
+          {"title": "程序控制", "credits": 3, "codes": ["CH42033"]},
+          {"title": "物理化學(上)", "credits": 3, "codes": ["CH215A0"]},
+          {"title": "物理化學(下)", "credits": 3, "codes": ["CH215B0"]},
+          {"title": "有機化學(上)", "credits": 3, "codes": ["CH213A0"]},
+          {"title": "有機化學(下)", "credits": 3, "codes": ["CH213B0"]},
+          {"title": "儀器分析", "credits": 3, "codes": ["CH33083","CH33087"]},
+          {"title": "單元操作與輸送現象(三)", "credits": 3, "codes": ["CH22073"]},
+          {"title": "化學技術實習(一)", "credits": 1, "codes": ["CH28003"]},
+          {"title": "化學技術實習(二)", "credits": 1, "codes": ["CH28023"]},
+          {"title": "化學技術實習(三)", "credits": 1, "codes": ["CH38033"]},
+          {"title": "化學技術實習(四)", "credits": 1, "codes": ["CH38043"]},
+          {"title": "化學工程實習(一)", "credits": 1, "codes": ["CH48043"]},
+          {"title": "化學工程實習(二)", "credits": 1, "codes": ["CH48053"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "修習化工專門科目至少20學分,其中質能均衡、單元操作與輸送現象(一)(二)與反應工程必修,其餘學分則選修其他化工專門學分最少8學分。"
+    ]
+  },
+  {
+    "years": [
+      "114"
+    ],
+    "category": "minor",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "電子學或電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "電子學(二)或電子電路", "credits": 3, "codes": ["ET21083"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]}
+        ]
+      },
+      {
+        "label": "專業必修任選三門",
+        "mode": "subjects",
+        "minimum": 3,
+        "subjects": [
+          {"title": "工程數學或工程數學(一)或微分方程", "credits": 3, "codes": ["ET30013"]},
+          {"title": "工程數學(二)或線性代數", "credits": 3, "codes": ["ET30023"]},
+          {"title": "微算機原理及應用或微算機應用", "credits": 3, "codes": ["ET34033"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "線性系統或信號與系統", "credits": 3, "codes": ["ET31053"]},
+          {"title": "通訊系統(一)或通信系統", "credits": 3, "codes": ["ET40067"]},
+          {"title": "半導體物理與元件(一)", "credits": 3, "codes": ["ET33077"]},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "光電元件", "credits": 3, "codes": ["ET43027"]},
+          {"title": "工程近代物理", "credits": 3, "codes": ["ET30057"]}
+        ]
+      },
+      {
+        "label": "實習任選兩門",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "電子儀器學實習", "credits": 1, "codes": ["ET38053"]},
+          {"title": "精密儀器學實習", "credits": 1, "codes": ["ET47093"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "電子學實習(一)或電子學實習", "credits": 1, "codes": ["ET37063"]},
+          {"title": "電子學實習(二)或電子電路實習", "credits": 1, "codes": ["ET37073"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "數位系統設計實習", "credits": 1, "codes": ["ET38043"]},
+          {"title": "微算機原理及應用實習或微算機應用實習", "credits": 1, "codes": ["ET38013"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]}
+        ]
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "電機工程系",
+    "shortName": "電機系",
+    "code": "EE",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "電路學(一)", "credits": 3, "codes": ["EE22013"]},
+          {"title": "電子學或電子學(一)", "credits": 3, "codes": ["EE22173"]},
+          {"title": "電磁學", "credits": 3, "codes": ["EE32013"]},
+          {"title": "電子學實習或電子學實習(一)", "credits": 1, "codes": ["EE27073"]}
+        ]
+      },
+      {
+        "label": "跨至少兩領域選修",
+        "mode": "credits",
+        "minimum": 10,
+        "subjects": [
+          {
+            "title": "電力系統",
+            "credits": 3,
+            "codes": ["EE32083"],
+            "area": "0"
+          },
+          {
+            "title": "電力系統實習",
+            "credits": 1,
+            "codes": ["EE47023"],
+            "area": "0"
+          },
+          {
+            "title": "電機控制",
+            "credits": 3,
+            "codes": ["EE42033"],
+            "area": "0"
+          },
+          {
+            "title": "電機控制實習",
+            "credits": 1,
+            "codes": ["EE47013"],
+            "area": "0"
+          },
+          {
+            "title": "信號與系統",
+            "credits": 3,
+            "codes": ["EE36033"],
+            "area": "1"
+          },
+          {
+            "title": "信號與系統實習",
+            "credits": 1,
+            "codes": ["EE33013", "EE33017"],
+            "area": "1"
+          },
+          {
+            "title": "控制系統",
+            "credits": 3,
+            "codes": ["EE36013"],
+            "area": "1"
+          },
+          {
+            "title": "控制系統實習",
+            "credits": 1,
+            "codes": ["EE47053"],
+            "area": "1"
+          },
+          {
+            "title": "類比及混合訊號積體電路與系統",
+            "credits": 3,
+            "codes": ["EE34163"],
+            "area": "2"
+          },
+          {
+            "title": "數位系統設計實習",
+            "credits": 1,
+            "codes": ["EE34093"],
+            "area": "2"
+          },
+          {
+            "title": "超大型積體電路設計導論",
+            "credits": 3,
+            "codes": ["EE34083", "EE34087"],
+            "area": "2"
+          },
+          {
+            "title": "超大型積體電路設計實習",
+            "credits": 1,
+            "codes": ["EE34103"],
+            "area": "2"
+          },
+          {
+            "title": "計算機組織",
+            "credits": 3,
+            "codes": ["EE30053", "EE54017"],
+            "area": "3"
+          },
+          {
+            "title": "資料結構",
+            "credits": 3,
+            "codes": ["EE34073", "EE34077"],
+            "area": "3"
+          },
+          {
+            "title": "電磁波",
+            "credits": 3,
+            "codes": ["EE32063"],
+            "area": "4"
+          },
+          {
+            "title": "電磁波實習",
+            "credits": 1,
+            "codes": ["EE47073", "EE47077"],
+            "area": "4"
+          },
+          {
+            "title": "通信系統或通訊系統(一)",
+            "credits": 3,
+            "codes": ["EE46003"],
+            "area": "4"
+          },
+          {
+            "title": "通信系統實習",
+            "credits": 1,
+            "codes": ["EE48063"],
+            "area": "4"
+          }
+        ],
+        "minAreas": 2
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "資訊工程系",
+    "shortName": "資工系",
+    "code": "CS",
+    "groups": [
+      {
+        "label": "核心科目至少五科",
+        "mode": "subjects",
+        "minimum": 5,
+        "subjects": [
+          {"title": "資料結構", "credits": 3, "codes": ["CS20023"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["CS20063"]},
+          {"title": "演算法", "credits": 3, "codes": ["CS30013"]},
+          {"title": "離散數學", "credits": 3, "codes": ["CS30033"]},
+          {"title": "計算機網路概論", "credits": 3, "codes": ["CS30043"]},
+          {"title": "物件導向程式設計", "credits": 3, "codes": ["CS30053"]},
+          {"title": "作業系統", "credits": 3, "codes": ["CS30093"]},
+          {"title": "編譯器設計", "credits": 3, "codes": ["CS30203"]},
+          {"title": "程式語言", "credits": 3, "codes": ["CS40013"]},
+          {"title": "資料庫系統", "credits": 3, "codes": ["CS30103","CS30107"]},
+          {"title": "軟體工程", "credits": 3, "codes": ["CS30253"]}
+        ]
+      },
+      {
+        "label": "核心與選修合計",
+        "mode": "credits",
+        "minimum": 21,
+        "subjects": [
+          {"title": "資料結構", "credits": 3, "codes": ["CS20023"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["CS20063"]},
+          {"title": "演算法", "credits": 3, "codes": ["CS30013"]},
+          {"title": "離散數學", "credits": 3, "codes": ["CS30033"]},
+          {"title": "計算機網路概論", "credits": 3, "codes": ["CS30043"]},
+          {"title": "物件導向程式設計", "credits": 3, "codes": ["CS30053"]},
+          {"title": "作業系統", "credits": 3, "codes": ["CS30093"]},
+          {"title": "編譯器設計", "credits": 3, "codes": ["CS30203"]},
+          {"title": "程式語言", "credits": 3, "codes": ["CS40013"]},
+          {"title": "資料庫系統", "credits": 3, "codes": ["CS30103","CS30107"]},
+          {"title": "軟體工程", "credits": 3, "codes": ["CS30253"]},
+          {"title": "數值計算", "credits": 3, "codes": ["CS30173","CS30177"]},
+          {"title": "自動機與形式語言", "credits": 3, "codes": ["CS30183","CS30187"]},
+          {"title": "編碼理論", "credits": 3, "codes": ["CS30313","CS30317"]},
+          {"title": "賽局理論", "credits": 3, "codes": ["CS30303","CS30307"]},
+          {"title": "多媒體資訊系統導論", "credits": 3, "codes": ["CS30077"]},
+          {"title": "人工智慧導論", "credits": 3, "codes": ["CS30087"]},
+          {"title": "資訊安全導論", "credits": 3, "codes": ["CS40033","CS40037"]},
+          {"title": "模糊系統導論", "credits": 3, "codes": ["CS30147"]},
+          {"title": "嵌入式系統", "credits": 3, "codes": ["CS30227"]},
+          {"title": "電腦圖學導論", "credits": 3, "codes": ["CS30267"]},
+          {"title": "人工智慧與機器學習", "credits": 3, "codes": ["CS30237"]},
+          {"title": "入侵偵測與防禦", "credits": 3, "codes": ["CS30297"]},
+          {"title": "基礎電腦圖學", "credits": 3, "codes": ["CS20157"]},
+          {"title": "行動裝置程式設計", "credits": 3, "codes": ["CS30407"]},
+          {"title": "遊戲程式設計", "credits": 3, "codes": ["CS20187"]},
+          {"title": "網路生活與應用程式", "credits": 3, "codes": ["CS30397"]},
+          {"title": "iOS程式設計", "credits": 3, "codes": ["CS30427"]},
+          {"title": "穿戴式電子應用設計", "credits": 3, "codes": ["CS30437"]},
+          {"title": "遊戲企劃與設計原理", "credits": 3, "codes": ["CS30447"]},
+          {"title": "即時系統概論", "credits": 3, "codes": ["CS20177"]},
+          {"title": "人機互動介面設計", "credits": 3, "codes": ["CS30467"]},
+          {"title": "資料科學導論", "credits": 3, "codes": ["CS30473","CS30477"]},
+          {"title": "自然語言處理導論", "credits": 3, "codes": ["CS30487"]}
+        ],
+        "manual": {
+          "target": "其他經確認的資工專業選修",
+          "prefixes": [
+            "CS"
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      "應修科目中至少選取五科核心科目課程"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "工業管理系",
+    "shortName": "工管系",
+    "code": "IM",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 10,
+        "subjects": [
+          {"title": "管理與企業倫理", "credits": 3, "codes": []},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["IM41033"]},
+          {"title": "工作研究", "credits": 2, "codes": ["IM44033"]},
+          {"title": "工作研究實習", "credits": 1, "codes": ["IM47033"]},
+          {"title": "品質管理", "credits": 3, "codes": ["IM47043"]},
+          {"title": "電子化企業概論", "credits": 2, "codes": ["IM46203"]},
+          {"title": "電子化企業概論實習", "credits": 1, "codes": ["IM46243"]},
+          {"title": "生產與作業管理", "credits": 3, "codes": ["IM34073","IM34077"]},
+          {"title": "人因工程學", "credits": 2, "codes": ["IM31033","IM46063"]},
+          {"title": "人因工程實習", "credits": 1, "codes": ["IM47083"]}
+        ]
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "企業管理系",
+    "shortName": "企管系",
+    "code": "BA",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 7,
+        "subjects": [
+          {"title": "行銷管理", "credits": 3, "codes": ["BA22013","BA52007"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007"]},
+          {"title": "管理會計", "credits": 3, "codes": ["BA23003","BA23007","BA53027"]},
+          {"title": "人力資源管理", "credits": 3, "codes": ["BA32093","BA32097","BA66057"]},
+          {"title": "策略管理", "credits": 3, "codes": ["BA44103","BA44107","BA55017"]},
+          {"title": "會計學或初級會計學或會計學(上)", "credits": 3, "codes": ["BA13093","BA13095","BA13097","BA139A5"]},
+          {"title": "供應鏈管理", "credits": 3, "codes": ["BA36163","BA64087"]}
+        ]
+      },
+      {
+        "label": "經濟學基礎課程（另計）",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [
+          {"title": "經濟學或經濟學(上)", "credits": 3, "codes": ["BA13000","BA130A0","FB11027","IM33013","MB11020","MB11037","MB112A0","MI10023"]},
+          {"title": "經濟學(下)", "credits": 3, "codes": ["BA130B0","MB112B0"]}
+        ]
+      },
+      {
+        "label": "統計學基礎課程（另計）",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [
+          {"title": "統計學或統計學(上)", "credits": 3, "codes": ["BA30050","BA305A0","FB27007","FB270A5","MB27000","MB27003","MB270A0","MI30060","MI30063","MI306A0"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0","FB270B5","MB270B0","MI306B0"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "除上述應修學分總數21學分外,另須修習通過下列2門基礎課程:1.「經濟學或經濟學(上)3學分、經濟學(下)3學分」,共6學分2.「統計學或統計學(上)3學分、統計學(下)3學分」,共6學分"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "資訊管理系",
+    "shortName": "資管系",
+    "code": "MI",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 6,
+        "subjects": [
+          {"title": "物件導向程式語言", "credits": 3, "codes": ["MI42043","MI42047"]},
+          {"title": "資料庫管理系統", "credits": 3, "codes": ["MI40023"]},
+          {"title": "系統分析與設計", "credits": 3, "codes": ["MI40013"]},
+          {"title": "資訊網路", "credits": 3, "codes": ["MI42063"]},
+          {"title": "管理資訊系統", "credits": 3, "codes": ["MI30033","MI30037"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["MI32013"]}
+        ]
+      },
+      {
+        "label": "本系專業選修",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [],
+        "manual": {
+          "target": "經確認的資管選修",
+          "prefixes": [
+            "MI"
+          ],
+          "eligible": [
+            "MI12067",
+            "MI12077",
+            "MI12087",
+            "MI21057",
+            "MI21087",
+            "MI21097",
+            "MI21107",
+            "MI21117",
+            "MI22027",
+            "MI22037",
+            "MI22047",
+            "MI30097",
+            "MI30107",
+            "MI30117",
+            "MI30137",
+            "MI30147",
+            "MI30167",
+            "MI31027",
+            "MI31037",
+            "MI31127",
+            "MI31137",
+            "MI31157",
+            "MI31167",
+            "MI31177",
+            "MI31187",
+            "MI32107",
+            "MI33067",
+            "MI33077",
+            "MI35097",
+            "MI35107",
+            "MI35117",
+            "MI35137",
+            "MI40037",
+            "MI40047",
+            "MI40057",
+            "MI40117",
+            "MI40127",
+            "MI41067",
+            "MI41077",
+            "MI41117",
+            "MI41127",
+            "MI41137",
+            "MI41145",
+            "MI41167",
+            "MI41177",
+            "MI41197",
+            "MI42027",
+            "MI42107",
+            "MI42117",
+            "MI42147",
+            "MI43107",
+            "MI43117",
+            "MI44097",
+            "MI44107",
+            "MI49827",
+            "MI49837",
+            "MI49917",
+            "MI49927",
+            "MI49937",
+            "MI50107",
+            "MI50127",
+            "MI50147",
+            "MI50157",
+            "MI50167",
+            "MI51027",
+            "MI51087",
+            "MI51097",
+            "MI51107",
+            "MI51117",
+            "MI51127",
+            "MI51137",
+            "MI51147",
+            "MI51157",
+            "MI51177",
+            "MI51187",
+            "MI51197",
+            "MI51207",
+            "MI51217",
+            "MI51227",
+            "MI51237",
+            "MI51247",
+            "MI51257",
+            "MI51267",
+            "MI51277",
+            "MI51287",
+            "MI51307",
+            "MI51317",
+            "MI51327",
+            "MI51337",
+            "MI51357",
+            "MI51367",
+            "MI51377",
+            "MI52077",
+            "MI52117",
+            "MI52137",
+            "MI52157",
+            "MI52167",
+            "MI52177",
+            "MI52187",
+            "MI52197",
+            "MI52207",
+            "MI52217",
+            "MI52227",
+            "MI52237",
+            "MI52247",
+            "MI52257",
+            "MI52267",
+            "MI52277",
+            "MI52287",
+            "MI52297",
+            "MI52307",
+            "MI52317",
+            "MI52347",
+            "MI52357",
+            "MI52367",
+            "MI52377",
+            "MI52387",
+            "MI52397",
+            "MI52407",
+            "MI52417",
+            "MI53007",
+            "MI53037",
+            "MI53077",
+            "MI53097",
+            "MI53117",
+            "MI53127",
+            "MI53137",
+            "MI53147",
+            "MI53157",
+            "MI53167",
+            "MI53177",
+            "MI53187",
+            "MI53197",
+            "MI53207",
+            "MI53217",
+            "MI53227",
+            "MI54067",
+            "MI54107",
+            "MI54127",
+            "MI54137",
+            "MI55107",
+            "MI55117",
+            "MI55127",
+            "MI56017",
+            "MI56037",
+            "MI56047",
+            "MI56057",
+            "MI56077",
+            "MI58017",
+            "MI58037",
+            "MI58047",
+            "MI59107",
+            "MI59127",
+            "MI59137",
+            "MI59147",
+            "MI59157",
+            "MI59167",
+            "MI59177",
+            "MI59187",
+            "MI59197",
+            "MI59207",
+            "MI59217",
+            "MI59227",
+            "MI59237",
+            "MI59247",
+            "MI59257",
+            "MI59827",
+            "MI59837",
+            "MI59917",
+            "MI59927",
+            "MI59937",
+            "MI60027",
+            "MI60067",
+            "MI60097",
+            "MI60117",
+            "MI73087",
+            "MI90017",
+            "MI90037",
+            "MI90057",
+            "MI90087",
+            "MI90157",
+            "MI90167",
+            "MI90177",
+            "MI90187",
+            "MI90217",
+            "MI90227",
+            "MI90237",
+            "MI90267",
+            "MI90277",
+            "MI90287",
+            "MI90297",
+            "MI90307",
+            "MI90317",
+            "MI90327",
+            "MI90337"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "設計系工業設計組",
+    "shortName": "設計系工業設計組",
+    "code": "DTA",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "模型製作", "credits": 2, "codes": ["DT12023"]},
+          {"title": "設計概論與職業倫理", "credits": 3, "codes": ["DT10163"]},
+          {"title": "設計表現技法(一)", "credits": 2, "codes": ["DT22053"]},
+          {"title": "基礎產品設計(一)", "credits": 3, "codes": ["DT22103"]},
+          {"title": "基礎產品設計(二)", "credits": 3, "codes": ["DT22113"]}
+        ]
+      },
+      {
+        "label": "專業選修",
+        "mode": "credits",
+        "minimum": 9,
+        "subjects": [
+          {"title": "色彩材質與表面處理", "credits": 3, "codes": ["DT26353"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "設計表現技法(二)", "credits": 2, "codes": ["DT22063"]},
+          {"title": "設計方法", "credits": 3, "codes": ["DT22073"]},
+          {"title": "人因工程", "credits": 3, "codes": ["DT32033"]},
+          {"title": "產品設計(一)", "credits": 3, "codes": ["DT32093"]},
+          {"title": "產品設計(二)", "credits": 3, "codes": ["DT32103"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.產品設計(一)先修課程為以下四科目:基本設計(一)、基本設計(二)、基礎產品設計(一)、基礎產品設計(二);產品設計(二)先修課程為以下五科目:基本設計(一)、基本設計(二)、基礎產品設計(一)、基礎產品設計(二)、產品設計(一)。2.學生修習非本系代碼之課程,須於每學期期初持成績單正本至設計系辦理抵免審查,如經審查無法抵修本系課程,則須修習本系開設課程補足應修總學分。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "設計系商業設計組",
+    "shortName": "設計系商業設計組",
+    "code": "DTB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 9,
+        "subjects": [
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "視覺傳達設計(一)", "credits": 3, "codes": ["DT25013"]},
+          {"title": "立體造形", "credits": 2, "codes": ["DT25083"]},
+          {"title": "包裝設計(一)", "credits": 3, "codes": ["DT35053"]},
+          {"title": "包裝設計(二)", "credits": 3, "codes": ["DT35063"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "電腦輔助設計(三)", "credits": 3, "codes": ["DT32083"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "學生修習非本系代碼之課程,須於每學期期初持成績單正本至設計系辦理抵免審查,如經審查無法抵修本系課程,則須修習本系開設課程補足應修總學分。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "建築系",
+    "shortName": "建築系",
+    "code": "AD",
+    "groups": [
+      {
+        "label": "甲：設計",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "建築設計(一)", "credits": 3, "codes": ["AD11013","AD50017"]},
+          {"title": "建築設計(二)", "credits": 3, "codes": ["AD11023"]},
+          {"title": "建築設計(三)", "credits": 5, "codes": ["AD20013","AD21113"]},
+          {"title": "建築設計(四)", "credits": 5, "codes": ["AD21123"]},
+          {"title": "建築設計(五)", "credits": 6, "codes": ["AD30013"]},
+          {"title": "建築設計(六)", "credits": 6, "codes": ["AD30023"]}
+        ]
+      },
+      {
+        "label": "乙：建築史",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "西洋建築史", "credits": 3, "codes": ["AD23013"]},
+          {"title": "近代建築史", "credits": 3, "codes": ["AD31063"]},
+          {"title": "中國建築史", "credits": 3, "codes": ["AD41083"]}
+        ]
+      },
+      {
+        "label": "丙：計畫",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "建築計畫", "credits": 3, "codes": ["AD25013"]},
+          {"title": "敷地計畫", "credits": 3, "codes": ["AD32033"]}
+        ]
+      },
+      {
+        "label": "丁：構造與施工",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "建築材料", "credits": 3, "codes": ["AD28043"]},
+          {"title": "建築構造", "credits": 3, "codes": ["AD39033"]},
+          {"title": "營建管理與工程倫理", "credits": 3, "codes": ["AD42063"]}
+        ]
+      },
+      {
+        "label": "戊：環境控制",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "環境控制系統(一)", "credits": 3, "codes": ["AD26023"]},
+          {"title": "環境控制系統(二)", "credits": 3, "codes": ["AD32053"]}
+        ]
+      },
+      {
+        "label": "己：結構",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "結構行為(一)", "credits": 3, "codes": ["AD24013"]},
+          {"title": "結構行為(二)", "credits": 3, "codes": ["AD24023"]}
+        ]
+      },
+      {
+        "label": "各課群合計",
+        "mode": "credits",
+        "minimum": 20,
+        "subjects": [
+          {"title": "建築設計(一)", "credits": 3, "codes": ["AD11013","AD50017"]},
+          {"title": "建築設計(二)", "credits": 3, "codes": ["AD11023"]},
+          {"title": "建築設計(三)", "credits": 5, "codes": ["AD20013","AD21113"]},
+          {"title": "建築設計(四)", "credits": 5, "codes": ["AD21123"]},
+          {"title": "建築設計(五)", "credits": 6, "codes": ["AD30013"]},
+          {"title": "建築設計(六)", "credits": 6, "codes": ["AD30023"]},
+          {"title": "西洋建築史", "credits": 3, "codes": ["AD23013"]},
+          {"title": "近代建築史", "credits": 3, "codes": ["AD31063"]},
+          {"title": "中國建築史", "credits": 3, "codes": ["AD41083"]},
+          {"title": "建築計畫", "credits": 3, "codes": ["AD25013"]},
+          {"title": "敷地計畫", "credits": 3, "codes": ["AD32033"]},
+          {"title": "建築材料", "credits": 3, "codes": ["AD28043"]},
+          {"title": "建築構造", "credits": 3, "codes": ["AD39033"]},
+          {"title": "營建管理與工程倫理", "credits": 3, "codes": ["AD42063"]},
+          {"title": "環境控制系統(一)", "credits": 3, "codes": ["AD26023"]},
+          {"title": "環境控制系統(二)", "credits": 3, "codes": ["AD32053"]},
+          {"title": "結構行為(一)", "credits": 3, "codes": ["AD24013"]},
+          {"title": "結構行為(二)", "credits": 3, "codes": ["AD24023"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "甲(設計)、乙(建築史)、丙(計畫)、丁(構造與施工)、戊(環境控制)、己(結構)課群科目選20學分以上,其中甲課群至少選二科,其他課群至少須選一科。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "應用外語系",
+    "shortName": "應外系",
+    "code": "FL",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 8,
+        "subjects": [
+          {"title": "批判識能:議題導向式英文閱讀與寫作(一)或多元識能:問題導向式英文閱讀與寫作(一)", "credits": 3, "codes": ["FL10133","FL20613"]},
+          {"title": "批判識能:議題導向式英文閱讀與寫作(二)或多元識能:問題導向式英文閱讀與寫作(二)", "credits": 3, "codes": ["FL10153","FL20633"]},
+          {"title": "英語演講(一)", "credits": 2, "codes": ["FL20033","FL20037"]},
+          {"title": "英語演講(二)", "credits": 2, "codes": ["FL20043","FL20047"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(一)或問題導向式英文閱讀與寫作工作坊(一)", "credits": 1, "codes": ["FL10143","FL20623"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(二)或問題導向式英文閱讀與寫作工作坊(二)", "credits": 1, "codes": ["FL10163","FL20643"]},
+          {"title": "翻譯與習作", "credits": 2, "codes": ["FL33233","FL33237"]},
+          {"title": "英語檢定", "credits": 0, "codes": ["FL47013","FL47017"]}
+        ]
+      },
+      {
+        "label": "應外專業課程（第二外語除外）",
+        "mode": "credits",
+        "minimum": 9,
+        "subjects": [],
+        "manual": {
+          "target": "經確認的應外專業課程",
+          "prefixes": [
+            "FL"
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      "1.英語檢定0學分必修課程審核注意事項:★應外輔系畢業門檻:學生需於畢業前通過相當於TOEIC750分(含)以上英語檢定。採通過及不通過方式認證此必修課程。★通過檢定者,請於學期期初(9月31日前或3月31日前)持相關英語檢定證明至應外系辦理審核。2.所有應修科目都需修習由應外系所開設的課程,課號為FL開頭,第二外語課程除外。本項規定在校生適用。"
+    ],
+    "sourcePrefix": "FL"
+  },
+  {
+    "years": [
+      "114"
+    ],
+    "category": "minor",
+    "department": "科技管理學士學位學程",
+    "shortName": "科管學程",
+    "code": "TB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "科技管理概論", "credits": 3, "codes": ["TB18007"]},
+          {"title": "智慧財產權法", "credits": 3, "codes": ["MB12023","TB21007"]},
+          {"title": "企業倫理與永續", "credits": 3, "codes": ["MB21083","TB20147"]}
+        ]
+      },
+      {
+        "label": "兩類專業選修合計",
+        "mode": "credits",
+        "minimum": 15,
+        "subjects": [
+          {"title": "行銷管理", "credits": 3, "codes": ["BA22013","BA52007","IM32027","MI21087"]},
+          {"title": "人力資源管理", "credits": 3, "codes": ["BA32093","BA32097","BA66057","IM32097"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007","FB20007"]},
+          {"title": "生產與作業管理", "credits": 3, "codes": ["BA36063","IM34073","IM34077"]},
+          {"title": "創意思考", "credits": 3, "codes": ["MB21057"]},
+          {"title": "科技政策", "credits": 3, "codes": ["MB21093"]},
+          {"title": "設計思考暨商業應用", "credits": 3, "codes": ["MB27047"]},
+          {"title": "策略性團隊創意實踐", "credits": 3, "codes": ["MB27057"]},
+          {"title": "創新與創業管理", "credits": 3, "codes": ["TB20087"]},
+          {"title": "網際網路與著作權", "credits": 3, "codes": ["IB20397"]},
+          {"title": "專利分析與佈局", "credits": 3, "codes": ["TM62407"]},
+          {"title": "專利與行政法", "credits": 3, "codes": ["TM62617"]},
+          {"title": "企業與競爭法", "credits": 3, "codes": ["TM62507"]},
+          {"title": "智慧財產權與行銷策略", "credits": 3, "codes": ["TM62317"]},
+          {"title": "綠能科技政策與能源法", "credits": 3, "codes": ["TM62517"]},
+          {"title": "資料與法律", "credits": 3, "codes": ["TM61607"]},
+          {"title": "社會科學研究方法", "credits": 3, "codes": ["TM61427"]},
+          {"title": "國際企業與創新發展", "credits": 3, "codes": ["TM63017"]},
+          {"title": "管理學或管理與企業倫理", "credits": 3, "codes": ["BA13023","BA13027","MB21003"]},
+          {"title": "企業政策或策略管理", "credits": 3, "codes": ["BA44003","BA44007","BA44103","BA44107","BA55017","MB18107"]},
+          {"title": "專案管理或軟體專案管理", "credits": 3, "codes": ["AD51267","CE30037","CS40077","IM66137","MI42117"]},
+          {"title": "社會創新或社會創新與創業實踐", "credits": 3, "codes": ["TB20117","TM63727"]}
+        ],
+        "manual": {
+          "target": "其他經確認的科管專業選修",
+          "prefixes": [
+            "TB",
+            "TM"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "財務金融學士學位學程",
+    "shortName": "財金學程",
+    "code": "FB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "經濟學或經濟學(上)或經濟學(下)", "credits": 3, "codes": ["BA13000","BA130A0","BA130B0","FB11027","IM33013","MB11020","MB11037","MB112A0","MB112B0","MI10023"]},
+          {"title": "統計學或統計學(上)或統計學(下)或統計學(一)或統計學(二)", "credits": 3, "codes": ["BA30050","BA305A0","BA305B0","FB27007","FB270A5","FB270B5","IM30033","IM30043","MB27000","MB27003","MB270A0","MB270B0","MB28003","MB28007","MB29003","MB29007","MI30060","MI30063","MI306A0","MI306B0"]},
+          {"title": "會計學或會計學(上)或會計學(下)", "credits": 3, "codes": ["BA13093","BA13095","BA13097","BA139A5","BA139B5","IM33093","MB14007","MB200A0","MB200B0","MI10033"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007","FB20007","MB12053"]}
+        ]
+      },
+      {
+        "label": "專業選修",
+        "mode": "credits",
+        "minimum": 12,
+        "subjects": [
+          {"title": "投資學", "credits": 3, "codes": ["FB20017"]},
+          {"title": "期貨與選擇權", "credits": 3, "codes": ["FB23007"]},
+          {"title": "金融市場與機構", "credits": 3, "codes": ["FB22007"]},
+          {"title": "資產證券化", "credits": 3, "codes": ["FB23027"]},
+          {"title": "債券市場", "credits": 3, "codes": ["FB23017"]},
+          {"title": "總體經濟學", "credits": 3, "codes": ["FB24007"]},
+          {"title": "公司治理", "credits": 3, "codes": ["FB21007"]},
+          {"title": "行為財務學", "credits": 3, "codes": ["FB21017"]},
+          {"title": "財金計量方法", "credits": 3, "codes": ["FB23097","FB23177"]},
+          {"title": "財金數學建模", "credits": 3, "codes": ["FB23167"]},
+          {"title": "財務風險管理", "credits": 3, "codes": ["FB25017"]},
+          {"title": "財金實務專題講座", "credits": 3, "codes": ["FB35017","FBG0013"]},
+          {"title": "財務報表分析", "credits": 3, "codes": ["FB36077"]},
+          {"title": "貨幣銀行學", "credits": 3, "codes": ["FB36047"]},
+          {"title": "基金管理", "credits": 3, "codes": ["FB36087"]},
+          {"title": "保險學", "credits": 3, "codes": ["FB25027"]}
+        ],
+        "manual": {
+          "target": "其他經確認的財金專業選修",
+          "prefixes": [
+            "FB"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "智慧財產權學士學位學程",
+    "shortName": "智財學程",
+    "code": "IB",
+    "groups": [
+      {
+        "label": "專業科目",
+        "mode": "credits",
+        "minimum": 18,
+        "subjects": [
+          {"title": "專利與營業秘密", "credits": 3, "codes": ["IB20407"]},
+          {"title": "商標與公平交易", "credits": 3, "codes": ["IB20417"]},
+          {"title": "商標法案例解析", "credits": 2, "codes": ["IB20497"]},
+          {"title": "設計專利實務", "credits": 2, "codes": ["IB20437"]},
+          {"title": "專利文件解讀", "credits": 2, "codes": ["IB20107","IB20187"]},
+          {"title": "企業財經法律", "credits": 3, "codes": ["IB20467"]},
+          {"title": "智慧財產權之侵害與救濟", "credits": 3, "codes": ["IB20427"]},
+          {"title": "公平交易法之理論與實務", "credits": 3, "codes": ["IB20127"]},
+          {"title": "智慧財產權實務專題", "credits": 3, "codes": ["IB20083","IB20087"]},
+          {"title": "專利資訊與產業分析", "credits": 2, "codes": ["IB20457"]},
+          {"title": "網際網路與著作權", "credits": 3, "codes": ["IB20397"]},
+          {"title": "著作權法案例解析:理論與實務", "credits": 3, "codes": ["IB20237"]},
+          {"title": "生物科技與法律", "credits": 3, "codes": ["IB20177"]}
+        ],
+        "manual": {
+          "target": "其他經確認的智財專業選修",
+          "prefixes": [
+            "IB"
+          ]
+        }
+      },
+      {
+        "label": "專業與通識合計",
+        "mode": "credits",
+        "minimum": 20,
+        "subjects": [
+          {"title": "專利與營業秘密", "credits": 3, "codes": ["IB20407"]},
+          {"title": "商標與公平交易", "credits": 3, "codes": ["IB20417"]},
+          {"title": "商標法案例解析", "credits": 2, "codes": ["IB20497"]},
+          {"title": "設計專利實務", "credits": 2, "codes": ["IB20437"]},
+          {"title": "專利文件解讀", "credits": 2, "codes": ["IB20107","IB20187"]},
+          {"title": "企業財經法律", "credits": 3, "codes": ["IB20467"]},
+          {"title": "智慧財產權之侵害與救濟", "credits": 3, "codes": ["IB20427"]},
+          {"title": "公平交易法之理論與實務", "credits": 3, "codes": ["IB20127"]},
+          {"title": "智慧財產權實務專題", "credits": 3, "codes": ["IB20083","IB20087"]},
+          {"title": "專利資訊與產業分析", "credits": 2, "codes": ["IB20457"]},
+          {"title": "網際網路與著作權", "credits": 3, "codes": ["IB20397"]},
+          {"title": "著作權法案例解析:理論與實務", "credits": 3, "codes": ["IB20237"]},
+          {"title": "生物科技與法律", "credits": 3, "codes": ["IB20177"]},
+          {"title": "智慧財產實戰策略講座", "credits": 2, "codes": ["IBG0053"]},
+          {"title": "時事漫談智慧財產與科技法", "credits": 2, "codes": ["IBG0073"]},
+          {"title": "專利101:專利制度入門與基礎", "credits": 2, "codes": ["IBG0063"]}
+        ],
+        "manual": {
+          "target": "其他經確認的智財專業選修",
+          "prefixes": [
+            "IB"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "醫學工程學士學位學程",
+    "shortName": "醫工學程",
+    "code": "BB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {"title": "生物學導論", "credits": 3, "codes": ["TCG0713"]}
+        ]
+      },
+      {
+        "label": "醫工專業選修",
+        "mode": "credits",
+        "minimum": 18,
+        "subjects": [
+          {"title": "醫學工程理論與實務", "credits": 3, "codes": ["BB20343"]},
+          {"title": "解剖生理學概論", "credits": 3, "codes": ["BB20123"]},
+          {"title": "臨床醫學工程概論", "credits": 3, "codes": ["BB20133","BB20137"]},
+          {"title": "醫學工程概論", "credits": 3, "codes": ["BB20013","BE59053"]},
+          {"title": "再生醫學原理", "credits": 3, "codes": ["BB20237"]},
+          {"title": "醫療儀器學", "credits": 3, "codes": ["BB20143","BB20147","EE39017"]},
+          {"title": "生醫材料導論", "credits": 3, "codes": ["BB20057"]},
+          {"title": "奈米醫學工程概論", "credits": 3, "codes": ["BB20177"]},
+          {"title": "醫學影像概論", "credits": 3, "codes": ["BB20187"]},
+          {"title": "電子學", "credits": 3, "codes": ["EE22173"]},
+          {"title": "生醫量測系統設計", "credits": 3, "codes": ["BE56107","ET56107"]},
+          {"title": "高分子化學", "credits": 3, "codes": ["CH32077","TX32043"]},
+          {"title": "儀器分析", "credits": 3, "codes": ["CH33083","CH33087","TX31097"]},
+          {"title": "靜力學", "credits": 3, "codes": ["ME21033"]},
+          {"title": "材料力學", "credits": 3, "codes": ["CT10033","CT20033","ME21063","TX43033"]},
+          {"title": "資料結構", "credits": 3, "codes": ["CS20023","EE34073","EE34077","ET34087"]},
+          {"title": "計算機程式設計", "credits": 3, "codes": ["CS10033"]}
+        ],
+        "manual": {
+          "target": "其他經確認的醫工專業選修",
+          "prefixes": [
+            "BE",
+            "BB"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "minor",
+    "department": "色彩影像與照明科技學士學位學程",
+    "shortName": "色彩學程",
+    "code": "CX",
+    "groups": [
+      {
+        "label": "色彩專業選修",
+        "mode": "credits",
+        "minimum": 20,
+        "subjects": [
+          {"title": "應用色彩科學", "credits": 3, "codes": ["CI53307"]},
+          {"title": "色彩心理學概論", "credits": 3, "codes": ["CX40073","CX40077"]},
+          {"title": "應用色彩心理學", "credits": 3, "codes": ["CI53377"]},
+          {"title": "感性色彩設計", "credits": 3, "codes": ["CI53387"]},
+          {"title": "色彩量測與品質評價", "credits": 3, "codes": ["CX40117"]},
+          {"title": "色彩工程概論", "credits": 3, "codes": ["CX46073","CX46077"]},
+          {"title": "應用視覺光學", "credits": 3, "codes": ["CI52227"]},
+          {"title": "色彩與視覺心理研究分析", "credits": 3, "codes": ["CI53427"]},
+          {"title": "色度學原理與應用", "credits": 3, "codes": ["CI52267"]},
+          {"title": "影像科技概論", "credits": 3, "codes": ["CX40053","CX40057"]},
+          {"title": "彩色影像處理", "credits": 3, "codes": ["CI53177"]},
+          {"title": "高等彩色視覺學", "credits": 3, "codes": ["CI53207"]},
+          {"title": "立體取像技術", "credits": 3, "codes": ["CI53257"]},
+          {"title": "三維模型設計實務", "credits": 3, "codes": ["CX40087"]},
+          {"title": "色彩及影像實作技術", "credits": 3, "codes": ["CI53297","CI53317"]},
+          {"title": "數位相機理論與實務", "credits": 3, "codes": ["CI52217"]},
+          {"title": "跨媒體色彩複製", "credits": 3, "codes": ["CI52177"]},
+          {"title": "成像技術及設備", "credits": 3, "codes": ["CI53167"]},
+          {"title": "高等電腦圖學", "credits": 3, "codes": ["CI53267"]},
+          {"title": "3D立體顯示", "credits": 3, "codes": ["CI53287"]},
+          {"title": "電腦視覺與應用", "credits": 3, "codes": ["CI53367"]},
+          {"title": "人工智慧影像辨識實務", "credits": 3, "codes": ["CX40217"]},
+          {"title": "AR/VR程式設計", "credits": 3, "codes": ["CX40187"]},
+          {"title": "多媒體資訊系統導論", "credits": 3, "codes": ["ET45077"]},
+          {"title": "固態照明技術", "credits": 3, "codes": ["CI53347"]},
+          {"title": "照明光學", "credits": 3, "codes": ["CI53247"]},
+          {"title": "非成像光學與照明設計", "credits": 3, "codes": ["CI53357"]},
+          {"title": "DIALux光環境照明設計", "credits": 3, "codes": ["CX40207"]},
+          {"title": "光電應用", "credits": 3, "codes": ["ET33037"]},
+          {"title": "固態照明", "credits": 3, "codes": ["EO54087"]},
+          {"title": "高效能照明工程設計", "credits": 3, "codes": ["EE53107"]},
+          {"title": "色彩與照明", "credits": 3, "codes": ["CI53397"]},
+          {"title": "色彩與照明概論", "credits": 2, "codes": ["CX40063","CX40067","CXG0063"]},
+          {"title": "數位典藏技術", "credits": 3, "codes": ["CI53327"]},
+          {"title": "色彩學在影像與照明產業之應用", "credits": 3, "codes": ["CI52187"]},
+          {"title": "光學系統設計", "credits": 3, "codes": ["CI53277"]},
+          {"title": "人因在照明與色彩之應用", "credits": 3, "codes": ["CI52167"]},
+          {"title": "人因工程學", "credits": 2, "codes": ["IM31033","IM46063"]},
+          {"title": "人因工程實習", "credits": 1, "codes": ["IM47083"]},
+          {"title": "色彩照明實驗設計與分析", "credits": 3, "codes": ["CI52297"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["ET21043"]}
+        ],
+        "manual": {
+          "target": "其他經確認的色彩專業選修",
+          "prefixes": [
+            "CX",
+            "CI"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "minor",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 3,
+        "subjects": [
+          {"title": "電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "電子學(二)", "credits": 3, "codes": ["ET21083"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]}
+        ]
+      },
+      {
+        "label": "專業必修任選三門",
+        "mode": "subjects",
+        "minimum": 3,
+        "subjects": [
+          {"title": "工程數學(一)", "credits": 3, "codes": ["ET30013"]},
+          {"title": "工程數學(二)", "credits": 3, "codes": ["ET30023"]},
+          {"title": "微算機原理及應用", "credits": 3, "codes": ["ET34033"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "線性系統或信號與系統", "credits": 3, "codes": ["ET31053"]},
+          {"title": "通訊系統(一)", "credits": 3, "codes": ["ET40067"]},
+          {"title": "半導體物理與元件(一)", "credits": 3, "codes": ["ET33077"]},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "光電元件", "credits": 3, "codes": ["ET43027"]},
+          {"title": "工程近代物理", "credits": 3, "codes": ["ET30057"]}
+        ]
+      },
+      {
+        "label": "實習任選兩門",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "電子儀器學實習", "credits": 1, "codes": ["ET38053"]},
+          {"title": "精密儀器學實習", "credits": 1, "codes": ["ET47093"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "電子學實習(一)", "credits": 1, "codes": ["ET37063"]},
+          {"title": "電子學實習(二)", "credits": 1, "codes": ["ET37073"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "數位系統設計實習", "credits": 1, "codes": ["ET38043"]},
+          {"title": "微算機原理及應用實習", "credits": 1, "codes": ["ET38013"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "得兼充科目僅依校方原表所列條件與核定結果登錄。"
+    ]
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "minor",
+    "department": "科技管理學士學位學程",
+    "shortName": "科管學程",
+    "code": "TB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "科技管理概論", "credits": 3, "codes": ["MB21023","TB18007"]},
+          {"title": "智慧財產權法", "credits": 3, "codes": ["MB12023","TB21007"]},
+          {"title": "企業倫理與永續", "credits": 3, "codes": ["MB21083","TB20147"]},
+          {"title": "創新與創業管理", "credits": 3, "codes": ["MB20003","MB20007","TB20087"]},
+          {"title": "科技政策", "credits": 3, "codes": ["MB21093"]}
+        ]
+      },
+      {
+        "label": "專業選修",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [
+          {"title": "策略性團隊創意實踐", "credits": 3, "codes": ["MB27057"]},
+          {"title": "智慧財產權與行銷策略", "credits": 3, "codes": ["TM62317"]},
+          {"title": "研發與專案管理", "credits": 3, "codes": ["TM56097"]},
+          {"title": "人工智慧與商業分析", "credits": 3, "codes": ["TM56107"]},
+          {"title": "技術評估與預測", "credits": 3, "codes": ["TM64107"]},
+          {"title": "企業與競爭法", "credits": 3, "codes": ["TM62507"]}
+        ]
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "機械工程系",
+    "shortName": "機械系",
+    "code": "ME",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 18,
+        "subjects": [
+          {"title": "圖學", "credits": 2, "codes": ["ME20067"]},
+          {"title": "工廠實習", "credits": 1, "codes": ["ME23073","ME23077"]},
+          {"title": "靜力學", "credits": 3, "codes": ["ME21033"]},
+          {"title": "熱力學", "credits": 3, "codes": ["ME27033","ME27063"]},
+          {"title": "動力學", "credits": 3, "codes": ["ME31003"]},
+          {"title": "工程材料(一)", "credits": 3, "codes": ["ME34013"]},
+          {"title": "工程數學(一)", "credits": 3, "codes": ["ME30003"]},
+          {"title": "機動學", "credits": 3, "codes": ["ME41043"]},
+          {"title": "材料力學", "credits": 3, "codes": ["ME21063"]},
+          {"title": "應用電子學", "credits": 3, "codes": ["ME34093"]},
+          {"title": "機械實習(一)-材料與製造領域", "credits": 1, "codes": ["ME24083"]},
+          {"title": "流體力學", "credits": 3, "codes": ["ME38013"]},
+          {"title": "機械設計", "credits": 3, "codes": ["ME32113"]},
+          {"title": "自動控制(一)", "credits": 3, "codes": ["ME36043"]},
+          {"title": "製造學", "credits": 3, "codes": ["ME33003"]},
+          {"title": "機械實習(二)-電子與自控領域", "credits": 1, "codes": ["ME35093"]},
+          {"title": "熱傳學", "credits": 3, "codes": ["ME37053"]},
+          {"title": "機械實習(三)-熱流領域", "credits": 1, "codes": ["ME37093"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "(1)修讀生於進入本校前若曾修習本課程,得檢具成績單申請免修。(2)應先修工廠實習。(3)應先修至少6學分微積分及至少6學分物理。(4)106學年度(含)以前入學學生仍需取得「工程數學(二)」學分。107學年度入學的學生未修習或未通過「工程數學(二)」者,須修習「工程數學(一)」,免修工程數學(二)。",
+      "微積分、物理及實習先修資格請依原表備註核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "營建工程系",
+    "shortName": "營建系",
+    "code": "CT",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 16,
+        "subjects": [
+          {"title": "營建工程初階設計與實作", "credits": 3, "codes": ["CT11023"]},
+          {"title": "工程靜力學或靜力學", "credits": 3, "codes": ["CT10023"]},
+          {"title": "工程材料", "credits": 3, "codes": ["CT33093"]},
+          {"title": "材料力學", "credits": 3, "codes": ["CT10033","CT20033"]},
+          {"title": "結構學", "credits": 3, "codes": ["CT32003"]},
+          {"title": "C/VB程式與應用或FORTRAN程式與應用或計算機程式與應用(工程學院開課)", "credits": 3, "codes": ["CE20023","CT34073","CT34077"]},
+          {"title": "混凝土品質控制", "credits": 3, "codes": ["CT36083"]},
+          {"title": "混凝土試驗", "credits": 1, "codes": ["CT37013"]},
+          {"title": "工程管理", "credits": 3, "codes": ["CT43083"]},
+          {"title": "鋼筋混凝土設計", "credits": 3, "codes": ["CT33043"]},
+          {"title": "鋼結構設計", "credits": 3, "codes": ["CT33073"]},
+          {"title": "土壤力學", "credits": 3, "codes": ["CT34103"]},
+          {"title": "土壤力學試驗", "credits": 1, "codes": ["CT37073"]},
+          {"title": "工程規劃與控制", "credits": 3, "codes": ["CT43013"]},
+          {"title": "基礎工程", "credits": 3, "codes": ["CT34033"]},
+          {"title": "營建工程整合設計實務", "credits": 3, "codes": ["CT44093"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "結構相關科目的先修成績及開課單位須依原表核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "化學工程系",
+    "shortName": "化工系",
+    "code": "CH",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 19,
+        "subjects": [
+          {"title": "質能均衡", "credits": 3, "codes": ["CH22013"]},
+          {"title": "單元操作與輸送現象(一)", "credits": 3, "codes": ["CH22053"]},
+          {"title": "單元操作與輸送現象(二)", "credits": 3, "codes": ["CH22063"]},
+          {"title": "單元操作與輸送現象(三)", "credits": 3, "codes": ["CH22073"]},
+          {"title": "化工熱力學", "credits": 3, "codes": ["CH32033","CH32133"]},
+          {"title": "反應工程", "credits": 3, "codes": ["CH32063"]},
+          {"title": "程序設計", "credits": 3, "codes": ["CH42053","CH42153"]},
+          {"title": "工程數學(一)", "credits": 3, "codes": ["CH20003","CH30003"]},
+          {"title": "物理化學(上)", "credits": 3, "codes": ["CH215A0"]},
+          {"title": "物理化學(下)", "credits": 3, "codes": ["CH215B0"]},
+          {"title": "有機化學(上)", "credits": 3, "codes": ["CH213A0"]},
+          {"title": "有機化學(下)", "credits": 3, "codes": ["CH213B0"]},
+          {"title": "儀器分析", "credits": 3, "codes": ["CH33083","CH33087"]},
+          {"title": "化學技術實習(一)", "credits": 1, "codes": ["CH28003"]},
+          {"title": "化學技術實習(二)", "credits": 1, "codes": ["CH28023"]},
+          {"title": "化學技術實習(三)", "credits": 1, "codes": ["CH38033"]},
+          {"title": "化學技術實習(四)", "credits": 1, "codes": ["CH38043"]},
+          {"title": "化學工程實習(一)", "credits": 1, "codes": ["CH48043"]},
+          {"title": "化學工程實習(二)", "credits": 1, "codes": ["CH48053"]}
+        ]
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114"
+    ],
+    "category": "double-major",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 13,
+        "subjects": [
+          {"title": "計算機科學導論或計算機概論", "credits": 3, "codes": ["ET24003","ET24007"]},
+          {"title": "數位邏輯或數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "線性代數或工程數學(二)", "credits": 3, "codes": ["ET30023"]},
+          {"title": "電子學或電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "計算機程式與應用或計算機程式或程式設計或程式語言或計算機程式設計", "credits": 3, "codes": ["ET34053","ET34057"]},
+          {"title": "工程數學或工程數學(一)或微分方程", "credits": 3, "codes": ["ET30013"]},
+          {"title": "微算機原理及應用或微算機應用", "credits": 3, "codes": ["ET34033"]},
+          {"title": "電子學(二)或電子電路", "credits": 3, "codes": ["ET21083"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "線性系統或信號與系統", "credits": 3, "codes": ["ET31053"]},
+          {"title": "微算機原理及應用實習或微算機應用實習", "credits": 1, "codes": ["ET38013"]},
+          {"title": "電子學實習(一)或電子學實習", "credits": 1, "codes": ["ET37063"]}
+        ]
+      },
+      {
+        "label": "實務課程",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題與實習（擇一路徑）",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]}
+              ],
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ],
+              [
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "專業選修內至少兩門實習",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "基礎電子電路實習(限高中生或非電子、電機科高職生背景)", "credits": 1, "codes": []},
+          {"title": "電子學實習(二)或電子電路實習", "credits": 1, "codes": ["ET37073"]},
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]}
+        ]
+      },
+      {
+        "label": "專業選修合計",
+        "mode": "credits",
+        "minimum": 13,
+        "subjects": [
+          {"title": "基礎電子電路實習(限高中生或非電子、電機科高職生背景)", "credits": 1, "codes": []},
+          {"title": "電子學實習(二)或電子電路實習", "credits": 1, "codes": ["ET37073"]},
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]},
+          {"title": "通訊系統(一)或通信系統", "credits": 3, "codes": ["ET40067"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["ET21043"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["ET35027"]},
+          {"title": "半導體物理與元件(一)", "credits": 3, "codes": ["ET33077"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "「校外實習」所指課程為:電子實務暑期校外實習3學分課程及電子實務校外實習(一)、(二)、(三)、(四)1~9學分等課程。",
+      "可採上下兩門專題，或一門專題搭配 2 學分校外實習。實習路徑依原表與系辦核定額度核對。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "電機工程系",
+    "shortName": "電機系",
+    "code": "EE",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 11,
+        "subjects": [
+          {"title": "微積分(上)", "credits": 4, "codes": ["EE161A0"]},
+          {"title": "微積分(下)", "credits": 4, "codes": ["EE161B0"]},
+          {"title": "微分方程或工程數學(一)或工程數學", "credits": 3, "codes": ["EE20113"]},
+          {"title": "微算機概論或微算機原理及應用", "credits": 3, "codes": ["EE34023"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["EE22013"]},
+          {"title": "電磁學", "credits": 3, "codes": ["EE32013"]},
+          {"title": "電機機械", "credits": 3, "codes": ["EE32043"]},
+          {"title": "微算機概論實習或微算機原理及應用實習", "credits": 1, "codes": ["EE38023"]},
+          {"title": "電子學實習或電子學實習(一)", "credits": 1, "codes": ["EE27073"]},
+          {"title": "電機實務專題(上)", "credits": 2, "codes": ["EE490A0","EE490A5"]},
+          {"title": "電機實務專題(下)", "credits": 2, "codes": ["EE490B0"]}
+        ]
+      },
+      {
+        "label": "專業選修正課",
+        "mode": "subjects",
+        "minimum": 4,
+        "subjects": [
+          {
+            "title": "電力系統",
+            "credits": 3,
+            "codes": ["EE32083"],
+            "area": "0"
+          },
+          {
+            "title": "電機控制",
+            "credits": 3,
+            "codes": ["EE42033"],
+            "area": "0"
+          },
+          {
+            "title": "信號與系統",
+            "credits": 3,
+            "codes": ["EE36033"],
+            "area": "1"
+          },
+          {
+            "title": "控制系統",
+            "credits": 3,
+            "codes": ["EE36013"],
+            "area": "1"
+          },
+          {
+            "title": "類比及混合訊號積體電路與系統",
+            "credits": 3,
+            "codes": ["EE34163"],
+            "area": "2"
+          },
+          {
+            "title": "超大型積體電路設計導論",
+            "credits": 3,
+            "codes": ["EE34083", "EE34087"],
+            "area": "2"
+          },
+          {
+            "title": "計算機組織",
+            "credits": 3,
+            "codes": ["EE30053", "EE54017"],
+            "area": "3"
+          },
+          {
+            "title": "資料結構",
+            "credits": 3,
+            "codes": ["EE34073", "EE34077"],
+            "area": "3"
+          },
+          {
+            "title": "電磁波",
+            "credits": 3,
+            "codes": ["EE32063"],
+            "area": "4"
+          },
+          {
+            "title": "通信系統或通訊系統(一)",
+            "credits": 3,
+            "codes": ["EE46003"],
+            "area": "4"
+          }
+        ]
+      },
+      {
+        "label": "專業選修實習",
+        "mode": "subjects",
+        "minimum": 3,
+        "subjects": [
+          {
+            "title": "電力系統實習",
+            "credits": 1,
+            "codes": ["EE47023"],
+            "area": "0",
+            "pairedWith": [
+              "電力系統"
+            ]
+          },
+          {
+            "title": "電機控制實習",
+            "credits": 1,
+            "codes": ["EE47013"],
+            "area": "0",
+            "pairedWith": [
+              "電機控制"
+            ]
+          },
+          {
+            "title": "信號與系統實習",
+            "credits": 1,
+            "codes": ["EE33013", "EE33017"],
+            "area": "1",
+            "pairedWith": [
+              "信號與系統"
+            ]
+          },
+          {
+            "title": "控制系統實習",
+            "credits": 1,
+            "codes": ["EE47053"],
+            "area": "1",
+            "pairedWith": [
+              "控制系統"
+            ]
+          },
+          {
+            "title": "數位系統設計實習",
+            "credits": 1,
+            "codes": ["EE34093"],
+            "area": "2",
+            "pairedWith": [
+              "類比及混合訊號積體電路與系統",
+              "超大型積體電路設計導論"
+            ]
+          },
+          {
+            "title": "超大型積體電路設計實習",
+            "credits": 1,
+            "codes": ["EE34103"],
+            "area": "2",
+            "pairedWith": [
+              "類比及混合訊號積體電路與系統",
+              "超大型積體電路設計導論"
+            ]
+          },
+          {
+            "title": "電磁波實習",
+            "credits": 1,
+            "codes": ["EE47073", "EE47077"],
+            "area": "4",
+            "pairedWith": [
+              "電磁波"
+            ]
+          },
+          {
+            "title": "通信系統實習",
+            "credits": 1,
+            "codes": ["EE48063"],
+            "area": "4",
+            "pairedWith": [
+              "通信系統或通訊系統(一)"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "另修基礎課程（不計入表列專業學分）",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "計算機程式與應用或計算機程式或程式設計或程式語言或計算機程式設計", "credits": 3, "codes": ["CE20003","CE20023","EC10033","EC10037","EC10113","EE34053","IM52127","MB12033","MI12067","MI31063"]},
+          {"title": "數位邏輯或數位邏輯設計", "credits": 3, "codes": ["EC10073","EC10077","EC34043","EE34033"]},
+          {"title": "線性代數或工程數學(二)", "credits": 3, "codes": ["EC20033","EC20037","EE40053"]},
+          {"title": "電子學或電子學(一)", "credits": 3, "codes": ["EC20013","EC20017","EC21073","EE22173"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "除上列必修44學分外,另須修習通過下列四門基礎課程:1.「計算機程式與應用」或「計算機程式」或「程式設計」或「程式語言」或「計算機程式設計」3學分2.「數位邏輯」或「數位邏輯設計」3學分3.「線性代數」或「工程數學(二)」3學分4.「電子學」或「電子學(一)」3學分",
+      "正課十選四(12學分)實習八選三(3學分)八選三之領域選修實習課程,除積體電路領域之「數位系統設計實習」、「超大型積體電路設計實習」兩門實習課,可任選「類比及混合訊號積體電路與系統」、「超大型積體電路設計導論」為對應正課外(仍須一門實習綁定一門正課),電力、控制與系統及電信領域實習皆需綁修相對應之正課。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "資訊工程系",
+    "shortName": "資工系",
+    "code": "CS",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 17,
+        "subjects": [
+          {"title": "資訊工程導論或計算機概論", "credits": 3, "codes": ["CS10053"]},
+          {"title": "物件導向程式設計", "credits": 3, "codes": ["CS30053"]},
+          {"title": "物件導向程式設計實習", "credits": 1, "codes": ["CS10103"]},
+          {"title": "資料結構", "credits": 3, "codes": ["CS20023"]},
+          {"title": "線性代數", "credits": 3, "codes": ["CS10063"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["CS20063"]},
+          {"title": "數位系統設計", "credits": 3, "codes": ["CS20223"]},
+          {"title": "機率與統計", "credits": 3, "codes": ["CS20083"]},
+          {"title": "演算法", "credits": 3, "codes": ["CS30013"]},
+          {"title": "離散數學", "credits": 3, "codes": ["CS30033"]},
+          {"title": "計算機網路概論", "credits": 3, "codes": ["CS30043"]},
+          {"title": "作業系統", "credits": 3, "codes": ["CS30093"]},
+          {"title": "程式語言或編譯器設計", "credits": 3, "codes": ["CS30203","CS40013"]},
+          {"title": "資料庫系統", "credits": 3, "codes": ["CS30103","CS30107"]},
+          {"title": "軟體工程", "credits": 3, "codes": ["CS30253"]},
+          {"title": "資工實務專題(上)", "credits": 2, "codes": ["CS490A0"]},
+          {"title": "資工實務專題(下)", "credits": 2, "codes": ["CS490B0"]}
+        ]
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "years": [
+      "114"
+    ],
+    "category": "double-major",
+    "department": "工業管理系",
+    "shortName": "工管系",
+    "code": "IM",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 19,
+        "subjects": [
+          {"title": "工業管理概論", "credits": 3, "codes": ["IM11013"]},
+          {"title": "計算機程式", "credits": 2, "codes": ["IM12013"]},
+          {"title": "計算機程式實習", "credits": 1, "codes": ["IM12023"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": []},
+          {"title": "管理數學", "credits": 3, "codes": ["IM30053"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["IM41033"]},
+          {"title": "作業研究(二)", "credits": 3, "codes": ["IM41043"]},
+          {"title": "工作研究", "credits": 2, "codes": ["IM44033"]},
+          {"title": "工作研究實習", "credits": 1, "codes": ["IM47033"]},
+          {"title": "品質管理", "credits": 3, "codes": ["IM47043"]},
+          {"title": "電子化企業概論", "credits": 2, "codes": ["IM46203"]},
+          {"title": "電子化企業概論實習", "credits": 1, "codes": ["IM46243"]},
+          {"title": "生產與作業管理", "credits": 3, "codes": ["IM34073","IM34077"]},
+          {"title": "人因工程學", "credits": 2, "codes": ["IM31033","IM46063"]},
+          {"title": "人因工程實習", "credits": 1, "codes": ["IM47083"]},
+          {
+            "title": "經濟學",
+            "credits": 3,
+            "codes": ["IM33013"],
+            "alternatives": [
+              [
+                {"title": "經濟學(上)", "credits": 3, "codes": ["BA130A0","MB112A0"]},
+                {"title": "經濟學(下)", "credits": 3, "codes": ["BA130B0","MB112B0"]}
+              ]
+            ]
+          },
+          {
+            "title": "會計學",
+            "credits": 3,
+            "codes": ["IM33093"],
+            "alternatives": [
+              [
+                {"title": "會計學(上)", "credits": 3, "codes": ["BA139A5","MB200A0"]},
+                {"title": "會計學(下)", "credits": 3, "codes": ["BA139B5","MB200B0"]}
+              ]
+            ]
+          },
+          {"title": "實務專題(上)", "credits": 2, "codes": ["IM499A0"]},
+          {"title": "實務專題(下)", "credits": 2, "codes": ["IM499B0"]}
+        ]
+      },
+      {
+        "label": "另修基礎課程（不計入表列專業學分）",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "微積分(上)", "credits": 3, "codes": ["BA161A0","CE162A0","EC161A0","IM160A0","MB160A0","MI161A0"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["BA161B0","CE162B0","EC161B0","IM160B0","MB160B0","MI161B0"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["BA305A0","FB270A5","MB270A0","MI306A0"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0","FB270B5","MB270B0","MI306B0"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.除上述應修學分總數43學分外,另須修習通過下列四門基礎課程:微積分(上)(3學分)、微積分(下)(3學分)、統計學(上)(3學分)、統計學(下)(3學分)。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "企業管理系",
+    "shortName": "企管系",
+    "code": "BA",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 7,
+        "subjects": [
+          {"title": "成本會計", "credits": 3, "codes": ["BA22083","BA22087"]},
+          {"title": "管理會計", "credits": 3, "codes": ["BA23003","BA23007","BA53027"]},
+          {"title": "人力資源管理", "credits": 3, "codes": ["BA32093","BA32097","BA66057"]},
+          {"title": "行銷管理", "credits": 3, "codes": ["BA22013","BA52007"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007"]},
+          {"title": "策略管理", "credits": 3, "codes": ["BA44103","BA44107","BA55017"]},
+          {"title": "會計學或會計學(上)或初級會計學", "credits": 3, "codes": ["BA13093","BA13095","BA13097","BA139A5"]}
+        ]
+      },
+      {
+        "label": "實務課程",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題或經核准的企管校外實習",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "實務專題(上)", "credits": 2, "codes": ["BA499A0"]},
+                {"title": "實務專題(下)", "credits": 2, "codes": ["BA499B0"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "BA 專業課程",
+        "mode": "credits",
+        "minimum": 18,
+        "subjects": [],
+        "manual": {
+          "target": "經確認的企管專業課程",
+          "prefixes": [
+            "BA"
+          ],
+          "cap": 5,
+          "cappedCodes": [
+            "BA11017",
+            "BA11027",
+            "BA11037",
+            "BA11117",
+            "BA11217",
+            "BA12007",
+            "BA12017",
+            "BA12027",
+            "BA12037",
+            "BA12047",
+            "BA12057",
+            "BA12067",
+            "BA12077",
+            "BA12087",
+            "BA12097",
+            "BA12117",
+            "BA12127",
+            "BA12137",
+            "BA12147",
+            "BA12157",
+            "BA12167",
+            "BA12207",
+            "BA15105",
+            "BA17095",
+            "BA17097",
+            "BA179A5",
+            "BA179B5",
+            "BA30150",
+            "BA39133",
+            "BA59617",
+            "BA59627",
+            "BA59637",
+            "BA59717",
+            "BA59817",
+            "BA59907",
+            "BA59917",
+            "BA59927",
+            "BA59937",
+            "BA59947",
+            "BA59957",
+            "BA59967",
+            "BA59977",
+            "BA59987",
+            "BA59997"
+          ]
+        }
+      },
+      {
+        "label": "經濟學基礎課程（另計）",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [
+          {"title": "經濟學或經濟學(上)", "credits": 3, "codes": ["BA13000","BA130A0","FB11027","IM33013","MB11020","MB11037","MB112A0","MI10023"]},
+          {"title": "經濟學(下)", "credits": 3, "codes": ["BA130B0","MB112B0"]}
+        ]
+      },
+      {
+        "label": "統計學基礎課程（另計）",
+        "mode": "credits",
+        "minimum": 6,
+        "subjects": [
+          {"title": "統計學或統計學(上)", "credits": 3, "codes": ["BA30050","BA305A0","FB27007","FB270A5","MB27000","MB27003","MB270A0","MI30060","MI30063","MI306A0"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0","FB270B5","MB270B0","MI306B0"]}
+        ]
+      },
+      {
+        "label": "另修基礎課程（不計入表列專業學分）",
+        "mode": "all",
+        "minimum": 2,
+        "subjects": [
+          {"title": "微積分或微積分(上)或微積分(下)", "credits": 3, "codes": ["BA16010","BA16013","BA16017","BA161A0","BA161B0","CE162A0","CE162B0","EC16010","EC161A0","EC161B0","IM16000","IM160A0","IM160B0","MB16000","MB16003","MB160A0","MB160B0","MI16010","MI161A0","MI161B0"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": ["BA47113","BA47117","MB21003"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "除上述應修學分總數43學分外,另須修習通過下列基礎課程:1.「微積分或微積分(上)或微積分(下)」,共3學分2.「經濟學或經濟學(上)3學分、經濟學(下)3學分」,共6學分3.「統計學或統計學(上)3學分、統計學(下)3學分」,共6學分4.「管理與企業倫理」3學分",
+      "企業實習相關課程在 18 學分內至多採計 5 學分，請依核定額度登錄。1.實務課程二選一,學生可選擇修習實務專題(上)及實務專題(下)共4學分,或修習企管校外實習4學分。2.學生修習通過「商業專題設計(上)(下)」或「工業專題設計(上)(下)」或「建築設計(七)(八)」或「英文實務專題(上)(下)」得免修本科目。3.跨校雙主修學生僅可修習實務專題(上)及實務專題(下)共4學分,本系開設校外實習課程僅限本系學生修習。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "資訊管理系",
+    "shortName": "資管系",
+    "code": "MI",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 9,
+        "subjects": [
+          {"title": "物件導向程式語言", "credits": 3, "codes": ["MI42043","MI42047"]},
+          {"title": "資料庫管理系統", "credits": 3, "codes": ["MI40023"]},
+          {"title": "資料結構", "credits": 3, "codes": ["MI30023"]},
+          {"title": "管理數學", "credits": 3, "codes": ["MI30083"]},
+          {"title": "行動裝置程式設計", "credits": 3, "codes": ["MI31143"]},
+          {"title": "系統分析與設計", "credits": 3, "codes": ["MI40013"]},
+          {"title": "資訊網路", "credits": 3, "codes": ["MI42063"]},
+          {"title": "管理資訊系統", "credits": 3, "codes": ["MI30033","MI30037"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["MI32013"]}
+        ]
+      },
+      {
+        "label": "本系專業選修",
+        "mode": "credits",
+        "minimum": 13,
+        "subjects": [],
+        "manual": {
+          "target": "經確認的資管選修",
+          "prefixes": [
+            "MI"
+          ],
+          "eligible": [
+            "MI12067",
+            "MI12077",
+            "MI12087",
+            "MI21057",
+            "MI21087",
+            "MI21097",
+            "MI21107",
+            "MI21117",
+            "MI22027",
+            "MI22037",
+            "MI22047",
+            "MI30097",
+            "MI30107",
+            "MI30117",
+            "MI30137",
+            "MI30147",
+            "MI30167",
+            "MI31027",
+            "MI31037",
+            "MI31127",
+            "MI31137",
+            "MI31157",
+            "MI31167",
+            "MI31177",
+            "MI31187",
+            "MI32107",
+            "MI33067",
+            "MI33077",
+            "MI35097",
+            "MI35107",
+            "MI35117",
+            "MI35137",
+            "MI40037",
+            "MI40047",
+            "MI40057",
+            "MI40117",
+            "MI40127",
+            "MI41067",
+            "MI41077",
+            "MI41117",
+            "MI41127",
+            "MI41137",
+            "MI41145",
+            "MI41167",
+            "MI41177",
+            "MI41197",
+            "MI42027",
+            "MI42107",
+            "MI42117",
+            "MI42147",
+            "MI43107",
+            "MI43117",
+            "MI44097",
+            "MI44107",
+            "MI49827",
+            "MI49837",
+            "MI49917",
+            "MI49927",
+            "MI49937",
+            "MI50107",
+            "MI50127",
+            "MI50147",
+            "MI50157",
+            "MI50167",
+            "MI51027",
+            "MI51087",
+            "MI51097",
+            "MI51107",
+            "MI51117",
+            "MI51127",
+            "MI51137",
+            "MI51147",
+            "MI51157",
+            "MI51177",
+            "MI51187",
+            "MI51197",
+            "MI51207",
+            "MI51217",
+            "MI51227",
+            "MI51237",
+            "MI51247",
+            "MI51257",
+            "MI51267",
+            "MI51277",
+            "MI51287",
+            "MI51307",
+            "MI51317",
+            "MI51327",
+            "MI51337",
+            "MI51357",
+            "MI51367",
+            "MI51377",
+            "MI52077",
+            "MI52117",
+            "MI52137",
+            "MI52157",
+            "MI52167",
+            "MI52177",
+            "MI52187",
+            "MI52197",
+            "MI52207",
+            "MI52217",
+            "MI52227",
+            "MI52237",
+            "MI52247",
+            "MI52257",
+            "MI52267",
+            "MI52277",
+            "MI52287",
+            "MI52297",
+            "MI52307",
+            "MI52317",
+            "MI52347",
+            "MI52357",
+            "MI52367",
+            "MI52377",
+            "MI52387",
+            "MI52397",
+            "MI52407",
+            "MI52417",
+            "MI53007",
+            "MI53037",
+            "MI53077",
+            "MI53097",
+            "MI53117",
+            "MI53127",
+            "MI53137",
+            "MI53147",
+            "MI53157",
+            "MI53167",
+            "MI53177",
+            "MI53187",
+            "MI53197",
+            "MI53207",
+            "MI53217",
+            "MI53227",
+            "MI54067",
+            "MI54107",
+            "MI54127",
+            "MI54137",
+            "MI55107",
+            "MI55117",
+            "MI55127",
+            "MI56017",
+            "MI56037",
+            "MI56047",
+            "MI56057",
+            "MI56077",
+            "MI58017",
+            "MI58037",
+            "MI58047",
+            "MI59107",
+            "MI59127",
+            "MI59137",
+            "MI59147",
+            "MI59157",
+            "MI59167",
+            "MI59177",
+            "MI59187",
+            "MI59197",
+            "MI59207",
+            "MI59217",
+            "MI59227",
+            "MI59237",
+            "MI59247",
+            "MI59257",
+            "MI59827",
+            "MI59837",
+            "MI59917",
+            "MI59927",
+            "MI59937",
+            "MI60027",
+            "MI60067",
+            "MI60097",
+            "MI60117",
+            "MI73087",
+            "MI90017",
+            "MI90037",
+            "MI90057",
+            "MI90087",
+            "MI90157",
+            "MI90167",
+            "MI90177",
+            "MI90187",
+            "MI90217",
+            "MI90227",
+            "MI90237",
+            "MI90267",
+            "MI90277",
+            "MI90287",
+            "MI90297",
+            "MI90307",
+            "MI90317",
+            "MI90327",
+            "MI90337"
+          ]
+        }
+      },
+      {
+        "label": "另修基礎課程（不計入表列專業學分）",
+        "mode": "all",
+        "minimum": 8,
+        "subjects": [
+          {"title": "會計學或會計學(上)或會計學(下)", "credits": 3, "codes": ["BA13093","BA13095","BA13097","BA139A5","BA139B5","FB28007","IM33093","MB14007","MB200A0","MB200B0","MI10033"]},
+          {"title": "經濟學或經濟學(上)或經濟學(下)", "credits": 3, "codes": ["BA13000","BA130A0","BA130B0","FB11027","IM33013","MB11020","MB11037","MB112A0","MB112B0","MI10023"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["BA305A0","FB270A5","MB270A0","MI306A0"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0","FB270B5","MB270B0","MI306B0"]},
+          {"title": "微積分(上)", "credits": 3, "codes": ["BA161A0","CE162A0","EC161A0","IM160A0","MB160A0","MI161A0"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["BA161B0","CE162B0","EC161B0","IM160B0","MB160B0","MI161B0"]},
+          {"title": "計算機概論", "credits": 3, "codes": ["EC34013","EC34017","MB12003","MI10063"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": ["BA47113","BA47117","MB21003"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.資管專業必修課程:27學分;資管專業選修課程:13學分;共計40學分。2.並需修畢下列專業基礎課程(但不計入雙主修專業課程學分總數):*「會計學」或「會計學(上)」或「會計學(下)」:3學分*「經濟學」或「經濟學(上)」或「經濟學(下)」:3學分*「統計學(上)」:3學分;與「統計學(下)」:3學分*「微積分(上)」:3學分;與「微積分(下)」:3學分*「計算機概論」:3學分*「管理與企業倫理」:3學分"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "設計系工業設計組",
+    "shortName": "設計系工業設計組",
+    "code": "DTA",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 17,
+        "subjects": [
+          {"title": "基本設計(一)", "credits": 3, "codes": ["DT10113"]},
+          {"title": "基本設計(二)", "credits": 3, "codes": ["DT10123"]},
+          {"title": "設計概論與職業倫理", "credits": 3, "codes": ["DT10163"]},
+          {"title": "設計素描(二)", "credits": 1, "codes": ["DT10043"]},
+          {"title": "模型製作", "credits": 2, "codes": ["DT12023"]},
+          {"title": "人因工程", "credits": 3, "codes": ["DT32033"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "基礎產品設計(一)", "credits": 3, "codes": ["DT22103"]},
+          {"title": "基礎產品設計(二)", "credits": 3, "codes": ["DT22113"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "設計表現技法(二)", "credits": 2, "codes": ["DT22063"]},
+          {"title": "產品設計(一)", "credits": 3, "codes": ["DT32093"]},
+          {"title": "產品設計(二)", "credits": 3, "codes": ["DT32103"]},
+          {"title": "工業專題設計(上)", "credits": 4, "codes": ["DT491A0"]},
+          {"title": "工業專題設計(下)", "credits": 4, "codes": ["DT491B0"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.學生修習非本系代碼之課程,須於每學期期初持成績單正本至設計系辦理抵免審查,如經審查無法抵修本系課程,則須修習本系開設課程補足應修總學分。2.102學年度起入學之不分系學生應先取得基本設計(一)、基本設計(二)、模型製作、基礎產品設計(一)及電腦輔助設計(一),方得以設計系工業設計組為主修。3.105學年度起入學之不分系學生應先取得基本設計(一)、基本設計(二)、設計素描(一)、設計素描(二)、模型製作等五門課程學分,方得以設計系工業設計組為主修或雙主修。4.工業專題設計(下)先修課程為工業專題設計(上)。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "設計系商業設計組",
+    "shortName": "設計系商業設計組",
+    "code": "DTB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 14,
+        "subjects": [
+          {"title": "設計素描(一)", "credits": 1, "codes": ["DT10033"]},
+          {"title": "設計素描(二)", "credits": 1, "codes": ["DT10043"]},
+          {"title": "基礎電腦輔助設計(一)", "credits": 3, "codes": ["DT10133"]},
+          {"title": "基礎電腦輔助設計(二)", "credits": 3, "codes": ["DT10143"]},
+          {"title": "視覺傳達設計(一)", "credits": 3, "codes": ["DT25013"]},
+          {"title": "視覺傳達設計(二)", "credits": 3, "codes": ["DT25023"]},
+          {"title": "立體造形", "credits": 2, "codes": ["DT25083"]},
+          {"title": "包裝設計(一)", "credits": 3, "codes": ["DT35053"]},
+          {"title": "包裝設計(二)", "credits": 3, "codes": ["DT35063"]},
+          {"title": "電腦輔助設計(一)", "credits": 3, "codes": ["DT20053"]},
+          {"title": "電腦輔助設計(二)", "credits": 3, "codes": ["DT20063"]},
+          {"title": "電腦輔助設計(三)", "credits": 3, "codes": ["DT32083"]},
+          {"title": "商業專題設計(上)", "credits": 4, "codes": ["DT493A0"]},
+          {"title": "商業專題設計(下)", "credits": 4, "codes": ["DT493B0"]}
+        ]
+      },
+      {
+        "label": "專業選修",
+        "mode": "credits",
+        "minimum": 9,
+        "subjects": [
+          {"title": "綜合媒材創作", "credits": 3, "codes": ["DT25107"]},
+          {"title": "包裝結構設計", "credits": 3, "codes": ["DT35087"]},
+          {"title": "數位媒體設計(一)", "credits": 3, "codes": ["DT36393"]},
+          {"title": "數位媒體設計(二)", "credits": 3, "codes": ["DT36403"]},
+          {"title": "電腦動畫", "credits": 3, "codes": ["DT36157"]},
+          {"title": "角色動畫", "credits": 3, "codes": ["DT36147"]},
+          {"title": "空間互動設計", "credits": 3, "codes": ["DT26167"]},
+          {"title": "網頁設計", "credits": 3, "codes": ["DT36137"]}
+        ]
+      },
+      {
+        "label": "另修五門基礎課程（按通過科數）",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "基本設計(一)", "credits": 0, "codes": ["DT10113"]},
+          {"title": "基本設計(二)", "credits": 0, "codes": ["DT10123"]},
+          {"title": "色彩計畫", "credits": 0, "codes": ["DT16063"]},
+          {"title": "設計史", "credits": 0, "codes": ["DT10073","DTG0013"]},
+          {"title": "設計概論或設計概論與職業倫理", "credits": 0, "codes": ["DT10153","DT10163"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.學生修習非本系代碼之課程,須於每學期期初持成績單正本至設計系辦理抵免審查,如經審查無法抵修本系課程,則須修習本系開設課程補足應修總學分。2.102學年度起,除上列必修48學分外,另需修習通過下列5門基礎課程:基本設計(一)、基本設計(二)、色彩計畫、設計史及設計概論(或設計概論與職業倫理)。3.105學年度起入學之不分系學生應先取得基本設計(一)、基本設計(二)、設計素描(一)、設計素描(二)、文字造形等五門課程學分,方得以設計系商業設計組為主修或雙主修。4.商業專題設計(下)先修課程為商業專題設計(上)。"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "建築系",
+    "shortName": "建築系",
+    "code": "AD",
+    "groups": [
+      {
+        "label": "甲：設計必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "建築設計(一)", "credits": 3, "codes": ["AD11013","AD50017"]},
+          {"title": "建築設計(二)", "credits": 3, "codes": ["AD11023"]},
+          {"title": "建築設計(三)", "credits": 5, "codes": ["AD20013","AD21113"]},
+          {"title": "建築設計(四)", "credits": 5, "codes": ["AD21123"]},
+          {"title": "建築設計(五)", "credits": 6, "codes": ["AD30013"]}
+        ]
+      },
+      {
+        "label": "乙：建築史",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "西洋建築史", "credits": 3, "codes": ["AD23013"]},
+          {"title": "近代建築史", "credits": 3, "codes": ["AD31063"]},
+          {"title": "中國建築史", "credits": 3, "codes": ["AD41083"]}
+        ]
+      },
+      {
+        "label": "丙：計畫",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "建築計畫", "credits": 3, "codes": ["AD25013"]},
+          {"title": "敷地計畫", "credits": 3, "codes": ["AD32033"]}
+        ]
+      },
+      {
+        "label": "丁：構造與施工",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "建築材料", "credits": 3, "codes": ["AD28043"]},
+          {"title": "建築構造", "credits": 3, "codes": ["AD39033"]},
+          {"title": "營建管理與工程倫理", "credits": 3, "codes": ["AD42063"]}
+        ]
+      },
+      {
+        "label": "戊：環境控制",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "環境控制系統(一)", "credits": 3, "codes": ["AD26023"]},
+          {"title": "環境控制系統(二)", "credits": 3, "codes": ["AD32053"]}
+        ]
+      },
+      {
+        "label": "己：結構",
+        "mode": "subjects",
+        "minimum": 1,
+        "subjects": [
+          {"title": "結構行為(一)", "credits": 3, "codes": ["AD24013"]},
+          {"title": "結構行為(二)", "credits": 3, "codes": ["AD24023"]}
+        ]
+      },
+      {
+        "label": "乙至己課群合計",
+        "mode": "credits",
+        "minimum": 22,
+        "subjects": [
+          {"title": "西洋建築史", "credits": 3, "codes": ["AD23013"]},
+          {"title": "近代建築史", "credits": 3, "codes": ["AD31063"]},
+          {"title": "中國建築史", "credits": 3, "codes": ["AD41083"]},
+          {"title": "建築計畫", "credits": 3, "codes": ["AD25013"]},
+          {"title": "敷地計畫", "credits": 3, "codes": ["AD32033"]},
+          {"title": "建築材料", "credits": 3, "codes": ["AD28043"]},
+          {"title": "建築構造", "credits": 3, "codes": ["AD39033"]},
+          {"title": "營建管理與工程倫理", "credits": 3, "codes": ["AD42063"]},
+          {"title": "環境控制系統(一)", "credits": 3, "codes": ["AD26023"]},
+          {"title": "環境控制系統(二)", "credits": 3, "codes": ["AD32053"]},
+          {"title": "結構行為(一)", "credits": 3, "codes": ["AD24013"]},
+          {"title": "結構行為(二)", "credits": 3, "codes": ["AD24023"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.最低修讀學分:44學分2.必修科目:甲(設計)課群共22學分【目前修訂中之建築師應考資格須修習建築設計(一)~(八)40學分】選修科目:乙(建築史)、丙(計畫)、丁(構造與施工)、戊(環境控制)、己(結構)課群科目選22學分以上,其中每個課群至少須選一科。【目前修訂中之建築師應考資格須修習36學分以上】"
+    ]
+  },
+  {
+    "years": [
+      "114",
+      "115"
+    ],
+    "category": "double-major",
+    "department": "應用外語系",
+    "shortName": "應外系",
+    "code": "FL",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 8,
+        "subjects": [
+          {"title": "批判識能:議題導向式英文閱讀與寫作(一)或多元識能:問題導向式英文閱讀與寫作(一)", "credits": 3, "codes": ["FL10133","FL20613"]},
+          {"title": "批判識能:議題導向式英文閱讀與寫作(二)或多元識能:問題導向式英文閱讀與寫作(二)", "credits": 3, "codes": ["FL10153","FL20633"]},
+          {"title": "英語演講(一)", "credits": 2, "codes": ["FL20033","FL20037"]},
+          {"title": "英語演講(二)", "credits": 2, "codes": ["FL20043","FL20047"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(一)或問題導向式英文閱讀與寫作工作坊(一)", "credits": 1, "codes": ["FL10143","FL20623"]},
+          {"title": "議題導向式英文閱讀與寫作工作坊(二)或問題導向式英文閱讀與寫作工作坊(二)", "credits": 1, "codes": ["FL10163","FL20643"]},
+          {"title": "翻譯與習作", "credits": 2, "codes": ["FL33233","FL33237"]},
+          {"title": "進階英語檢定", "credits": 0, "codes": ["FL47027"]}
+        ]
+      },
+      {
+        "label": "應外專業課程（第二外語除外）",
+        "mode": "credits",
+        "minimum": 30,
+        "subjects": [],
+        "manual": {
+          "target": "經確認的應外專業課程",
+          "prefixes": [
+            "FL"
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      "1.進階英語檢定0學分必修課程審核注意事項:★應外雙主修畢業門檻:學生需於畢業前通過相當於TOEIC820分(含)以上英語檢定。採通過及不通過方式認證此必修課程。★通過檢定者,請於學期期初(9月31日前或3月31日前)持相關英語檢定證明至應外系辦理審核。2.所有應修科目都需修習由應外系所開設的課程,課號為FL開頭,第二外語課程除外。本項規定在校生適用。"
+    ],
+    "sourcePrefix": "FL"
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "double-major",
+    "department": "電子工程系",
+    "shortName": "電子系",
+    "code": "ET",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 13,
+        "subjects": [
+          {"title": "計算機科學導論", "credits": 3, "codes": ["ET24003","ET24007"]},
+          {"title": "計算機程式與應用", "credits": 3, "codes": ["ET34053","ET34057"]},
+          {"title": "數位邏輯設計", "credits": 3, "codes": ["ET33053"]},
+          {"title": "電子學(一)", "credits": 3, "codes": ["ET21073"]},
+          {"title": "工程數學(二)", "credits": 3, "codes": ["ET30023"]},
+          {"title": "工程數學(一)", "credits": 3, "codes": ["ET30013"]},
+          {"title": "電路學(一)", "credits": 3, "codes": ["ET21033"]},
+          {"title": "電子學(二)", "credits": 3, "codes": ["ET21083"]},
+          {"title": "微算機原理及應用", "credits": 3, "codes": ["ET34033"]},
+          {"title": "線性系統", "credits": 3, "codes": ["ET31053"]},
+          {"title": "電磁學", "credits": 3, "codes": ["ET31033"]},
+          {"title": "微算機原理及應用實習", "credits": 1, "codes": ["ET38013"]},
+          {"title": "電子學實習(一)", "credits": 1, "codes": ["ET37063"]}
+        ]
+      },
+      {
+        "label": "實務課程",
+        "mode": "all",
+        "minimum": 1,
+        "subjects": [
+          {
+            "title": "實務專題與實習（擇一路徑）",
+            "credits": 4,
+            "codes": [],
+            "alternatives": [
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]}
+              ],
+              [
+                {"title": "電子實務專題(上)", "credits": 2, "codes": ["ET490A0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ],
+              [
+                {"title": "電子實務專題(下)", "credits": 2, "codes": ["ET490B0"]},
+                {"title": "電子實務暑期校外實習或電子實務校外實習(一)或電子實務校外實習(二)或電子實務校外實習(三)或電子實務校外實習(四)", "credits": 2, "codes": ["ET49107","ET49207","ET49217","ET49727","ET49737","ET49747","ET49757","ET49777","ET49827","ET49837","ET49847","ET49857","ET49867","ET49877","ET49937","ET49947"]}
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "label": "專業選修內至少兩門實習",
+        "mode": "subjects",
+        "minimum": 2,
+        "subjects": [
+          {"title": "基礎電子電路實習(限高中生或非電子、電機科高職生背景)", "credits": 1, "codes": []},
+          {"title": "電子學實習(二)", "credits": 1, "codes": ["ET37073"]},
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]}
+        ]
+      },
+      {
+        "label": "專業選修合計",
+        "mode": "credits",
+        "minimum": 13,
+        "subjects": [
+          {"title": "基礎電子電路實習(限高中生或非電子、電機科高職生背景)", "credits": 1, "codes": []},
+          {"title": "電子學實習(二)", "credits": 1, "codes": ["ET37073"]},
+          {"title": "電力電子實習", "credits": 1, "codes": ["ET45113"]},
+          {"title": "積體電路佈局原理與實習", "credits": 1, "codes": ["ET48083","ET48087"]},
+          {"title": "數位信號處理實習", "credits": 1, "codes": ["ET48003"]},
+          {"title": "通信系統實習", "credits": 1, "codes": ["ET47023"]},
+          {"title": "射頻模組實習", "credits": 1, "codes": ["ET48093","ET48097"]},
+          {"title": "通訊網路實習", "credits": 1, "codes": ["ET37083"]},
+          {"title": "無線通訊網路實習", "credits": 1, "codes": ["ET48063","ET48067"]},
+          {"title": "類比積體電路設計實習", "credits": 1, "codes": ["ET48123"]},
+          {"title": "物聯網平台技術實習", "credits": 1, "codes": ["ET27023","ET27027"]},
+          {"title": "微波工程實習", "credits": 1, "codes": ["ET47033"]},
+          {"title": "混合雲平台技術實習", "credits": 1, "codes": ["ET27033","ET27037"]},
+          {"title": "應用電子學實習", "credits": 1, "codes": ["ET37093","ET37097"]},
+          {"title": "嵌入式系統設計實習", "credits": 2, "codes": ["ET38123"]},
+          {"title": "FPGA系統設計實習", "credits": 1, "codes": ["ET48103"]},
+          {"title": "數位邏輯設計實習", "credits": 1, "codes": ["ET38063"]},
+          {"title": "光纖光學實習", "credits": 1, "codes": ["ET48043"]},
+          {"title": "光子學工程導論實習", "credits": 1, "codes": ["ET48053","ET48057"]},
+          {"title": "固態照明實習", "credits": 1, "codes": ["ET48073"]},
+          {"title": "半導體元件製作實習", "credits": 1, "codes": ["ET48033"]},
+          {"title": "光電半導體量測實習", "credits": 1, "codes": ["ET48113"]},
+          {"title": "通訊系統(一)", "credits": 3, "codes": ["ET40067"]},
+          {"title": "電路學(二)", "credits": 3, "codes": ["ET21043"]},
+          {"title": "計算機組織", "credits": 3, "codes": ["ET35027"]},
+          {"title": "半導體物理與元件(一)", "credits": 3, "codes": ["ET33077"]},
+          {"title": "光電元件", "credits": 3, "codes": ["ET43027"]},
+          {"title": "工程近代物理", "credits": 3, "codes": ["ET30057"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "「校外實習」所指課程為:電子實務暑期校外實習3學分課程及電子實務校外實習(一)、(二)、(三)、(四)1~9學分等課程。",
+      "可採上下兩門專題，或一門專題搭配 2 學分校外實習。實習路徑依原表與系辦核定額度核對。",
+      "得兼充科目僅依校方原表所列條件與核定結果登錄。"
+    ]
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "double-major",
+    "department": "工業管理系",
+    "shortName": "工管系",
+    "code": "IM",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 19,
+        "subjects": [
+          {"title": "工業管理概論", "credits": 3, "codes": ["IM11013"]},
+          {"title": "計算機程式", "credits": 2, "codes": ["IM12013"]},
+          {"title": "計算機程式實習", "credits": 1, "codes": ["IM12023"]},
+          {"title": "管理與企業倫理", "credits": 3, "codes": []},
+          {"title": "管理數學", "credits": 3, "codes": ["IM30053"]},
+          {"title": "作業研究(一)", "credits": 3, "codes": ["IM41033"]},
+          {"title": "作業研究(二)", "credits": 3, "codes": ["IM41043"]},
+          {"title": "工作研究", "credits": 2, "codes": ["IM44033"]},
+          {"title": "工作研究實習", "credits": 1, "codes": ["IM47033"]},
+          {"title": "品質管理", "credits": 3, "codes": ["IM47043"]},
+          {"title": "電子化企業概論", "credits": 2, "codes": ["IM46203"]},
+          {"title": "電子化企業概論實習", "credits": 1, "codes": ["IM46243"]},
+          {"title": "生產與作業管理", "credits": 3, "codes": ["IM34073","IM34077"]},
+          {"title": "人因工程學", "credits": 2, "codes": ["IM31033","IM46063"]},
+          {"title": "人因工程實習", "credits": 1, "codes": ["IM47083"]},
+          {
+            "title": "經濟學",
+            "credits": 3,
+            "codes": ["IM33013"],
+            "alternatives": [
+              [
+                {"title": "經濟學(上)", "credits": 3, "codes": ["BA130A0","MB112A0"]},
+                {"title": "經濟學(下)", "credits": 3, "codes": ["BA130B0","MB112B0"]}
+              ]
+            ]
+          },
+          {
+            "title": "會計學",
+            "credits": 3,
+            "codes": ["IM33093"],
+            "alternatives": [
+              [
+                {"title": "會計學(上)", "credits": 3, "codes": ["BA139A5","MB200A0"]},
+                {"title": "會計學(下)", "credits": 3, "codes": ["BA139B5","MB200B0"]}
+              ]
+            ]
+          },
+          {"title": "實務專題(上)", "credits": 2, "codes": ["IM499A0"]},
+          {"title": "實務專題(下)", "credits": 2, "codes": ["IM499B0"]}
+        ]
+      },
+      {
+        "label": "另修基礎課程（不計入表列專業學分）",
+        "mode": "all",
+        "minimum": 4,
+        "subjects": [
+          {"title": "微積分(上)", "credits": 3, "codes": ["BA161A0","CE162A0","EC161A0","IM160A0","MB160A0","MI161A0"]},
+          {"title": "微積分(下)", "credits": 3, "codes": ["BA161B0","CE162B0","EC161B0","IM160B0","MB160B0","MI161B0"]},
+          {"title": "統計學(上)", "credits": 3, "codes": ["BA305A0","FB270A5","MB270A0","MI306A0"]},
+          {"title": "統計學(下)", "credits": 3, "codes": ["BA305B0","FB270B5","MB270B0","MI306B0"]}
+        ]
+      }
+    ],
+    "conditions": [
+      "1.115學年度起,上述應修課程如工管系有開設者,第一次須修習工管系所開課程,未通過之學生只能選修本校開設之課程重修。如有特殊情況,經工管系同意後得個案處理。2.除上述應修學分總數43學分外,另須修習通過下列四門基礎課程:微積分(上)(3學分)、微積分(下)(3學分)、統計學(上)(3學分)、統計學(下)(3學分)。"
+    ]
+  },
+  {
+    "years": [
+      "115"
+    ],
+    "category": "double-major",
+    "department": "財務金融學士學位學程",
+    "shortName": "財金學程",
+    "code": "FB",
+    "groups": [
+      {
+        "label": "指定必修",
+        "mode": "all",
+        "minimum": 5,
+        "subjects": [
+          {"title": "經濟學或經濟學(上)或經濟學(下)", "credits": 3, "codes": ["BA13000","BA130A0","BA130B0","FB11027","IM33013","MB11020","MB11037","MB112A0","MB112B0","MI10023"]},
+          {"title": "會計學或會計學(上)或會計學(下)", "credits": 3, "codes": ["BA13093","BA13095","BA13097","BA139A5","BA139B5","IM33093","MB14007","MB200A0","MB200B0","MI10033"]},
+          {"title": "統計學或統計學(上)或統計學(下)或統計學(一)或統計學(二)", "credits": 3, "codes": ["BA30050","BA305A0","BA305B0","FB27007","FB270A5","FB270B5","IM30033","IM30043","MB27000","MB27003","MB270A0","MB270B0","MB28003","MB28007","MB29003","MB29007","MI30060","MI30063","MI306A0","MI306B0"]},
+          {"title": "微積分(上)或微積分(下)或微積分", "credits": 3, "codes": ["BA16010","BA16013","BA16017","BA161A0","BA161B0","CE162A0","CE162B0","IM16000","IM160A0","IM160B0","MB16000","MB16003","MB160A0","MB160B0","MI16010","MI161A0","MI161B0"]},
+          {"title": "財務管理", "credits": 3, "codes": ["BA32083","BA32087","BA53007","FB20007","MB12053"]}
+        ]
+      },
+      {
+        "label": "專業選修",
+        "mode": "credits",
+        "minimum": 27,
+        "subjects": [
+          {"title": "投資學", "credits": 3, "codes": ["FB20017"]},
+          {"title": "金融市場與機構", "credits": 3, "codes": ["FB22007"]},
+          {"title": "債券市場", "credits": 3, "codes": ["FB23017"]},
+          {"title": "國際財務管理", "credits": 3, "codes": ["FB20027"]},
+          {"title": "資產證券化", "credits": 3, "codes": ["FB23027"]},
+          {"title": "公司治理", "credits": 3, "codes": ["FB21007"]},
+          {"title": "期貨與選擇權", "credits": 3, "codes": ["FB23007"]},
+          {"title": "總體經濟學", "credits": 3, "codes": ["FB24007"]},
+          {"title": "財金實務專題講座", "credits": 3, "codes": ["FB35017","FBG0013"]},
+          {"title": "行為財務學", "credits": 3, "codes": ["FB21017"]},
+          {"title": "財務風險管理", "credits": 3, "codes": ["FB25017"]},
+          {"title": "財金計量方法", "credits": 3, "codes": ["FB23097","FB23177"]},
+          {"title": "財金數學建模", "credits": 3, "codes": ["FB23167"]},
+          {"title": "財務報表分析", "credits": 3, "codes": ["FB36077"]},
+          {"title": "貨幣銀行學", "credits": 3, "codes": ["FB36047"]},
+          {"title": "基金管理", "credits": 3, "codes": ["FB36087"]},
+          {"title": "保險學", "credits": 3, "codes": ["FB25027"]}
+        ],
+        "manual": {
+          "target": "其他經確認的財金專業選修",
+          "prefixes": [
+            "FB"
+          ]
+        }
+      }
+    ],
+    "conditions": []
+  }
+]

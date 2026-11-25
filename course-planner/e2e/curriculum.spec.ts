@@ -36,3 +36,37 @@ test("browse official year and page, track a sheet, record a substitution and re
   await expect(tracked.getByText(/待修 · 材料科學\(一\)/)).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(392);
 });
+
+test("preview another major, track a CS minor, and switch admission years on mobile", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("");
+  await page.getByRole("button", { name: "修課紀錄與規則" }).click();
+  const panel = page.getByRole("region", { name: "修課紀錄與規則" });
+  const library = panel.getByRole("region", { name: "校方科目表" });
+  const year = library.getByLabel("科目表年度");
+  const kind = library.getByLabel("科目表類別");
+  const department = library.getByLabel("查閱系所");
+  await year.selectOption("115");
+  await kind.selectOption("major");
+  await department.selectOption("資訊工程系");
+  const preview = library.locator(".sheet-preview");
+  await expect(preview).toContainText("115 資工系四技主系");
+  await expect(preview).toContainText("尚缺 20 科");
+  await kind.selectOption("minor");
+  await expect(preview).toContainText("尚缺 21 學分");
+  await library.getByRole("button", { name: "追蹤這份科目表" }).click();
+  await panel.getByLabel("課程代碼", { exact: true }).fill("CS2002301");
+  await panel.getByLabel("課程名稱", { exact: true }).fill("資料結構");
+  await panel.getByRole("button", { name: "新增紀錄", exact: true }).click();
+  const tracked = library.locator(".tracked-sheet");
+  await expect(tracked).toContainText("1 / 5 科");
+  await expect(tracked).toContainText("尚缺 18 學分");
+  await kind.selectOption("double-major");
+  await department.selectOption("財務金融學士學位學程");
+  await expect(preview).toContainText("尚缺 27 學分");
+  await year.selectOption("114");
+  await expect(library.getByText(/已停止受理新申請/)).toBeVisible();
+  await expect(preview).toHaveCount(0);
+  await expect(tracked).toContainText("115 資工系輔系");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(392);
+});

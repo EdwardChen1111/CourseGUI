@@ -48,3 +48,94 @@ describe("材料系科目表", () => {
     expect(academicSchema.parse(JSON.parse(JSON.stringify(backup)))).toEqual(backup);
   });
 });
+
+describe("跨系科目表與學分缺額", () => {
+  it("publishes every open annual table and keeps the two design majors separate", () => {
+    expect(new Set(sheets.map((s) => s.id)).size).toBe(sheets.length);
+    for (const year of ["114", "115"]) {
+      const majors = sheets.filter((s) => s.year === year && s.category === "major");
+      expect(majors).toHaveLength(16);
+      expect(majors.map((s) => s.department)).toEqual(expect.arrayContaining(["設計系工業設計組", "設計系商業設計組"]));
+      for (const source of curriculumSources.filter((s) => s.year === year)) {
+        const open = source.departments.filter((d) => !d.closed);
+        const published = sheets.filter((s) => s.year === year && s.category === source.category);
+        expect(published.map((s) => s.department).sort()).toEqual(open.map((d) => d.name).sort());
+        for (const sheet of published) expect(sheet.url).toBe(source.url + "#page=" + open.find((d) => d.name === sheet.department)?.page);
+      }
+    }
+    for (const sheet of sheets) {
+      for (const group of sheet.groups) {
+        expect(group.minimum).toBeGreaterThan(0);
+        expect(group.subjects.length || group.manual).toBeTruthy();
+        expect(new Set(group.subjects.map((s) => s.title)).size).toBe(group.subjects.length);
+        const codes = group.subjects.flatMap((s) => s.codes);
+        expect(new Set(codes).size, sheet.id + " " + group.label).toBe(codes.length);
+      }
+    }
+  });
+
+  it("counts core subjects toward the CS minor total without requiring every elective", () => {
+    const sheet = byId("115-CS-minor");
+    const core = sheet.groups[0].subjects.slice(0, 5).map((s) => record(s.codes[0], 3));
+    const [subjects, total] = evaluateSheet(sheet, [...core, record(core[0].courseNo + "01", 3), record("CS99999", 3, "taking")]);
+    expect(subjects.complete).toBe(true);
+    expect(total.remaining).toBe(6);
+    const optional = sheet.groups[1].subjects.slice(11, 13).map((s) => record(s.codes[0], 3));
+    expect(evaluateSheet(sheet, [...core, ...optional]).every((g) => g.complete)).toBe(true);
+  });
+
+  it("counts only eligible open electives and verified assignments in the MI minor", () => {
+    const sheet = byId("115-MI-minor");
+    const elective = sheet.groups[1].manual!;
+    const records = [record(elective.eligible![0], 3), record(elective.eligible![0] + "01", 3),
+      record("MI99999", 3), record("BA99999", 3)];
+    const approved = (code: string): Recognition => ({ sheetId: sheet.id, target: elective.target, fromCode: code, credits: 3, evidence: "系辦核定" });
+    expect(evaluateSheet(sheet, records, [approved("BA99999")])[1].remaining).toBe(3);
+    expect(evaluateSheet(sheet, records, [approved("MI99999")])[1].complete).toBe(true);
+    expect(evaluateSheet(byId("114-MI-minor"), records, [approved("MI99999")])[1].remaining).toBe(3);
+  });
+
+  it("keeps cohort-specific curricula, additional foundations and individual shortfalls", () => {
+    expect(byId("114-TB-minor").groups[1].minimum).toBe(15);
+    expect(byId("115-TB-minor").groups[1].minimum).toBe(6);
+    expect(sheets.some((s) => s.id === "114-FB-double-major")).toBe(false);
+    expect(byId("115-FB-double-major").groups[1].minimum).toBe(27);
+    const ch = byId("114-CH-double-major");
+    const first = ch.groups[0].subjects[0];
+    expect(evaluateSheet(ch, [record(first.codes[0], 2)])[0]).toMatchObject({ missingCredits: 43, complete: false });
+    const mi = byId("115-MI-double-major");
+    expect(evaluateSheet(mi, [])[2]).toMatchObject({ remaining: 8, missingCredits: 24 });
+  });
+
+  it("checks both halves of the 114 electronics lecture/lab choice and caps BA internship credits", () => {
+    const et = byId("114-ET-major");
+    const choice = et.groups.findIndex((g) => g.label.includes("ET0009"));
+    const [[lecture, lab]] = et.groups[choice].subjects[0].alternatives!;
+    const passed = [record(lecture.codes[0], 3)];
+    expect(evaluateSheet(et, passed)[choice].remaining).toBe(1);
+    expect(evaluateSheet(et, [...passed, record(lab.codes[0], 1)])[choice].remaining).toBe(0);
+    const ba = byId("115-BA-double-major");
+    const index = ba.groups.findIndex((g) => g.manual?.cap === 5);
+    const rule = ba.groups[index].manual!;
+    const placements = rule.cappedCodes!.slice(0, 2).map((code) => record(code, 4));
+    const decisions = placements.map((r) => ({ sheetId: ba.id, fromCode: r.courseNo, credits: r.credits, target: rule.target, evidence: "系辦核定" }));
+    expect(evaluateSheet(ba, placements, decisions)[index]).toMatchObject({ achieved: 5, remaining: 13 });
+  });
+
+  it("requires a different passed lecture for each electrical lab and both parts of a project route", () => {
+    const ee = byId("115-EE-double-major");
+    const eeCourse = (title: string) => {
+      const course = ee.groups.flatMap((group) => group.subjects).find((s) => s.title === title)!;
+      return record(course.codes[0], course.credits);
+    };
+    const labs = ["數位系統設計實習", "超大型積體電路設計實習"].map(eeCourse);
+    expect(evaluateSheet(ee, labs)[2].achieved).toBe(0);
+    expect(evaluateSheet(ee, [...labs, eeCourse("超大型積體電路設計導論")])[2].achieved).toBe(1);
+    expect(evaluateSheet(ee, [...labs, eeCourse("超大型積體電路設計導論"), eeCourse("類比及混合訊號積體電路與系統")])[2].achieved).toBe(2);
+    const et = byId("115-ET-major");
+    const group = et.groups.findIndex((g) => g.label.includes("ET0007"));
+    const [up, placement] = et.groups[group].subjects[0].alternatives![1];
+    expect(evaluateSheet(et, [record(up.codes[0], 2)])[group].complete).toBe(false);
+    expect(evaluateSheet(et, [record(up.codes[0], 2), record(placement.codes[0], 3)])[group].complete).toBe(true);
+  });
+});

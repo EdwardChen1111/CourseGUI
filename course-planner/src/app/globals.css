@@ -167,13 +167,13 @@ body { background: #f4f6f5; color: #203334; }
 .rule-group { border-top: 1px solid #dce7dc; padding-top: 12px; margin-top: 15px; min-width: 0; }
 .rule-group legend, .rule-group label { font-size: 12px; }
 .curriculum-library { margin: 18px 0; border-block: 1px solid #dce5dc; padding-block: 16px; }
-.curriculum-library h4, .tracked-sheet h5 { font-weight: 700; }
+.curriculum-library h4, .curriculum-library h5 { font-weight: 700; }
 .curriculum-library p { margin-block: 8px; line-height: 1.65; }
 .library-inputs, .recognition form { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(135px, 100%), 1fr)); gap: 10px; margin-block: 12px; }
 .library-inputs label, .recognition label { display: grid; gap: 4px; min-width: 0; font-size: 13px; }
 .library-inputs select, .recognition select, .recognition input { width: 100%; min-width: 0; }
 .library-track { background: #f1f7f4; border-radius: 8px; padding: 12px; }
-.tracked-sheet { margin-top: 16px; border-top: 1px solid #dce5dc; padding-top: 14px; }
+.sheet-preview, .tracked-sheet { min-width: 0; overflow-wrap: anywhere; margin-top: 16px; border-top: 1px solid #dce5dc; padding-top: 14px; }
 .sheet-group, .recognition { margin-top: 10px; }
 .sheet-group summary, .recognition summary { cursor: pointer; font-weight: 600; padding-block: 5px; }
 .sheet-group li, .recognition li { padding-block: 5px; border-bottom: 1px solid #e2eae5; overflow-wrap: anywhere; }

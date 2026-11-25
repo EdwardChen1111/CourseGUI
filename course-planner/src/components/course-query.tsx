@@ -5,7 +5,9 @@ import type { QueryCatalog } from "@/lib/query-options";
 import type { CourseSnapshot } from "@/lib/course";
 import { courseSnapshotSchema } from "@/lib/course-schema";
 import { CoursePlanner } from "@/components/course-planner";
-import { AcademicPlanner } from "@/components/academic-planner";
+import dynamic from "next/dynamic";
+
+const AcademicPlanner = dynamic(() => import("@/components/academic-planner").then((module) => module.AcademicPlanner));
 
 const catalog: QueryCatalog = catalogData;
 const cache = new Map<string, CourseSnapshot>();
