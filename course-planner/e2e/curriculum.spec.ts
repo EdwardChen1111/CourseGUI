@@ -70,3 +70,64 @@ test("preview another major, track a CS minor, and switch admission years on mob
   await expect(tracked).toContainText("115 資工系輔系");
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(392);
 });
+
+for (const cohort of ["112", "113"]) {
+  test(cohort + " business student sees the correct shortfalls in all three curriculum types", async ({ page }) => {
+    await page.goto("");
+    const tab = page.getByRole("button", { name: "修課紀錄與規則" });
+    await tab.click();
+    const panel = page.getByRole("region", { name: "修課紀錄與規則" });
+    const library = panel.getByRole("region", { name: "校方科目表" });
+    const kind = library.getByLabel("科目表類別");
+    const department = library.getByLabel("查閱系所");
+    const preview = library.locator(".sheet-preview");
+    await library.getByLabel("科目表年度").selectOption(cohort);
+    await kind.selectOption("major");
+    await department.selectOption("企業管理系");
+    await preview.getByRole("button", { name: "將個人設定改為 " + cohort + " 入學、企管系大學部" }).click();
+    await expect(preview).toContainText("尚缺 23 科（至少 67 學分）");
+    await panel.getByLabel("課程代碼", { exact: true }).fill("BA2201301");
+    await panel.getByLabel("課程名稱", { exact: true }).fill("行銷管理");
+    await panel.getByRole("button", { name: "新增紀錄", exact: true }).click();
+    await expect(preview).toContainText("尚缺 22 科（至少 64 學分）");
+    await kind.selectOption("double-major");
+    await expect(preview).toContainText("尚缺 6 科（至少 18 學分）");
+    await kind.selectOption("minor");
+    await expect(preview).toContainText("尚缺 5 科（至少 15 學分）");
+    await library.getByRole("button", { name: "追蹤這份科目表" }).click();
+    await page.reload();
+    await tab.click();
+    await expect(library.getByLabel("科目表年度")).toHaveValue(cohort);
+    await expect(department).toHaveValue("企業管理系");
+    const tracked = library.locator(".tracked-sheet");
+    await expect(tracked).toContainText(cohort + " 企管系輔系");
+    await tracked.locator(".sheet-group summary").first().click();
+    await expect(tracked.getByText(/已通過 · 行銷管理/)).toBeVisible();
+    await expect(tracked.getByText(/待修 · 財務管理/)).toBeVisible();
+    await expect(tracked).toContainText("尚缺 5 科（至少 15 學分）");
+  });
+}
+
+test("distinguish closed programs and unavailable tracks on a year change", async ({ page }) => {
+  await page.goto("");
+  await page.getByRole("button", { name: "修課紀錄與規則" }).click();
+  const library = page.getByRole("region", { name: "校方科目表" });
+  const year = library.getByLabel("科目表年度");
+  const kind = library.getByLabel("科目表類別");
+  const department = library.getByLabel("查閱系所");
+  const preview = library.locator(".sheet-preview");
+  await year.selectOption("112");
+  await kind.selectOption("double-major");
+  await department.selectOption("科技管理學士學位學程");
+  await expect(preview).toContainText("三類專業選修合計 · 0 / 24 學分");
+  await year.selectOption("113");
+  await expect(library.getByText(/已停止受理新申請/)).toBeVisible();
+  await expect(preview).toHaveCount(0);
+  await kind.selectOption("major");
+  await department.selectOption("應用科技學士學位學程（電資技術組資工群）");
+  await expect(preview).toContainText("尚缺 36 學分");
+  await year.selectOption("114");
+  await expect(department).toHaveValue("");
+  await expect(library.getByText(/請重新選擇適用系所或組別/)).toBeVisible();
+  await expect(preview).toHaveCount(0);
+});

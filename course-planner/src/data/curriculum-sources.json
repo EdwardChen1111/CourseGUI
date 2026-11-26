@@ -69,13 +69,205 @@
     "year": "112",
     "category": "minor",
     "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/112ass-sub.pdf",
-    "departments": []
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 18,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 20,
+        "closed": false
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 22,
+        "closed": false
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 23,
+        "closed": false
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 24,
+        "closed": false
+      }
+    ]
   },
   {
     "year": "113",
     "category": "minor",
     "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/113ass-sub.pdf",
-    "departments": []
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 7,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 19,
+        "closed": false
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 21,
+        "closed": false
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 22,
+        "closed": false
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 23,
+        "closed": false
+      }
+    ]
   },
   {
     "year": "114",
@@ -351,13 +543,205 @@
     "year": "112",
     "category": "double-major",
     "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/112double.pdf",
-    "departments": []
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 7,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 17,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 18,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 19,
+        "closed": false
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 21,
+        "closed": false
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 22,
+        "closed": false
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 23,
+        "closed": true
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 24,
+        "closed": true
+      }
+    ]
   },
   {
     "year": "113",
     "category": "double-major",
     "url": "https://academic.ntust.edu.tw/var/file/48/1048/img/2790/113double.pdf",
-    "departments": []
+    "departments": [
+      {
+        "name": "機械工程系",
+        "page": 2,
+        "closed": false
+      },
+      {
+        "name": "材料科學與工程系",
+        "page": 3,
+        "closed": false
+      },
+      {
+        "name": "營建工程系",
+        "page": 4,
+        "closed": false
+      },
+      {
+        "name": "化學工程系",
+        "page": 5,
+        "closed": false
+      },
+      {
+        "name": "電子工程系",
+        "page": 6,
+        "closed": false
+      },
+      {
+        "name": "電機工程系",
+        "page": 8,
+        "closed": false
+      },
+      {
+        "name": "資訊工程系",
+        "page": 9,
+        "closed": false
+      },
+      {
+        "name": "工業管理系",
+        "page": 10,
+        "closed": false
+      },
+      {
+        "name": "企業管理系",
+        "page": 11,
+        "closed": false
+      },
+      {
+        "name": "資訊管理系",
+        "page": 12,
+        "closed": false
+      },
+      {
+        "name": "設計系工業設計組",
+        "page": 13,
+        "closed": false
+      },
+      {
+        "name": "設計系商業設計組",
+        "page": 14,
+        "closed": false
+      },
+      {
+        "name": "建築系",
+        "page": 15,
+        "closed": false
+      },
+      {
+        "name": "應用外語系",
+        "page": 16,
+        "closed": false
+      },
+      {
+        "name": "科技管理學士學位學程",
+        "page": 17,
+        "closed": true
+      },
+      {
+        "name": "財務金融學士學位學程",
+        "page": 18,
+        "closed": true
+      },
+      {
+        "name": "智慧財產權學士學位學程",
+        "page": 19,
+        "closed": true
+      },
+      {
+        "name": "醫學工程學士學位學程",
+        "page": 20,
+        "closed": true
+      },
+      {
+        "name": "色彩影像與照明科技學士學位學程",
+        "page": 21,
+        "closed": true
+      }
+    ]
   },
   {
     "year": "114",

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { academicSchema, emptyAcademic, type AcademicData } from "./academic-records";
-import { curriculumSources, evaluateSheet, sheets, type Recognition } from "./curriculum";
+import { curriculumSources, eligibleTarget, evaluateSheet, fitsDepartment, sheets, type Recognition } from "./curriculum";
 
 const byId = (id: string) => sheets.find((sheet) => sheet.id === id)!;
 const record = (courseNo: string, credits: number, status: "passed" | "taking" = "passed"): AcademicData["records"][number] =>
@@ -52,9 +52,9 @@ describe("材料系科目表", () => {
 describe("跨系科目表與學分缺額", () => {
   it("publishes every open annual table and keeps the two design majors separate", () => {
     expect(new Set(sheets.map((s) => s.id)).size).toBe(sheets.length);
-    for (const year of ["114", "115"]) {
+    for (const [year, count] of [["112", 31], ["113", 31], ["114", 16], ["115", 16]] as const) {
       const majors = sheets.filter((s) => s.year === year && s.category === "major");
-      expect(majors).toHaveLength(16);
+      expect(majors).toHaveLength(count);
       expect(majors.map((s) => s.department)).toEqual(expect.arrayContaining(["設計系工業設計組", "設計系商業設計組"]));
       for (const source of curriculumSources.filter((s) => s.year === year)) {
         const open = source.departments.filter((d) => !d.closed);
@@ -72,6 +72,73 @@ describe("跨系科目表與學分缺額", () => {
         expect(new Set(codes).size, sheet.id + " " + group.label).toBe(codes.length);
       }
     }
+  });
+
+  it.each(["112", "113"])("checks published credit thresholds separately in cohort %s", (year) => {
+    const deficits = (code: string) => evaluateSheet(byId(year + "-" + code), []).map((g) => g.missingCredits);
+    expect(deficits("BA-minor")).toEqual([18, 6, 6]);
+    expect(deficits("ET-double-major")).toEqual([20, 4, 2, 13, 15]);
+    expect(deficits("CT-double-major")).toEqual([43]);
+    expect(deficits("EE-double-major")).toEqual([18, 12, 3, 15]);
+    for (const code of ["TB", "FB", "IB"]) {
+      expect(Boolean(byId(year + "-" + code + "-double-major"))).toBe(year === "112");
+    }
+  });
+
+  it("applies the 112 technology management area quotas to the overall elective total", () => {
+    const tb = byId("112-TB-double-major");
+    const target = tb.groups[3].manual!.target;
+    const data = [record("TM55555", 3)];
+    const approved = [{ sheetId: tb.id, target, credits: 3, fromCode: "TM55555", evidence: "系辦核定" }];
+    expect(evaluateSheet(tb, data, approved).map((g) => g.missingCredits)).toEqual([18, 6, 6, 3, 21]);
+  });
+
+  it.each(["112", "113"])("shows earned credits and required lab pairings for historical electronics courses in %s", (year) => {
+    const et = byId(year + "-ET-double-major");
+    const project = et.groups[1].subjects[0].alternatives![0];
+    const firstHalf = record(project[0].codes[0], 2);
+    expect(evaluateSheet(et, [firstHalf])[1]).toMatchObject({ remaining: 1, missingCredits: 2, complete: false });
+    expect(evaluateSheet(et, [firstHalf, record(project[1].codes[0], 2)])[1].complete).toBe(true);
+
+    const ee = byId(year + "-EE-double-major");
+    const course = (name: string) => {
+      const item = ee.groups.flatMap((g) => g.subjects).find((s) => s.title === name)!;
+      return record(item.codes[0], item.credits);
+    };
+    const labs = ["數位系統設計實習", "超大型積體電路設計實習"].map(course);
+    expect(evaluateSheet(ee, labs)[2].achieved).toBe(0);
+    expect(evaluateSheet(ee, [...labs, course("超大型積體電路設計導論")])[2].achieved).toBe(2);
+  });
+
+  it("matches historical study tracks and excludes ineligible AT electives", () => {
+    const sheet = byId("113-AT-CS-major");
+    expect(fitsDepartment(sheet, sheet.department.normalize("NFKC"))).toBe(true);
+    expect(fitsDepartment(byId("113-AT-EE-major"), sheet.department)).toBe(false);
+    const group = sheet.groups.find((g) => g.label === "本組專業選修")!;
+    expect(eligibleTarget(group, "CS2002301")).toBe(true);
+    expect(eligibleTarget(group, "CSG1123")).toBe(false);
+    expect(eligibleTarget(group, "BA22013")).toBe(false);
+    expect(eligibleTarget(group, group.manual!.excludedCodes![0])).toBe(false);
+    expect(group.minimum).toBe(36);
+  });
+
+  it("keeps the global development language routes independent and sums approved courses within one route", () => {
+    const sheet = byId("113-GDR-major");
+    const i = sheet.groups.findIndex((g) => g.manual?.alternativeTarget);
+    const rule = sheet.groups[i].manual!;
+    expect(evaluateSheet(sheet, rule.eligible!.map((code) => record(code, 2)))[i].complete).toBe(true);
+    const chemistry = sheet.groups.findIndex((g) => g.label.includes("GDR005"));
+    const parts = sheet.groups[chemistry].subjects[0].alternatives![0];
+    const replacements = [record("ME90501", 1), record("ME90502", 2)];
+    const approved = replacements.map((c, j) => ({ sheetId: sheet.id, target: parts[j].title, credits: c.credits, fromCode: c.courseNo, evidence: "學程核定" }));
+    expect(evaluateSheet(sheet, replacements, approved.slice(0, 1))[chemistry].missingCredits).toBe(2);
+    expect(evaluateSheet(sheet, replacements, approved)[chemistry].complete).toBe(true);
+    const courses = ["GD19001", "GD19002", "FL19001", "FL19002"].map((c) => record(c, 2));
+    const enrollments = (targets: string[]) => courses.map((c, j) => ({
+      fromCode: c.courseNo, sheetId: sheet.id, target: targets[j], credits: 2, evidence: "學程核定",
+    }));
+    expect(evaluateSheet(sheet, courses, enrollments([rule.target, rule.target, rule.alternativeTarget!, rule.alternativeTarget!]))[i].remaining).toBe(4);
+    expect(evaluateSheet(sheet, courses, enrollments(courses.map(() => rule.alternativeTarget!)))[i].complete).toBe(true);
   });
 
   it("counts core subjects toward the CS minor total without requiring every elective", () => {

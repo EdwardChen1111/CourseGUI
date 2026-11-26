@@ -61,13 +61,14 @@ type Group = {
   minimum: number;
   subjects: Subject[];
   minAreas?: number;
-  manual?: { target: string; prefixes: string[]; eligible?: string[]; cappedCodes?: string[]; cap?: number };
+  allowSharedLecture?: boolean;
+  manual?: { target: string; alternativeTarget?: string; prefixes: string[]; excludeGeneralEducation?: boolean; excludedCodes?: string[]; eligible?: string[]; cappedCodes?: string[]; cap?: number };
 };
 const required = (label: string, subjects: Subject[]): Group => ({ label, subjects, mode: "all", minimum: subjects.length });
 const practice: Group = { label: "實務專題與實習", subjects: project, minimum: 3, mode: "credits" };
 export type Sheet = {
   id: string; year: string; category: Category; url: string; groups: Group[]; conditions: string[];
-  department: string; shortName: string; code: string; sourcePrefix?: string; page?: number;
+  department: string; shortName: string; code: string; supplementUrl?: string; sourcePrefix?: string; page?: number;
 };
 function makeSheet(year: string, category: Category): Sheet {
   const id = [year, "TX", category].join("-");
@@ -122,8 +123,10 @@ export const sheets = [...materialSheets, ...otherSheets];
 
 export function fitsDepartment(sheet: Sheet, name: string) {
   const normalized = name.normalize("NFKC").replace(/\s/g, "").toUpperCase();
-  return [sheet.department, sheet.shortName, sheet.code].some((alias) => normalized === alias ||
-    normalized.split("學院").at(-1) === alias);
+  return [sheet.department, sheet.shortName, sheet.code].some((alias) => {
+    const value = alias.normalize("NFKC").replace(/\s/g, "").toUpperCase();
+    return normalized === value || normalized.split("學院").at(-1) === value;
+  });
 }
 
 export type Recognition = NonNullable<AcademicData["recognitions"]>[number];
@@ -133,7 +136,10 @@ export function allowedSource(sheet: Sheet, code: string) {
 
 export function eligibleTarget(group: Group, code: string) {
   const prefixes = group.manual?.prefixes ?? [];
-  return !prefixes.length || prefixes.some((prefix) => subjectCode(code).startsWith(prefix));
+  const normalized = subjectCode(code);
+  if (group.manual?.excludeGeneralEducation && normalized[2] === "G") return false;
+  if (group.manual?.excludedCodes?.includes(normalized)) return false;
+  return !prefixes.length || prefixes.some((prefix) => normalized.startsWith(prefix));
 }
 
 /** Assign each passed lab to a distinct eligible lecture, including the interchangeable IC lectures. */
@@ -168,31 +174,41 @@ export function evaluateSheet(sheet: Sheet, records: AcademicData["records"], de
       best = Math.max(best ?? 0, value);
     }
     const routes = (item.alternatives ?? []).map((route) => route.map(evaluateSubject));
-    if (routes.some((parts) => parts.every((part) => part.passed))) best = Math.max(best ?? 0, item.credits);
-    const credited = item.actual ? best ?? 0 : Math.min(best ?? 0, item.credits);
-    return { ...item, credited, routes, passed: best !== undefined && credited >= item.credits };
+    const routePassed = routes.some((parts) => parts.every((part) => part.passed));
+    const passed = routePassed || (best !== undefined && best >= item.credits);
+    const routeCredits = routes.map((parts) => parts.reduce((sum, part) => sum + part.credited, 0));
+    const earnedCredits = Math.max(best ?? 0, routePassed ? item.credits : 0, ...routeCredits);
+    const credited = item.actual ? earnedCredits : Math.min(earnedCredits, item.credits);
+    return { ...item, credited, routes, passed };
   }
   const results = sheet.groups.map((group) => ({ group, rows: group.subjects.map(evaluateSubject) }));
   const allPassed = new Set(results.flatMap(({ rows }) => rows.filter((r) => r.passed).map((r) => r.title)));
-  const matched = pairedLabs(sheet.groups.flatMap((g) => g.subjects).filter((s) => s.pairedWith), allPassed);
+  const matched = pairedLabs(sheet.groups.filter((g) => !g.allowSharedLecture).flatMap((g) => g.subjects).filter((s) => s.pairedWith), allPassed);
   return results.map(({ group, rows }) => {
-    const eligibleRows = rows.map((row) => (
-      row.pairedWith && !matched.has(row.title) ? { ...row, passed: false, credited: 0 } : row
-    ));
+    const eligibleRows = rows.map((row) => {
+      if (!row.pairedWith) return row;
+      const paired = group.allowSharedLecture ? row.pairedWith.some((lecture) => allPassed.has(lecture)) : matched.has(row.title);
+      return paired ? row : { ...row, passed: false, credited: 0 };
+    });
     let confirmed = 0;
     let capped = 0;
     if (group.manual) {
-      const { target, eligible, cappedCodes, cap } = group.manual;
+      const { target, alternativeTarget, eligible, cappedCodes, cap } = group.manual;
+      let alternativeCredits = 0;
       for (const course of earned) {
         const decision = byCode.get(course.courseNo);
-        if (!eligibleTarget(group, course.courseNo) ||
-          (decision ? decision.target !== target : !eligible?.includes(course.courseNo))) continue;
+        if (!eligibleTarget(group, course.courseNo)) continue;
         const credit = Math.min(course.credits, decision?.credits ?? course.credits);
+        if (decision && alternativeTarget && decision.target === alternativeTarget) {
+          alternativeCredits += credit;
+          continue;
+        }
+        if (decision ? decision.target !== target : !eligible?.includes(course.courseNo)) continue;
         if (group.mode === "subjects") confirmed++;
         else if (cappedCodes?.includes(course.courseNo)) capped += credit;
         else confirmed += credit;
       }
-      confirmed += Math.min(capped, cap ?? capped);
+      confirmed = Math.max(confirmed + Math.min(capped, cap ?? capped), alternativeCredits);
     }
     const achieved = confirmed + (group.mode === "credits" ? eligibleRows.reduce((sum, row) => sum + row.credited, 0) :
       eligibleRows.filter((row) => row.passed).length);
